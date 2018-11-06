@@ -2,6 +2,11 @@
 Repository to fork when you want to start a new project
 
 # Installation
+If you want to use phy you have to use conda in order to install pyqt4
+```
+conda install python=3.5 pyqt=4
+```
+Then, to install expipe etc.
 ```
 git clone git@github.com:CINPLA/cinpla-base.git
 cd cinpla-base
