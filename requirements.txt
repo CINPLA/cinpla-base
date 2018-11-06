@@ -1,4 +1,3 @@
-python_version >= '3.5'
 klusta
 klustakwik2
 vispy
@@ -6,7 +5,7 @@ requests
 traitlets
 pycircstat
 quantities
-xmljson
+ruamel_yaml
 scp
 send2trash
 packaging
@@ -30,13 +29,13 @@ click
 six
 -e git+git://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
 -e git+git@github.com:CINPLA/python-neo.git@expipe#egg=python-neo
--e git+git@github.com:CINPLA/exana.git@cinpla#egg=exana
+-e git+git@github.com:CINPLA/exana.git@dev#egg=exana
 -e git+git@github.com:CINPLA/expipe.git@dev#egg=expipe
 -e git+git@github.com:CINPLA/expipe-cli.git@dev#egg=expipe-cli
 -e git+git@github.com:CINPLA/exdir.git@dev#egg=exdir
 -e git+git@github.com:CINPLA/exdir-cli.git@dev#egg=exdir-cli
--e git+git@github.com:CINPLA/phy-contrib.git@NeoGUI#egg=phy-contrib
 -e git+git@github.com:kwikteam/phy.git@master#egg=phy
+-e git+git@github.com:CINPLA/phy-contrib.git@NeoGUI#egg=phy-contrib
 -e git+git@github.com:CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+git@github.com:CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
 elephant
