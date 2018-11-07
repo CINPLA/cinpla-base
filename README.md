@@ -2,11 +2,21 @@
 Repository to fork when you want to start a new project
 
 # Installation
-If you want to use phy you have to use conda in order to install pyqt4
+## Anaconda
+```
+conda create -n expipe
+conda activate expipe
+```
+If you want to use phy you have to install pyqt4 and python 3.5
 ```
 conda install python=3.5 pyqt=4
 ```
-Then, to install expipe etc.
+Then, to install expipe etc. follow the instructions for PyPi, but first, make sure you have the latest version of pip
+```
+conda update pip
+```
+## PyPi
+If you are not using anaconda, we recomend using [virtualenv](https://virtualenvwrapper.readthedocs.io/en/latest/)
 ```
 git clone git@github.com:CINPLA/cinpla-base.git
 cd cinpla-base
