@@ -31,6 +31,7 @@ six
 -e git+git@github.com:CINPLA/python-neo.git@expipe#egg=python-neo
 -e git+git@github.com:CINPLA/exana.git@dev#egg=exana
 -e git+git@github.com:CINPLA/expipe.git@dev#egg=expipe
+-e git+git@github.com:CINPLA/pyxona.git@dev#egg=pyxona
 -e git+git@github.com:CINPLA/expipe-cli.git@dev#egg=expipe-cli
 -e git+git@github.com:CINPLA/exdir.git@dev#egg=exdir
 -e git+git@github.com:CINPLA/exdir-cli.git@dev#egg=exdir-cli
