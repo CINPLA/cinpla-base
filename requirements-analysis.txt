@@ -1,6 +1,6 @@
--e git+git@github.com:CINPLA/time-frequency.git@dev#egg=time-frequency
--e git+git@github.com:CINPLA/visual-stimulation.git@dev#egg=visual-stimulation
--e git+git@github.com:CINPLA/spike-waveform.git@dev#egg=spike-waveform
--e git+git@github.com:CINPLA/spike-statistics.git@dev#egg=spike-statistics
--e git+git@github.com:CINPLA/spatial-spike-fields.git@dev#egg=spatial-spike-fields
--e git+git@github.com:CINPLA/optogenetics.git@dev#egg=optogenetics
+-e git+https://github.com/CINPLA/time-frequency.git@dev#egg=time-frequency
+-e git+https://github.com/CINPLA/visual-stimulation.git@dev#egg=visual-stimulation
+-e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spike-waveform
+-e git+https://github.com/CINPLA/spike-statistics.git@dev#egg=spike-statistics
+-e git+https://github.com/CINPLA/spatial-spike-fields.git@dev#egg=spatial-spike-fields
+-e git+https://github.com/CINPLA/optogenetics.git@dev#egg=optogenetics
