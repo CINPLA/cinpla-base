@@ -1,3 +1,6 @@
-spiketoolkit
-spikeextractors
+-e git+git@github.com:SpikeInterface/spikeextractors.git@master#egg=spikeextractors
+-e git+git@github.com:SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
+-e git+git@github.com:SpikeInterface/spikewidgets.git@master#egg=spikewidgets
 ml_ms4alg
+klusta 
+klustakwik2
