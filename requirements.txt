@@ -38,5 +38,4 @@ six
 -e git+https://github.com/CINPLA/phy-contrib.git@NeoGUI#egg=phy-contrib
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
--e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
 elephant
