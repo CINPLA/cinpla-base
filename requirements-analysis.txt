@@ -4,3 +4,4 @@
 -e git+https://github.com/CINPLA/spike-statistics.git@dev#egg=spike-statistics
 -e git+https://github.com/CINPLA/spatial-spike-fields.git@dev#egg=spatial-spike-fields
 -e git+https://github.com/CINPLA/optogenetics.git@dev#egg=optogenetics
+astropy
