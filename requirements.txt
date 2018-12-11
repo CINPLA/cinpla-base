@@ -12,6 +12,7 @@ jupyter
 openpyxl
 tqdm
 click
+matplotlib
 six
 -e git+https://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
 -e git+https://github.com/CINPLA/python-neo.git@expipe#egg=python-neo
