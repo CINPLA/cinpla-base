@@ -1,6 +1,6 @@
 -e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
--e git+https://github.com/SpikeInterface/spiketoolkit.git@dev#egg=spiketoolkit
--e git+https://github.com/SpikeInterface/spikewidgets.git@master#egg=spikewidgets
-ml_ms4alg
+-e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
 klusta 
 klustakwik2
+joblib
+mountainlab_pytools
