@@ -1,4 +1,4 @@
-## Installation
+# Installation
 Install GIT [Windows](https://git-scm.com/downloads)
 
 Install [Anaconda](https://www.anaconda.com/download/#linux)
@@ -26,15 +26,16 @@ git clone https://github.com/CINPLA/cinpla-base.git
 Windows: Search for anaconda and open Anaconda prompt. y
 Mac: open a terminal
 
-### Installing python and pyqt
+### Installing python and other dependencies
 In order to use `phy` (a spikesorter) we have to
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 conda install python=3.5 pyqt=4
+conda install h5py scikit-learn
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### Installing expipe for CINPLA
+## Installing expipe for CINPLA
 Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
 requirements
 
@@ -43,7 +44,41 @@ cd cinpla-base
 pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-## Getting started
+## Installing spike sorting tools
+Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
+requirements-spiketools
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd cinpla-base
+pip install -r requirements-spiketools.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#### Installing KiloSort and Ironclust
+
+KiloSort and Ironclust are matlab-based spike sorters. To install them navigate to `C:\apps` and run:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git clone https://github.com/cortex-lab/KiloSort.git
+git clone https://github.com/kwikteam/npy-matlab.git
+git clone https://github.com/jamesjun/ironclust.git
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to let the system know where these packages are installed we have to set environment variables. If you have admin access, in Windows, select `start-->Computer-->right-click-->Properties`. Then click on `Advanced settings-->Environment variables` and add this three `New` variables:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+name: KILOSORT_PATH     variable: C:\apps\KiloSort
+name: NPY_MATLAB_PATH   variable: C:\apps\npy-matlab
+name: IRONCLUST_PATH    variable: C:\apps\ironclust
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In case you don't have admin access you can set temporary environment variables from the anaconda prompt by running:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+set KILOSORT_PATH=C:\apps\KiloSort
+set NPY_MATLAB_PATH=C:\apps\npy-matlab
+set IRONCLUST_PATH=C:\apps\ironclust
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# Getting started
 
 ### Register a Gitea account
  * Contact Mikkel, Alessio or Svenn-Arne
@@ -159,3 +194,13 @@ browser.display('workshop')
 import expipe
 expipe.Browser('workshop').display()
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+# Troubleshooting
+
+- if you get a `multiarray error` when running `expipe init` run:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pip uninstall numpy
+pip install numpy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
