@@ -8,18 +8,22 @@ Install [Github Desktop](https://desktop.github.com/), if you do not like to use
 
 Install [Atom](https://atom.io/)
 
-Start by cloning this repository, this can either be done with Github Desktop
+### Cloning the cinpla-base repository
+This can either be done with Github Desktop
 or with a terminal. When we say terminal, in Windows we mean Anaconda prompt.
 However, all code that starts with `git` can be done with Github Desktop.
+
+Make a folder where you want to have it, e.g. c:\apps\
 
 With the terminal run
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd c:\apps
 git clone https://github.com/CINPLA/cinpla-base.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Anaconda
-Windows: Search for anaconda and open Anaconda prompt
+Windows: Search for anaconda and open Anaconda prompt. y
 Mac: open a terminal
 
 ### Installing python and pyqt
