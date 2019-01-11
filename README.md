@@ -29,8 +29,21 @@ git clone https://github.com/CINPLA/cinpla-base.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Anaconda
-Windows: Search for anaconda and open Anaconda prompt. y
+Windows: Search for anaconda and open Anaconda prompt.
+
 Mac: open a terminal
+
+Create a new Anaconda environment with (replace `myproject` with the name of your project):
+
+```
+conda create -n myproject python=3
+```
+
+Then, enter the environment using
+
+```
+source activate myproject
+```
 
 ### Installing python and other dependencies
 In order to use `phy` (a spikesorter) we have to
