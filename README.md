@@ -1,3 +1,9 @@
+# Welcome!
+
+This repository is a template you can use to *create new projects*.
+
+IMPORTANT: If you are going to work on an existing project, do not clone this repository. You need to look for the repository for that project.
+
 # Installation
 Install GIT [Windows](https://git-scm.com/downloads)
 
