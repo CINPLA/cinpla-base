@@ -30,9 +30,9 @@ openpyxl
 astropy
 packaging
 paramiko
-pyopenephys
 pyintan
 elephant
+-e git+https://github.com/CINPLA/pyopenephys.git@master#egg=python-neo
 -e git+https://github.com/CINPLA/python-neo.git@expipe#egg=python-neo
 -e git+https://github.com/CINPLA/expipe.git@dev#egg=expipe
 -e git+https://github.com/CINPLA/pyxona.git@dev#egg=pyxona

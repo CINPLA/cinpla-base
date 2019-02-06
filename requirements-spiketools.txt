@@ -1,5 +1,5 @@
 -e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
--e git+https://github.com/SpikeInterface/spiketoolkit.git@dev#egg=spiketoolkit
+-e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
 -e git+https://github.com/SpikeInterface/spikewidgets.git@master#egg=spikewidgets
 -e git+https://github.com/kwikteam/phy.git@dev#egg=phy
 -e git+https://github.com/CINPLA/phy-contrib.git@neogui-pyqt5#egg=phy-contrib
