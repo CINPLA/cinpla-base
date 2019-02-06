@@ -205,15 +205,27 @@ git push
 ## Working with expipe
 Now you are ready to start using expipe
 
-### Open cinpla browser
 
+### Open cinpla browser
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from expipe_plugin_cinpla.widgets import browser
 browser.display('workshop')
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You can register actions (surgery, adjustments, recordings, perfusions, etc.) and process data using the jupyter GUI.
+Once you have worked on the repo, you should `git add` the changed files, `git commit`   and `git push`.
+
+If you want to physically download the files of an action to perform analysis, for example, first you need to pull the required files:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git pull
+git -c lfs.fetchexclude="" lfs pull -I path-to-action
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ### Open expipe browser
+
+You can check the status of your expipe project using the expipe Browser:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import expipe
