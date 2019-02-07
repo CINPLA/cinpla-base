@@ -31,9 +31,8 @@ astropy
 packaging
 paramiko
 pyintan
-elephant
--e git+https://github.com/CINPLA/pyopenephys.git@master#egg=python-neo
 -e git+https://github.com/CINPLA/python-neo.git@expipe#egg=python-neo
+-e git+https://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
 -e git+https://github.com/CINPLA/expipe.git@dev#egg=expipe
 -e git+https://github.com/CINPLA/pyxona.git@dev#egg=pyxona
 -e git+https://github.com/CINPLA/expipe-cli.git@dev#egg=expipe-cli
@@ -41,3 +40,4 @@ elephant
 -e git+https://github.com/CINPLA/exdir-cli.git@dev#egg=exdir-cli
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
+elephant
