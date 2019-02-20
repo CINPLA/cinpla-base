@@ -9,8 +9,7 @@ numpy
 matplotlib
 scipy
 h5py
-pyqt5
-cython
+pyqt5=5.9
 pyopengl
 vispy
 requests
@@ -18,6 +17,7 @@ traitlets
 tqdm
 six
 joblib
+cython
 click
 pandas
 seaborn
