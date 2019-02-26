@@ -9,7 +9,7 @@ numpy
 matplotlib
 scipy
 h5py
-pyqt5=5.9
+pyqt5==5.9
 pyopengl
 vispy
 requests
