@@ -6,3 +6,5 @@ kbucket
 mountainlab_pytools
 klusta 
 klustakwik2
+joblib
+mountainlab_pytools

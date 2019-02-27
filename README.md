@@ -45,6 +45,7 @@ Then, enter the environment using
 source activate myproject
 ```
 
+
 ## Installing expipe for CINPLA
 Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
 requirements
@@ -219,7 +220,6 @@ Once you have pushed everything, if you want to free some space you can delete y
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git reset --hard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 ### Open expipe browser
 

@@ -1,8 +1,6 @@
 pycircstat
 quantities
 ruamel_yaml
-scp
-send2trash
 packaging
 xmltodict
 numpy
@@ -21,9 +19,7 @@ cython
 click
 pandas
 seaborn
-pyyaml
 pytest
-nose
 jupyter
 ipython
 openpyxl
@@ -40,4 +36,5 @@ pyintan
 -e git+https://github.com/CINPLA/exdir-cli.git@dev#egg=exdir-cli
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
+-e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
 elephant
