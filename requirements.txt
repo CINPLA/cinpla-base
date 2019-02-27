@@ -1,28 +1,39 @@
-vispy
-requests
-traitlets
 pycircstat
 quantities
 ruamel_yaml
 packaging
 xmltodict
+numpy
+matplotlib
+scipy
+h5py
+pyqt5==5.9
+pyopengl
+vispy
+requests
+traitlets
+tqdm
+six
+joblib
+cython
+click
+pandas
 seaborn
 pytest
 jupyter
+ipython
 openpyxl
-tqdm
-click
-matplotlib
-six
--e git+https://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
+astropy
+packaging
+paramiko
+pyintan
 -e git+https://github.com/CINPLA/python-neo.git@expipe#egg=python-neo
+-e git+https://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
 -e git+https://github.com/CINPLA/expipe.git@dev#egg=expipe
 -e git+https://github.com/CINPLA/pyxona.git@dev#egg=pyxona
 -e git+https://github.com/CINPLA/expipe-cli.git@dev#egg=expipe-cli
 -e git+https://github.com/CINPLA/exdir.git@dev#egg=exdir
 -e git+https://github.com/CINPLA/exdir-cli.git@dev#egg=exdir-cli
--e git+https://github.com/kwikteam/phy.git@master#egg=phy
--e git+https://github.com/CINPLA/phy-contrib.git@NeoGUI#egg=phy-contrib
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
 -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla

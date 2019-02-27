@@ -36,7 +36,7 @@ Mac: open a terminal
 Create a new Anaconda environment with (replace `myproject` with the name of your project):
 
 ```
-conda create -n myproject python=3
+conda create -n myproject python=3.5
 ```
 
 Then, enter the environment using
@@ -45,14 +45,6 @@ Then, enter the environment using
 source activate myproject
 ```
 
-### Installing python and other dependencies
-In order to use `phy` (a spikesorter) we have to
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-conda install python=3.5 pyqt=4
-conda install h5py scikit-learn
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Installing expipe for CINPLA
 Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
@@ -221,6 +213,12 @@ If you want to physically download the files of an action to perform analysis, f
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git pull
 git -c lfs.fetchexclude="" lfs pull -I path-to-action
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once you have pushed everything, if you want to free some space you can delete your actions and run (do it with caution!!!):
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git reset --hard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Open expipe browser
