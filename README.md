@@ -233,6 +233,23 @@ expipe.Browser('workshop').display()
 
 # Troubleshooting
 
+## gitea
+
+Sometimes when cloning, pulling, or pushing to gitea you might get this error:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fatal: unable to access 'https://gitea.expipe.sigma2.no/username/project.git/': The requested URL returned error: 403
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This can be solved by changing the repo name copied from gitea:
+
+`https://gitea.expipe.sigma2.no/username/project.git/` 
+
+to 
+
+`https://username@gitea.expipe.sigma2.no/username/project.git/`
+
+## python
+
 - if you get a `multiarray error` when running `expipe init` run:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 pip uninstall numpy
