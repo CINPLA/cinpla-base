@@ -10,10 +10,12 @@ h5py
 pyqt5==5.9
 pyopengl
 vispy
+tkfilebrowser
 requests
 traitlets
 tqdm
 six
+scp
 joblib
 cython
 click
