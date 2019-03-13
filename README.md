@@ -136,6 +136,7 @@ This command adds actions, entities and templates folders together with an
 `expipe.yaml`, this is necesarry so that `my_project_name` will be recognized as
 a expipe project.
 
+## Git LFS
 Next, we need to add some information to `git LFS` which is helping us handling
 large files (LFS stands for Large File Storage)
 
@@ -167,6 +168,16 @@ pointing to the real data files on NIRD.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git add -A
 git commit -am "init expipe and LFS"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+### Setting up LFS
+If you get lfs-timeout errors when pushing (i/o timeout, error: failed to push some refs), consider changing your lfs settings to with
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config lfs.tlstimeout 300
+git config lfs.activitytimeout 60
+git config lfs.dialtimeout 600
+git config lfs.concurrenttransfers 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Add templates
