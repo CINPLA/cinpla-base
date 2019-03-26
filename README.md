@@ -146,9 +146,7 @@ git lfs install
 git lfs track actions/*/data/**/*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This command adds two files, `.gitattributes` and `.lfsconfig`, the latter is not
-so interesting but the former deserves some explanation. Inside it says
-
+This command adds a file, `.gitattributes`, with the following contents
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 actions/*/data/**/* filter=lfs diff=lfs merge=lfs -text
@@ -165,6 +163,12 @@ as LFS files when the repository is cloned or pulled if nothing else is specifie
 This means that all files in `data` except `.yaml` files will be text files
 pointing to the real data files on NIRD.
 
+To avoid downloading the original files when doing a `git pull` the following command adds `.lfsconfig`
+with a line specifying to exclude all LFS tracked files.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config -f .lfsconfig lfs.fetchexclude "*"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git add -A
