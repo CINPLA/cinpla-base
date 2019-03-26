@@ -259,15 +259,6 @@ to
 
 `https://username@gitea.expipe.sigma2.no/username/project.git/`
 
-If you get this error:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-fatal: unable to access 'https://gitea.expipe.sigma2.no/username/project.git/': SSL certificate problem:certificate has expired
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-you can fix it by running this command from inside the gitea project folder:
-
-`git config --global http.sslVerify false`
-
 If your `.git` folder gets huge, you can delete old LFS files from local storage with (make sure you are sync with remote (all files are pushed))
 
 `git lfs prune`
