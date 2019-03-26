@@ -142,7 +142,8 @@ large files (LFS stands for Large File Storage)
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-expipe init-lfs
+git lfs install
+git lfs track actions/*/data/**/*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This command adds two files, `.gitattributes` and `.lfsconfig`, the latter is not
