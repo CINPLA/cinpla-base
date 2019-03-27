@@ -1,6 +1,6 @@
 pycircstat
 quantities
-ruamel_yaml
+ruamel.yaml
 packaging
 xmltodict
 numpy
