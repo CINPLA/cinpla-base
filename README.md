@@ -265,6 +265,14 @@ expipe.Browser('workshop').display()
 
 ## gitea
 
+If you want to store your credentials do
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config credential.helper store
+git pull
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Type in your credentials and it is then stored.
+
 Sometimes when cloning, pulling, or pushing to gitea you might get this error:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 fatal: unable to access 'https://gitea.expipe.sigma2.no/username/project.git/': The requested URL returned error: 403
