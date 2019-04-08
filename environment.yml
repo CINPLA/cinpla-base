@@ -26,6 +26,7 @@ dependencies:
   - pyqt=5.9
   - git
   - pyopengl
+  - scikit-learn
   - sip
   - xmltodict
   - pycodestyle
@@ -38,6 +39,11 @@ dependencies:
     - scp
     - send2trash
     - pyintan
+    - kbucket
+    - mountainlab_pytools
+    - klusta
+    - klustakwik2
+    - pycwt
     - -e git+https://github.com/CINPLA/python-neo.git@expipe#egg=python-neo
     - -e git+https://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
     - -e git+https://github.com/CINPLA/expipe.git@dev#egg=expipe
@@ -48,8 +54,6 @@ dependencies:
     - -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
     - -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
     - -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
-    - elephant
-    - pycwt
     - -e git+https://github.com/CINPLA/time-frequency.git@dev#egg=time-frequency
     - -e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spike-waveform
     - -e git+https://github.com/CINPLA/spike-statistics.git@dev#egg=spike-statistics
@@ -61,7 +65,4 @@ dependencies:
     - -e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
     - -e git+https://github.com/kwikteam/phy.git@dev#egg=phy
     - -e git+https://github.com/CINPLA/phy-contrib.git@neogui-pyqt5#egg=phy-contrib
-    - kbucket
-    - mountainlab_pytools
-    - klusta
-    - klustakwik2
+    - elephant
