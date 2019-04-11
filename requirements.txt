@@ -18,6 +18,7 @@ six
 scp
 joblib
 cython
+gitpython
 click
 pandas
 seaborn

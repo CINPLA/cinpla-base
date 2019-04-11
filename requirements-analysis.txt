@@ -7,3 +7,4 @@
 -e git+https://github.com/CINPLA/head-direction.git@master#egg=head-direction
 -e git+https://github.com/CINPLA/optogenetics.git@dev#egg=optogenetics
 astropy
+pactools
