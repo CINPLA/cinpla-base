@@ -7,13 +7,15 @@ numpy
 matplotlib
 scipy
 h5py
-pyqt5==5.9
+colorcet
 pyopengl
-vispy
 requests
 traitlets
 tqdm
 six
+joblib
+click
+vispy
 joblib
 cython
 click
@@ -37,4 +39,5 @@ pyintan
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
 -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
+git+https://github.com/cortex-lab/phylib
 elephant
