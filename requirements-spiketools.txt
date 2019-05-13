@@ -1,7 +1,6 @@
 -e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
 -e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
--e git+https://github.com/kwikteam/phy.git@dev#egg=phy
--e git+https://github.com/CINPLA/phy-contrib.git@neogui-pyqt5#egg=phy-contrib
+-e git+https://github.com/kwikteam/phy.git@gloo#egg=phy
 kbucket
 mountainlab_pytools
 klusta 
