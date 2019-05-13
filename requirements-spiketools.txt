@@ -1,6 +1,8 @@
 -e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
 -e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
--e git+https://github.com/kwikteam/phy.git@gloo#egg=phy
+https://github.com/tridesclous/tridesclous/archive/master.zip
+https://github.com/mhhennig/HS2/archive/master.zip
+spyking-circus
 kbucket
 mountainlab_pytools
 klusta 
