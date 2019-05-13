@@ -136,17 +136,17 @@ This command adds actions, entities and templates folders together with an
 `expipe.yaml`, this is necesarry so that `my_project_name` will be recognized as
 a expipe project.
 
+## Git LFS
 Next, we need to add some information to `git LFS` which is helping us handling
 large files (LFS stands for Large File Storage)
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-expipe init-lfs
+git lfs install
+git lfs track actions/*/data/**/*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This command adds two files, `.gitattributes` and `.lfsconfig`, the latter is not
-so interesting but the former deserves some explanation. Inside it says
-
+This command adds a file, `.gitattributes`, with the following contents
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 actions/*/data/**/* filter=lfs diff=lfs merge=lfs -text
@@ -163,10 +163,26 @@ as LFS files when the repository is cloned or pulled if nothing else is specifie
 This means that all files in `data` except `.yaml` files will be text files
 pointing to the real data files on NIRD.
 
+To avoid downloading the original files when doing a `git pull` the following command adds `.lfsconfig`
+with a line specifying to exclude all LFS tracked files.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config -f .lfsconfig lfs.fetchexclude "*"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git add -A
 git commit -am "init expipe and LFS"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+### Setting up LFS
+If you get lfs-timeout errors when pushing (i/o timeout, error: failed to push some refs), consider changing your lfs settings to with
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config lfs.tlstimeout 300
+git config lfs.activitytimeout 60
+git config lfs.dialtimeout 600
+git config lfs.concurrenttransfers 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Add templates
@@ -212,7 +228,21 @@ If you want to physically download the files of an action to perform analysis, f
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git pull
+git lfs fetch -I path-to-action
+git lfs checkout
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ or equivalently
+ 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git -c lfs.fetchexclude="" lfs pull -I path-to-action
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to download all files:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git lfs fetch --all
+git lfs checkout
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you have pushed everything, if you want to free some space you can delete your actions and run (do it with caution!!!):
@@ -233,9 +263,51 @@ expipe.Browser('workshop').display()
 
 # Troubleshooting
 
+## gitea
+
+If you want to store your credentials do
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config credential.helper store
+git pull
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Type in your credentials and it is then stored.
+
+Sometimes when cloning, pulling, or pushing to gitea you might get this error:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fatal: unable to access 'https://gitea.expipe.sigma2.no/username/project.git/': The requested URL returned error: 403
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This can be solved by changing the repo name copied from gitea:
+
+`https://gitea.expipe.sigma2.no/username/project.git/` 
+
+to 
+
+`https://username@gitea.expipe.sigma2.no/username/project.git/`
+
+If your `.git` folder gets huge, you can delete old LFS files from local storage with (make sure you are sync with remote (all files are pushed))
+
+`git lfs prune`
+
+## python
+
 - if you get a `multiarray error` when running `expipe init` run:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 pip uninstall numpy
 pip install numpy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+No module named repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pip install gitpython
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## jupyter notebook
+Stale connection, unable to connect to kernel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pip install "tornado<6"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 

@@ -1,6 +1,6 @@
 pycircstat
 quantities
-ruamel_yaml
+ruamel.yaml
 packaging
 xmltodict
 numpy
@@ -9,16 +9,17 @@ scipy
 h5py
 colorcet
 pyopengl
+tkfilebrowser
 requests
 traitlets
 tqdm
 six
+scp
 joblib
 click
 vispy
-joblib
 cython
-click
+gitpython
 pandas
 seaborn
 pytest

@@ -2,6 +2,9 @@
 -e git+https://github.com/CINPLA/visual-stimulation.git@dev#egg=visual-stimulation
 -e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spike-waveform
 -e git+https://github.com/CINPLA/spike-statistics.git@dev#egg=spike-statistics
--e git+https://github.com/CINPLA/spatial-spike-fields.git@dev#egg=spatial-spike-fields
+-e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
+-e git+https://github.com/CINPLA/speed-cells.git@master#egg=speed-cells
+-e git+https://github.com/CINPLA/head-direction.git@master#egg=head-direction
 -e git+https://github.com/CINPLA/optogenetics.git@dev#egg=optogenetics
 astropy
+pactools
