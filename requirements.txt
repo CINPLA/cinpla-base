@@ -7,8 +7,6 @@ numpy
 matplotlib
 scipy
 h5py
-colorcet
-pyopengl
 tkfilebrowser
 requests
 traitlets
