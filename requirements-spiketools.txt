@@ -4,6 +4,7 @@ https://github.com/tridesclous/tridesclous/archive/master.zip
 https://github.com/mhhennig/HS2/archive/master.zip
 spyking-circus
 kbucket
+ml_ms4alg
 mountainlab_pytools
 klusta 
 klustakwik2
