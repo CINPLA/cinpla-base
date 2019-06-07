@@ -42,7 +42,7 @@ conda create -n myproject python=3.5
 Then, enter the environment using
 
 ```
-source activate myproject
+activate myproject
 ```
 
 
@@ -86,6 +86,15 @@ In case you don't have admin access you can set temporary environment variables 
 set KILOSORT_PATH=C:\apps\KiloSort
 set NPY_MATLAB_PATH=C:\apps\npy-matlab
 set IRONCLUST_PATH=C:\apps\ironclust
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## Installing curationtools [phy]
+Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
+requirements-curationtools
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd cinpla-base
+pip install -r requirements-curationtools.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
