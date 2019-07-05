@@ -8,6 +8,7 @@ six
 joblib
 click
 -e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
+-e git+https://github.com/SpikeInterface/spikesorters.git@master#egg=spikesorters
 -e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
--e git+https://github.com/kwikteam/phy.git@gloo#egg=phy
+-e git+https://github.com/cortex-lab/phy.git@dev#egg=phy
 git+https://github.com/cortex-lab/phylib
