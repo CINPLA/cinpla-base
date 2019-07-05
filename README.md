@@ -36,7 +36,7 @@ Mac: open a terminal
 Create a new Anaconda environment with (replace `myproject` with the name of your project):
 
 ```
-conda create -n myproject python=3.5
+conda create -n myproject python=3.6
 ```
 
 Then, enter the environment using
@@ -96,6 +96,8 @@ requirements-curationtools
 cd cinpla-base
 pip install -r requirements-curationtools.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**NOTE:** On Windows you need an extra package: `pip install pywin32`
 
 
 # Getting started
