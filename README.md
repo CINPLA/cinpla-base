@@ -164,6 +164,12 @@ actions/*/data/**/* filter=lfs diff=lfs merge=lfs -text
 *.yaml !filter !diff !merge
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+It can also be good to ignore numpy files for delta compression to speed up pushing
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*.npy binary -delta
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 The first line says that all the contents in all `data` directories whithin every
 action should be handeled by git LFS. The second line says that even though all
 the `data` directories should be handeled by LFS, all files ending with `.yaml`
@@ -195,6 +201,7 @@ git config lfs.activitytimeout 60
 git config lfs.dialtimeout 600
 git config lfs.concurrenttransfers 1
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ### Add templates
 Navigate to `cinpla-base/src/expipe-templates-cinpla/templates`, where you'll
@@ -283,6 +290,13 @@ git config credential.helper store
 git pull
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Type in your credentials and it is then stored.
+
+If you get timeout error while pushing try
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config --global https.postBuffer 2097152000
+git config --global http.postBuffer 2097152000
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Sometimes when cloning, pulling, or pushing to gitea you might get this error:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
