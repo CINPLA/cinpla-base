@@ -154,7 +154,13 @@ large files (LFS stands for Large File Storage)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git lfs install
-git lfs track actions/*/data/**/*
+git lfs track "actions/*/data/**/*"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+or if you only want to track npy and dat files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git lfs track "*.npy"
+git lfs track "*.dat"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This command adds a file, `.gitattributes`, with the following contents
@@ -162,12 +168,6 @@ This command adds a file, `.gitattributes`, with the following contents
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 actions/*/data/**/* filter=lfs diff=lfs merge=lfs -text
 *.yaml !filter !diff !merge
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-It can also be good to ignore numpy files for delta compression to speed up pushing
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*.npy binary -delta
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first line says that all the contents in all `data` directories whithin every
