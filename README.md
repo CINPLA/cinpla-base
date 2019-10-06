@@ -8,6 +8,7 @@ IMPORTANT: If you are going to work on an existing project, do not clone this re
 Install GIT [Windows](https://git-scm.com/downloads)
 
 Install GIT [LFS](https://git-lfs.github.com/)
+
 [Nice intro video to LFS](https://www.youtube.com/watch?v=uLR1RNqJ1Mw)
 
 Install [Anaconda](https://www.anaconda.com/download/#linux)
