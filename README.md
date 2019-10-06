@@ -7,6 +7,9 @@ IMPORTANT: If you are going to work on an existing project, do not clone this re
 # Installation
 Install GIT [Windows](https://git-scm.com/downloads)
 
+Install GIT [LFS](https://git-lfs.github.com/)
+[Nice intro video to LFS](https://www.youtube.com/watch?v=uLR1RNqJ1Mw)
+
 Install [Anaconda](https://www.anaconda.com/download/#linux)
 
 Install [Github Desktop](https://desktop.github.com/), if you do not like to use the terminal so much.
@@ -100,7 +103,7 @@ pip install -r requirements-curationtools.txt
 **NOTE:** On Windows you need an extra package: `pip install pywin32`
 
 
-# Getting started
+# Getting started with git LFS and gitea@nird
 
 ### Register a Gitea account
  * Contact Mikkel, Alessio or Svenn-Arne
@@ -122,10 +125,16 @@ pip install -r requirements-curationtools.txt
  * from notebook (see example below)
  * with git desktop
 
+If you want to clone a LFS repository and only get the pointer files (not the large files) do 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git lfs install --skip-smudge
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+And then clone as usual
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git clone https://gitea.expipe.sigma2.no/user_name/my_project_name.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ### Open jupyter notebook inside repository
 Navigate to `my_project_name` and write in the terminal
@@ -148,23 +157,27 @@ This command adds actions, entities and templates folders together with an
 a expipe project.
 
 ## Git LFS
-Next, we need to add some information to `git LFS` which is helping us handling
+
+[Intro from atlassian](https://www.atlassian.com/git/tutorials/git-lfs)
+[Official docs](https://github.com/git-lfs/git-lfs)
+
+There are many good tutorials for LFS, use those or look at the brief intro below.
+
+Normal git is not "wired" to handle large files, this is why we use `git LFS` which is helping us handling
 large files (LFS stands for Large File Storage)
 
+**Be sure to initialize LFS properly before adding and committing files. It is possible to rewrite history later (with git lfs migrate import), but this can be a pain..**
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git lfs install
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Next we need to tell LFS which files should be tracked as large files, if you are not sure, you can add all data which is put in the action/data folder by
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git lfs track "actions/*/data/**/*"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-or if you only want to track npy and dat files
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git lfs track "*.npy"
-git lfs track "*.dat"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-This command adds a file, `.gitattributes`, with the following contents
-
+Open the `.gitattributes` files and make sure it reads: (you may want to add the last line which tells LFS to skip `.yaml` files)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 actions/*/data/**/* filter=lfs diff=lfs merge=lfs -text
 *.yaml !filter !diff !merge
@@ -180,6 +193,20 @@ as LFS files when the repository is cloned or pulled if nothing else is specifie
 This means that all files in `data` except `.yaml` files will be text files
 pointing to the real data files on NIRD.
 
+
+If you only want to track npy and dat files
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git lfs track "*.npy"
+git lfs track "*.dat"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Add the `.gitattributes` file
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git add .gitattributes
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 To avoid downloading the original files when doing a `git pull` the following command adds `.lfsconfig`
 with a line specifying to exclude all LFS tracked files.
 
@@ -188,18 +215,14 @@ git config -f .lfsconfig lfs.fetchexclude "*"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git add -A
+git add .lfsconfig
 git commit -am "init expipe and LFS"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-### Setting up LFS
-If you get lfs-timeout errors when pushing (i/o timeout, error: failed to push some refs), consider changing your lfs settings to with
+Now try to add and commit some files which should be tracked by LFS, and make sure they are correct by looking at
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git config lfs.tlstimeout 300
-git config lfs.activitytimeout 60
-git config lfs.dialtimeout 600
-git config lfs.concurrenttransfers 1
+git lfs ls-files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -291,7 +314,17 @@ git pull
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Type in your credentials and it is then stored.
 
-If you get timeout error while pushing try
+## LFS
+If you get lfs-timeout errors when pushing (i/o timeout, error: failed to push some refs), consider changing your lfs settings to with
+
+**This might be a sign that LFS is not tracking your files properly, if so try `git lfs migrate import`, although we have experienced this not to properly add files to LFS, see which files are tracked by `git lfs ls-files`**
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+git config lfs.tlstimeout 300
+git config lfs.activitytimeout 60
+git config lfs.dialtimeout 600
+git config lfs.concurrenttransfers 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git config --global https.postBuffer 2097152000
