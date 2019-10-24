@@ -1,10 +1,14 @@
-name: expipe
+name: phy
 dependencies:
-  - python=3.5
+  - python=3.6
+  - pip
+  - pywin32
   - numpy
   - matplotlib
   - scipy
   - cython
+  - six
+  - colorcet
   - pandas
   - seaborn
   - ruamel_yaml
@@ -31,6 +35,7 @@ dependencies:
   - xmltodict
   - pycodestyle
   - pip:
+    - gitpython
     - pycircstat
     - quantities
     - pyrebase
@@ -44,6 +49,7 @@ dependencies:
     - klusta
     - klustakwik2
     - pycwt
+    - elephant
     - -e git+https://github.com/CINPLA/python-neo.git@expipe#egg=python-neo
     - -e git+https://github.com/CINPLA/pyopenephys.git@master#egg=pyopenephys
     - -e git+https://github.com/CINPLA/expipe.git@dev#egg=expipe
@@ -54,15 +60,8 @@ dependencies:
     - -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
     - -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
     - -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
-    - -e git+https://github.com/CINPLA/time-frequency.git@dev#egg=time-frequency
-    - -e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spike-waveform
-    - -e git+https://github.com/CINPLA/spike-statistics.git@dev#egg=spike-statistics
-    - -e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
-    - -e git+https://github.com/CINPLA/speed-cells.git@master#egg=speed-cells
-    - -e git+https://github.com/CINPLA/head-direction.git@master#egg=head-direction
-    - -e git+https://github.com/CINPLA/optogenetics.git@dev#egg=optogenetics
     - -e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
+    - -e git+https://github.com/SpikeInterface/spikesorters.git@master#egg=spikesorters
     - -e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
-    - -e git+https://github.com/kwikteam/phy.git@dev#egg=phy
-    - -e git+https://github.com/CINPLA/phy-contrib.git@neogui-pyqt5#egg=phy-contrib
-    - elephant
+    - -e git+https://github.com/cortex-lab/phy.git@dev#egg=phy
+    - -e git+https://github.com/cortex-lab/phylib
