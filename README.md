@@ -59,37 +59,43 @@ cd cinpla-base
 pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-## Installing spike sorting tools
+## Installing spike sorting tools (optional)
+
+In order to run spike sorting with the machine you are using, you have to install them.
 Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
-requirements-spiketools
+requirements-spiketools. Choose the appropriate file (windows-linux)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd cinpla-base
-pip install -r requirements-spiketools.txt
+pip install -r requirements-spiketools-windows.txt (or requirements-spiketools-linux.txt)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#### Installing KiloSort and Ironclust
+This will install the Python-based sorters(klusta, spyking-circus, mountainsort, herding spikes, tridesclous)
 
-KiloSort and Ironclust are matlab-based spike sorters. To install them navigate to `C:\apps` and run:
+#### Installing Matlab-based spike sorters
+
+Kilosort2, Ironclust, and WaveClus are matlab-based spike sorters. To install them navigate to `C:\apps` and run:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://github.com/cortex-lab/KiloSort.git
-git clone https://github.com/kwikteam/npy-matlab.git
+git clone https://github.com/MouseLand/kilosort2.git
 git clone https://github.com/jamesjun/ironclust.git
+git clone https://github.com/csn-le/wave_clus.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In order to let the system know where these packages are installed we have to set environment variables. If you have admin access, in Windows, select `start-->Computer-->right-click-->Properties`. Then click on `Advanced settings-->Environment variables` and add this three `New` variables:
+In order to let the system know where these packages are installed we have to set environment variables. 
+If you have admin access, in Windows, select `start-->Computer-->right-click-->Properties`. 
+Then click on `Advanced settings-->Environment variables` and add this three `New` variables:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-name: KILOSORT_PATH     variable: C:\apps\KiloSort
-name: NPY_MATLAB_PATH   variable: C:\apps\npy-matlab
+name: KILOSORT2_PATH     variable: C:\apps\kilosort2
 name: IRONCLUST_PATH    variable: C:\apps\ironclust
+name: WAVECLUS_PATH    variable: C:\apps\wave_clus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In case you don't have admin access you can set temporary environment variables from the anaconda prompt by running:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-set KILOSORT_PATH=C:\apps\KiloSort
-set NPY_MATLAB_PATH=C:\apps\npy-matlab
+set KILOSORT2_PATH=C:\apps\kilosort2
 set IRONCLUST_PATH=C:\apps\ironclust
+set WAVECLUS_PATH=C:\apps\wave_clus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Installing curationtools [phy]

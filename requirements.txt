@@ -32,7 +32,6 @@ elephant
 pyopenephys
 expipe
 exdir
-spikeinterface
 spikeextractors==0.7.1
 spiketoolkit==0.5.1
 spikesorters==0.2.2
