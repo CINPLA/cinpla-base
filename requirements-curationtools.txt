@@ -1,14 +1,8 @@
-PyQt5==5.9
+pyqt5
+pyqtwebengine
 colorcet
 pyopengl
-requests
-traitlets
-tqdm
-six
-joblib
-click
--e git+https://github.com/SpikeInterface/spikeextractors.git@master#egg=spikeextractors
--e git+https://github.com/SpikeInterface/spikesorters.git@master#egg=spikesorters
--e git+https://github.com/SpikeInterface/spiketoolkit.git@master#egg=spiketoolkit
--e git+https://github.com/cortex-lab/phy.git@dev#egg=phy
+qtconsole
+git+https://github.com/cortex-lab/phy.git@dev
 git+https://github.com/cortex-lab/phylib
+
