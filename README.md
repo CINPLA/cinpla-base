@@ -15,6 +15,8 @@ Install [Anaconda](https://www.anaconda.com/download/#linux)
 
 Install [Github Desktop](https://desktop.github.com/), if you do not like to use the terminal so much.
  * [Setup](https://help.github.com/desktop/guides/getting-started-with-github-desktop/setting-up-github-desktop/)
+ 
+Install [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)
 
 Install [Atom](https://atom.io/)
 
@@ -59,6 +61,14 @@ cd cinpla-base
 pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+## Adding expipe_plugin_cinpla plugin
+
+In order to add lab-specific expipe commands, run:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+expipe config global -a plugin expipe_plugin_cinpla
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ## Installing spike sorting tools (optional)
 
 In order to run spike sorting with the machine you are using, you have to install them.
@@ -99,6 +109,7 @@ set WAVECLUS_PATH=C:\apps\wave_clus
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Installing curationtools [phy]
+
 Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
 requirements-curationtools
 
@@ -109,6 +120,15 @@ pip install -r requirements-curationtools.txt
 
 **NOTE:** On Windows you need an extra package: `pip install pywin32`
 
+## Adding a remote server
+
+To add a remote server for spike sorting, run:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+expipe add-server -n name-of-the-server(torkel-beist) -d IP-address -un username 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You will be prompted a password for the server.
 
 # Getting started with git LFS and gitea@nird
 
