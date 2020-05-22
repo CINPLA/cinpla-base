@@ -7,13 +7,13 @@ klusta
 klustakwik2==0.2.6
 
 # tridesclous
-tridesclous==1.2.2
+tridesclous==1.26
 
 # ms4 - not for windows
 # ml_ms4alg==0.3.2
 
 # herdingspikes
-herdingspikes==0.3.3
+herdingspikes==0.3.7
 
 # spyking-circus
-spyking-circus==0.9.0 --no-binary=mpi4py
+spyking-circus==0.9.6 --no-binary=mpi4py
