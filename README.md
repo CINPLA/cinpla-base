@@ -118,7 +118,12 @@ cd cinpla-base
 pip install -r requirements-curationtools.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**NOTE:** On Windows you need an extra package: `pip install pywin32`
+Next you can install phy:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pip install --pre --upgrade phy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+(**NOTE:** On Windows you need an extra package: `pip install pywin32`)
 
 ## Adding a remote server
 
