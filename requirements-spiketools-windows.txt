@@ -7,7 +7,7 @@ klusta
 klustakwik2==0.2.6
 
 # tridesclous
-tridesclous==1.26
+tridesclous==1.6
 
 # ms4 - not for windows
 # ml_ms4alg==0.3.2
