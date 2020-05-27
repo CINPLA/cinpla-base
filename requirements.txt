@@ -32,11 +32,7 @@ elephant
 pyopenephys
 expipe
 exdir
-spikeextractors==0.7.1
-spiketoolkit==0.5.1
-spikesorters==0.2.2
-spikecomparison==0.2.2
-spikewidgets==0.3.2
+spikeinterface
 -e git+https://github.com/CINPLA/pyxona.git@dev#egg=pyxona
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
