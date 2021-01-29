@@ -21,6 +21,7 @@ gitpython
 pandas
 seaborn
 pytest
+statsmodels
 jupyter
 ipython
 openpyxl
