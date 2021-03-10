@@ -271,6 +271,9 @@ class TrackMultipleSessions:
                 for unit in identified_units.values()
                 if len(unit['original_unit_ids']) > 1]
             num_units = sum([len(u) for u in units])
+            if num_units == 0:
+                print(f"Zero units found on channel group {ch_group}")
+                continue
             fig = plt.figure(figsize=(figsize[0], figsize[1] * num_units))
             gs = gridspec.GridSpec(num_units, 1)
             fig.suptitle('Channel group ' + str(ch_group))
