@@ -38,3 +38,4 @@ spikeinterface
 -e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
 -e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
 -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
+-e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
