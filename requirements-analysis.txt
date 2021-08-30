@@ -1,6 +1,6 @@
--e git+https://github.com/CINPLA/time-frequency.git@dev#egg=time-frequency
--e git+https://github.com/CINPLA/visual-stimulation.git@dev#egg=visual-stimulation
--e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spike-waveform
+-e git+https://github.com/CINPLA/time-frequency.git@dev#egg=timefrequency
+-e git+https://github.com/CINPLA/visual-stimulation.git@dev#egg=visualstimulation
+-e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spikewaveform
 -e git+https://github.com/CINPLA/spike-statistics.git@dev#egg=spike-statistics
 -e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
 -e git+https://github.com/CINPLA/speed-cells.git@master#egg=speed-cells
