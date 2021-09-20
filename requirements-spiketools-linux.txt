@@ -4,7 +4,7 @@ h5py
 tqdm
 click
 klusta
-klustakwik2==0.2.6
+#klustakwik2==0.2.6
 
 # tridesclous
 tridesclous==1.6
@@ -13,7 +13,11 @@ tridesclous==1.6
 ml_ms4alg==0.3.2
 
 # herdingspikes
-herdingspikes==0.3.7
+#herdingspikes==0.3.7
 
 # spyking-circus
-spyking-circus==0.9.6 --no-binary=mpi4py
+#spyking-circus==0.9.6 --no-binary=mpi4py
+
+herdingspikes
+spikeinterface[full]==0.90.1
+phy==2.0b1

@@ -1,0 +1,41 @@
+numpy
+h5py
+tqdm
+click
+pillow
+scipy
+matplotlib
+seaborn
+networkx
+ipympl
+scikit-learn
+pyqt5
+jupyter
+pyqtwebengine
+pynwb
+docker
+probeinterface
+quantities
+ruamel.yaml
+packaging
+xmltodict
+tkfilebrowser
+requests
+traitlets
+six
+scp
+cython
+pandas
+pytest
+jupyterlab
+ipython
+openpyxl
+paramiko
+pyintan
+pyopenephys
+expipe
+exdir
+-e git+https://github.com/CINPLA/pyxona.git@dev#egg=pyxona
+-e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
+-e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
+-e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
