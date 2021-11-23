@@ -30,8 +30,7 @@ def view_active_channels(action, sorter):
 
 
 def data_scope(
-    x: np.ndarray,
-    y: np.ndarray,
+    tracking_data: list,
     t: np.ndarray,
     spike_times: neo.core.spiketrain.SpikeTrain = None,
     scope: np.ndarray = np.array([0.0, 0.5]),
@@ -44,14 +43,13 @@ def data_scope(
 
     Parameters
     ----------
-    x : np.ndarray
-        1D array. Tracking x-axis
-    y : np.ndarray
-        1D array. Tracking y-axis
+    tracking_data : list
+        List of 1d-tracking data. e.g. [x,y,a], i.e. spatial, and angular
+        1D arrays.
     t : np.ndarray
-        1D array. Tracking time (seconds)
+        1D array. Tracking data times.
     spike_times : neo.core.spiketrain.SpikeTrain
-        spike time data
+        (Optional) spike time data
     scope : np.ndarray
         1D, 2 elements, array. Elements are start and stop of data scope.
     t_start : float
@@ -61,41 +59,42 @@ def data_scope(
 
     Returns
     -------
-    (x_selected, y_selected, t_selected, spike_times_selected) : (np.ndarray,
-    np.ndarray, np.ndarray, neo.core.spiketrain.SpikeTrain)
+    (t, tracking_data, spike_times) : (np.ndarray, list
+    neo.core.spiketrain.SpikeTrain)
         the inputs limited to the selected scope.
 
     Example
     -------
     >>> import numpy as np
-    >>> x,y,t = np.arange(4), np.arange(4), np.linspace(-0.5,1,4)
-    >>> data_scope(x,y,t)
-    (array([0, 1]), array([0, 1]), array([-0.5,  0. ]), None)
+    >>> tracking_data, t = [np.arange(4), np.arange(4)], np.linspace(-0.5,1,4)
+    >>> data_scope(tracking_data, t)
+    ([array([0, 1]), array([0, 1])], array([-0.5,  0. ]), None)
     """
     if t_start is not None and t_stop is not None:
         # limit recording scope (i.e. remove leading and trailing 'extra' recording times)
         track_mask = (t < t_stop) & (t > t_start)
-        x, y, t = x[track_mask], y[track_mask], t[track_mask]
+        t = t[track_mask]
+        tracking_data = [track_data_i[track_mask] for track_data_i in tracking_data]
         if spike_times is not None:
             spike_mask = (spike_times < t_stop) & (spike_times > t_start)
             spike_times = spike_times[spike_mask]
 
     scope_idxs = np.ceil((scope * (len(t) - 1))).astype(int)
     # scope tracking
-    x_selected = x[slice(*scope_idxs)]
-    y_selected = y[slice(*scope_idxs)]
-    t_selected = t[slice(*scope_idxs)]
+    t = t[slice(*scope_idxs)]
+    tracking_data = [
+        tracking_data_i[slice(*scope_idxs)] for tracking_data_i in tracking_data
+    ]
 
-    spike_times_selected = None
     if spike_times is not None:
         # get scope edges in realtime
-        scope_realtime = t[scope_idxs]
+        scope_realtime = t[[0, -1]]
         # scope spike times
         spike_times_mask = (spike_times > scope_realtime[0]) & (
             spike_times < scope_realtime[1]
         )
-        spike_times_selected = spike_times[spike_times_mask]
-    return x_selected, y_selected, t_selected, spike_times_selected
+        spike_times = spike_times[spike_times_mask]
+    return tracking_data, t, spike_times
 
 
 def _cut_to_same_len(*args):
