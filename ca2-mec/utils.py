@@ -1,5 +1,7 @@
 import numpy as np
 import numpy.ma as ma
+import expipe
+import dataloader as dl
 
 
 def nancorrcoef(X, Y):
@@ -21,10 +23,23 @@ def get_entity_actions(entity):
     return [action_id for action_id in actions if action_id[:3] == entity]
 
 
-def trial_id(action):
+def trial_identity(action):
+    if type(action) == str:
+        project = expipe.get_project(dl.project_path())
+        action = project.require_action(action)
     for tag in action.attributes["tags"]:
         if "trial_id" in tag:
             return tag.split("_")[-1]
+
+
+def action_identity(trial, actions, project):
+    """
+    Return the action_id that matches the trial_ids.
+    """
+    for action in actions:
+        if trial == trial_identity(project.require_action(action)):
+            return action
+    return None
 
 
 def trial_label(action):
@@ -160,12 +175,18 @@ def truncate_spikes(spike_times, t):
     spike_times = spike_times[spike_times_mask]
     return spike_times
 
-def persistent_units(spikes):
+def persistent_units(spikes, include_trials=None):
     """
     Find all units that persist across all trials for each animal (cumulative intersection over trials)
     """
+    if include_trials is None:
+        # include all trials
+        include_trials = list(spikes.keys())
+
     punits = []
     for trial in spikes:
+        if trial not in include_trials:
+            continue
         if not punits:
             # empty list
             punits = list(spikes[trial].keys())
