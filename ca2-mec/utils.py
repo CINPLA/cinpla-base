@@ -1,7 +1,91 @@
 import numpy as np
 import numpy.ma as ma
+import neo
 import expipe
 import dataloader as dl
+import spatial_maps as sp
+
+
+def ratemap_fn(
+    x,
+    y,
+    t,
+    spike_train,
+    box_size=[1.0, 1.0],
+    bin_size=0.02,
+    smoothing=0.05,
+    mask_zero_occupancy=True,
+):
+    smap = sp.SpatialMap(y, x, t, np.array(spike_train.times), box_size, bin_size)
+    return smap.rate_map(smoothing, mask_zero_occupancy)
+
+
+def data_scope(
+    tracking_data: list,
+    t: np.ndarray,
+    spike_times: neo.core.spiketrain.SpikeTrain = None,
+    scope: np.ndarray = np.array([0.0, 0.5]),
+    t_start: float = 0,
+    t_stop: float = None,
+) -> (np.ndarray, np.ndarray, np.ndarray, neo.core.spiketrain.SpikeTrain):
+    """
+    Remove leading and trailing portion of data. Subsequently, limit scope of
+    data manually.
+
+    Parameters
+    ----------
+    tracking_data : list
+        List of 1d-tracking data. e.g. [x,y,a], i.e. spatial, and angular
+        1D arrays.
+    t : np.ndarray
+        1D array. Tracking data times.
+    spike_times : neo.core.spiketrain.SpikeTrain
+        (Optional) spike time data
+    scope : np.ndarray
+        1D, 2 elements, array. Elements are start and stop of data scope.
+    t_start : float
+        When to start including data (wrt. t). Previous data are removed.
+    t_stop : float
+        When to stop including data (wrt. t). Subsequent data are removed.
+
+    Returns
+    -------
+    (t, tracking_data, spike_times) : (np.ndarray, list
+    neo.core.spiketrain.SpikeTrain)
+        the inputs limited to the selected scope.
+
+    Example
+    -------
+    >>> import numpy as np
+    >>> tracking_data, t = [np.arange(4), np.arange(4)], np.linspace(-0.5,1,4)
+    >>> data_scope(tracking_data, t)
+    ([array([0, 1]), array([0, 1])], array([-0.5,  0. ]), None)
+    """
+    if t_start is not None and t_stop is not None:
+        # limit recording scope (i.e. remove leading and trailing 'extra' recording times)
+        track_mask = (t < t_stop) & (t > t_start)
+        t = t[track_mask]
+        tracking_data = [track_data_i[track_mask] for track_data_i in tracking_data]
+        if spike_times is not None:
+            spike_mask = (spike_times < t_stop) & (spike_times > t_start)
+            spike_times = spike_times[spike_mask]
+
+    scope_idxs = np.ceil((scope * (len(t) - 1))).astype(int)
+    # scope tracking
+    t = t[slice(*scope_idxs)]
+    tracking_data = [
+        tracking_data_i[slice(*scope_idxs)] for tracking_data_i in tracking_data
+    ]
+
+    if spike_times is not None:
+        # get scope edges in realtime
+        scope_realtime = t[[0, -1]]
+        # scope spike times
+        spike_times_mask = (spike_times > scope_realtime[0]) & (
+            spike_times < scope_realtime[1]
+        )
+        spike_times = spike_times[spike_times_mask]
+    return tracking_data, t, spike_times
 
 
 def nancorrcoef(X, Y):
@@ -152,6 +236,7 @@ def truncate_recording(arr, t, t_start=0.0, t_stop=None):
     mask = mask & (t < t_stop) if t_stop is not None else mask
     return arr[mask]
 
+
 def truncate_tracking_dict(tracking_dict, t_start=0.0, t_stop=None):
     """
     Truncate tracking dict, in seconds.
@@ -174,6 +259,7 @@ def truncate_spikes(spike_times, t):
     )
     spike_times = spike_times[spike_times_mask]
     return spike_times
+
 
 def persistent_units(spikes, include_trials=None):
     """
