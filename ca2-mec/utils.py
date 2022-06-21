@@ -38,20 +38,6 @@ def ratemap_fn2(x,y,t,spike_train,bins=32,fill_value='extrapolate'):
     return spike_map/occupancy_map, occupancy_map, spike_map
 
 
-def ratemap_fn(
-    x,
-    y,
-    t,
-    spike_train,
-    box_size=[1.0, 1.0],
-    bin_size=0.02,
-    smoothing=0.05,
-    mask_zero_occupancy=True,
-):
-    smap = sp.SpatialMap(y, x, t, np.array(spike_train.times), box_size, bin_size)
-    return smap.rate_map(smoothing, mask_zero_occupancy)
-
-
 def data_scope(
     tracking_data: list,
     t: np.ndarray,
