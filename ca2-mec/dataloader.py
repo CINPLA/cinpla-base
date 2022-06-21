@@ -46,6 +46,7 @@ def get_duration(data_path):
 
 def load_spiketrains(
     action_id,
+    load_spikes=True,
     channel_group=None,
     load_waveforms=False,
     lim=None,
@@ -79,7 +80,7 @@ def load_spiketrains(
     for u in sorting.get_unit_ids():
         times = sorting.get_unit_spike_train(u) / (
             sorting.get_sampling_frequency() * pq.Hz
-        )
+        ) if load_spikes else [] * pq.s
         if lim is None:
             t_stop = get_duration(action_path(action_id))
             t_start = 0 * pq.s
@@ -133,7 +134,7 @@ def load_spiketrains(
 def correct_mua(sptr, only_good_mua=False):
     """
     Corrects MUA_quality to be consistent across trials.
-    In other words, if a unit is set to "bad" MUA-quality, it will be set to 
+    In other words, if a unit is set to "bad" MUA-quality, it will be set to
     "good" if it is also set to "good" in any other trial.
     """
     for spike_train in sptr:
@@ -148,7 +149,6 @@ def correct_mua(sptr, only_good_mua=False):
 
     if only_good_mua:
         sptr = [st for st in sptr if st.annotations["mua_quality"] == "good"]
-    sptr = [st for st in sptr if st.annotations["mua_quality"] == "good"]
 
     return sptr
 
@@ -351,7 +351,7 @@ def load_head_direction(
     if lim is not None:
         mask = (times >= lim[0]) & (times <= lim[1])
         angles, times = angles[mask], times[mask]
-    return angles, times
+    return np.stack([angles, times], axis=-1)
 
 
 def check_valid_tracking(x, y, box_size):
@@ -369,6 +369,17 @@ def check_valid_tracking(x, y, box_size):
         )
 
 
+def ca2_tracking_transformation(x, y):
+    """
+    Transforms spatial-coordinates to align with open-ephys GUI coordinates
+    in one of the lab rooms where CA2-project is recorded (2020-2023 ish)
+
+    Transform is verified with recording test data in each of the corners of
+    the box.
+    """
+    return x, 1 - y
+
+
 def load_tracking(
     action_id,
     lim=None,
@@ -376,6 +387,7 @@ def load_tracking(
     low_pass_frequency=6,
     box_size=[1.0, 1.0],
     velocity_threshold=5,
+    ca2_transform_data=False,
 ):
     data_path = action_path(action_id)
 
@@ -407,4 +419,8 @@ def load_tracking(
     if lim is not None:
         mask = (t >= lim[0]) & (t <= lim[1])
         x, y, t, speed = x[mask], y[mask], t[mask], speed[mask]
+
+    if ca2_transform_data:
+        x, y = ca2_tracking_transformation(x, y)
+
     return np.stack([x, y, t, speed], axis=-1)

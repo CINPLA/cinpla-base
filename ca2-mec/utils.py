@@ -1,9 +1,41 @@
 import numpy as np
 import numpy.ma as ma
+import scipy
 import neo
 import expipe
 import dataloader as dl
 import spatial_maps as sp
+
+
+def ratemap_fn2(x,y,t,spike_train,bins=32,fill_value='extrapolate'):
+    """
+    Calculate ratemap from tracking and spikes.
+    Essentially: 
+        1. calculate occupancy map (2d histogram of x,y-positions)
+        2. calculate spike_map (2d histogram of x,y spike positions)
+        3. calculate ratemap as spike_map / occupancy_map
+        4. (optional) smooth
+    
+    ---
+    OBS! Note that matplotlib.imshow shows matrices as images, where
+    the "logically" the origin of the image is in the top left, which can
+    be "inverted" by the origin='lower' option. However, also the x,y coordinates
+    are logically swapped, such that 'x' in X[x,y] moves in the cardinal downward
+    y-direction. To counter this, x,y are swapped in this function.
+    ---
+    
+    params:
+        x: (n,) np.ndarray of cardinal x-positions
+        y: (n,) np.ndarray of cardinal y-positions
+        t: (n,) np.ndarray of position times
+        spike_train: neo.SpikeTrain of spike times
+    """
+    occupancy_map = scipy.stats.binned_statistic_2d(y,x, None, statistic='count', bins=bins).statistic
+    occupancy_map[occupancy_map == 0] = np.nan
+    f = scipy.interpolate.interp1d(t, np.stack([x,y]), kind='linear', bounds_error=False, fill_value=fill_value)
+    xs,ys = f(np.array(spike_train.times))
+    spike_map = scipy.stats.binned_statistic_2d(ys,xs, None, statistic='count', bins=bins).statistic
+    return spike_map/occupancy_map, occupancy_map, spike_map
 
 
 def ratemap_fn(
@@ -133,15 +165,16 @@ def trial_label(action):
     return int(trial_id(action)[1])
 
 
-def social_label(action):
+def social_label(spike_train):
     """
     socializing can happen at either of the four corners of the box (space).
     there are four types of socializing: nobox (-1) empty (0), familiar (1) or novel (2).
     this gives a 4d-vector with four possible categories each.
     """
 
-    def social_category(str1, str2):
+    def social_category(string):
         """helper function"""
+        str1,str2 = string.split("_")[3:]
         if str1 == "nobox":
             return -1
         if str2 == "e":
@@ -151,21 +184,25 @@ def social_label(action):
         if str2 == "n":
             return 2
 
-    tags = action.attributes["tags"]
-    social_types = {"s": np.zeros(4), "o": np.zeros(4)}
+    def corner_idx(string):
+        """helper function"""
+        string = string.split("_")[2] # tl,tr,bl,br
+        if string == "bl":
+            return 0
+        if string == "tl":
+            return 1
+        if string == "tr":
+            return 2
+        if string == "br":
+            return 3
+
+    tags = spike_train.annotations["tags"]
+    social_types = np.zeros(4)
     for tag in tags:
         if not "corner" in tag:
             continue
-        stag = tag.split("_")[1:]
-        # TR, TL, BL and BR, respectively
-        if stag[1] == "tr":
-            social_types[stag[0]][0] = social_category(*stag[-2:])
-        elif stag[1] == "tl":
-            social_types[stag[0]][1] = social_category(*stag[-2:])
-        elif stag[1] == "bl":
-            social_types[stag[0]][2] = social_category(*stag[-2:])
-        elif stag[1] == "br":
-            social_types[stag[0]][3] = social_category(*stag[-2:])
+        # BL, TL, TR and BR, respectively
+        social_types[corner_idx(tag)] = social_category(tag)
 
     return social_types
 
@@ -177,19 +214,6 @@ def rotmat(theta):
     theta = np.radians(theta)
     r = np.array(((np.cos(theta), -np.sin(theta)), (np.sin(theta), np.cos(theta))))
     return r
-
-
-def transform_coordinates(x, y, theta=90, **kwargs):
-    """
-    Transform tracking coordinates to align with physical coordinates
-    For this project (CA2 MEC): rotate recorded coordinates 90 degrees,
-    followed by a shift to make values positive afterwards.
-    """
-    # rotate x,y coordinates 90 degrees using a 2D rotation matrix transform
-    coords = rotmat(theta) @ np.array([x, y])
-    # shift new x-coordinates to be positive
-    coords -= np.array([[-1], [0]])
-    return coords
 
 
 def corner_masks(x, y, margin=0.4, **kwargs):
@@ -208,8 +232,8 @@ def corner_masks(x, y, margin=0.4, **kwargs):
     # create cardinal basis vectors
     ex, ey = np.arange(2), np.arange(2)[::-1]
 
-    # create corner vectors: TR, TL, BL and BR, respectively
-    corners = np.array([ex + ey, -ex + ey, -ex - ey, ex - ey])
+    # create corner vectors: BL, TL, TR and BR, respectively
+    corners = np.array([-ex - ey, -ex + ey, ex + ey, ex - ey])
 
     corner_masks = np.zeros((len(x), 5), dtype=bool)
     for i, corner in enumerate(corners):
@@ -279,3 +303,17 @@ def persistent_units(spikes, include_trials=None):
             continue
         punits = list(spikes[trial].keys() & punits)
     return punits
+
+
+def transform_coordinates(x, y, theta=90, **kwargs):
+    """
+    Transform tracking coordinates to align with physical coordinates
+    For this project (CA2 MEC): rotate recorded coordinates 90 degrees,
+    followed by a shift to make values positive afterwards.
+    """
+    # rotate x,y coordinates 90 degrees using a 2D rotation matrix transform
+    coords = rotmat(theta) @ np.array([x, y])
+    # shift new x-coordinates to be positive
+    coords -= np.array([[-1], [0]])
+    return coords
+
