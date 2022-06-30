@@ -106,3 +106,4 @@ venv.bak/
 src/
 graveyard/
 plots/
+.DS_Store
