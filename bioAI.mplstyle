@@ -108,7 +108,7 @@
 ## ***************************************************************************
 ## See https://matplotlib.org/api/artist_api.html#module-matplotlib.lines
 ## for more information on line properties.
-lines.linewidth: 1.0               # line width in points
+lines.linewidth: 0.8               # line width in points
 #lineslinestyle: -                 # solid line
 #lines.color:     C0                # has no affect on plot(); see axes.prop_cycle
 #lines.marker:          None        # the default marker
@@ -555,7 +555,7 @@ legend.frameon:       False     # if True, draw the legend on a background patch
 ## See https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
 #figure.titlesize:   large     # size of the figure title (``Figure.suptitle()``)
 #figure.titleweight: normal    # weight of the figure title
-#figure.figsize:     5, 5  # figure size in inches
+figure.figsize:     3, 3  # figure size in inches
 #figure.dpi:         100       # figure dots per inch
 #figure.facecolor:   white     # figure face color
 #figure.edgecolor:   white     # figure edge color
