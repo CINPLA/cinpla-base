@@ -25,6 +25,71 @@ import expipe
 from utils import *
 
 
+def in_brain_regions(spikes, brain_regions=["ca2"]):
+    """
+    Returns a reduced set of spikes that are in the given brain regions.
+
+    Parameters
+    ----------
+    spikes : list of neo.SpikeTrain
+    brain_regions : list of brain region strings
+
+    Returns
+    -------
+    list of neo.SpikeTrain
+    """
+    new_spikes = []
+    for sptr in spikes:
+        tetrode_id = 't' + str(sptr.annotations["group_id"])
+        for tag in sptr.annotations["tags"]:
+            if tag.split("=")[0] == tetrode_id and tag.split("=")[1] in brain_regions:
+                new_spikes.append(sptr)
+                break
+    return new_spikes
+
+
+def persistent_units(spikes, persistent_actions):
+    """
+    Returns a reduced set of spikes that are persistent in the given actions.
+
+    Parameters
+    ----------
+    spikes : list of neo.SpikeTrain
+    persistent_actions : list of action-strings
+
+    Returns
+    -------
+    list of neo.SpikeTrain
+    """
+    return [
+        spike_train
+        for spike_train in spikes
+        if set(spike_train.annotations["persistent_actions"]) == set(persistent_actions)
+    ]
+
+
+def persistent_trials(spikes, persistent_trials):
+    """
+    Returns a reduced set of spikes that are persistent in the given trials.
+
+    Parameters
+    ----------
+    spikes : list of neo.SpikeTrain
+    persistent_trials : list of trial-strings
+
+    Returns
+    -------
+    list of neo.SpikeTrain
+    """
+    return [
+        spike_train
+        for spike_train in spikes
+        if set(persistent_trials).issubset(
+            set(spike_train.annotations["persistent_trials"])
+        )
+    ]
+
+
 def project_path():
     path = os.environ.get("CA2MEC_PATH")
     if path is None:
@@ -78,9 +143,11 @@ def load_spiketrains(
     sptr = []
     # build neo objects
     for u in sorting.get_unit_ids():
-        times = sorting.get_unit_spike_train(u) / (
-            sorting.get_sampling_frequency() * pq.Hz
-        ) if load_spikes else [] * pq.s
+        times = (
+            sorting.get_unit_spike_train(u) / (sorting.get_sampling_frequency() * pq.Hz)
+            if load_spikes
+            else [] * pq.s
+        )
         if lim is None:
             t_stop = get_duration(action_path(action_id))
             t_start = 0 * pq.s
@@ -111,9 +178,12 @@ def load_spiketrains(
         st.annotations.update({"action_id": action_id})
 
         # add MUA info
-        mua_id, mua_quality = mua_df.loc[
-            mua_df["cluster_id"] == st.annotations["unit_name"]
-        ].values[0]
+        try:
+            mua_id, mua_quality = mua_df.loc[
+                mua_df["cluster_id"] == st.annotations["unit_name"]
+            ].values[0]
+        except IndexError:
+            mua_quality = "unassigned"
         st.annotations.update({"mua_quality": mua_quality})
 
         # add expipe attributes
