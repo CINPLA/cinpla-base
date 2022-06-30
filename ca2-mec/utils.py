@@ -144,14 +144,14 @@ def action_identity(trial, actions, project):
     return None
 
 
-def trial_label(action):
+def trial_label_DEPRECATED(action):
     """
     Returns the trial label (number) for the action.
     """
     return int(trial_id(action)[1])
 
 
-def social_label(spike_train):
+def social_label(action_id):
     """
     socializing can happen at either of the four corners of the box (space).
     there are four types of socializing: nobox (-1) empty (0), familiar (1) or novel (2).
@@ -182,7 +182,9 @@ def social_label(spike_train):
         if string == "br":
             return 3
 
-    tags = spike_train.annotations["tags"]
+    project = expipe.get_project(dl.project_path())
+    action = project.require_action(action_id)
+    tags = action.attributes["tags"]
     social_types = np.zeros(4)
     for tag in tags:
         if not "corner" in tag:
@@ -271,7 +273,7 @@ def truncate_spikes(spike_times, t):
     return spike_times
 
 
-def persistent_units(spikes, include_trials=None):
+def persistent_units_DEPRECATED(spikes, include_trials=None):
     """
     Find all units that persist across all trials for each animal (cumulative intersection over trials)
     """
@@ -291,7 +293,7 @@ def persistent_units(spikes, include_trials=None):
     return punits
 
 
-def transform_coordinates(x, y, theta=90, **kwargs):
+def transform_coordinates_DEPRECATED(x, y, theta=90, **kwargs):
     """
     Transform tracking coordinates to align with physical coordinates
     For this project (CA2 MEC): rotate recorded coordinates 90 degrees,
