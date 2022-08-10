@@ -7,6 +7,19 @@ import dataloader as dl
 import spatial_maps as sp
 
 
+
+def vonmises_kde(data, kappa=100, n_bins=100):
+    # Kernel Density Estimation - continuous equivalent of a histogram
+    from scipy.special import i0
+    x = np.linspace(-np.pi, np.pi, n_bins)
+    if len(data) == 0:
+        return [], []
+    # integrate vonmises kernels
+    kde = np.exp(kappa * np.cos(x[:, None] - data[None, :])).sum(1) / (2 * np.pi * i0(kappa))
+    kde /= np.trapz(kde, x=x)
+    return x, kde
+
+
 def ratemap_fn2(x,y,t,spike_train,bins=32,fill_value='extrapolate'):
     """
     Calculate ratemap from tracking and spikes.
