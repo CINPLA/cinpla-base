@@ -6,7 +6,16 @@ import expipe
 import dataloader as dl
 import spatial_maps as sp
 
+import elephant
+import quantities as pq
 
+
+def cell_rate(spike_train, decimals=3, sampling_period=10*pq.ms):
+    mean_rate = len(spike_train) / (spike_train.t_stop - spike_train.t_start)
+    # use "arbitrary" 10*pq.ms sampling period as this only gives the resolution of 
+    # the rate - which is already super fine tuned for 10*pq.ms.
+    rate = elephant.statistics.instantaneous_rate(spike_train, sampling_period)#spike_train.sampling_period
+    return np.around(mean_rate,decimals), np.around(np.max(rate),decimals)
 
 def vonmises_kde(data, kappa=100, n_bins=100):
     # Kernel Density Estimation - continuous equivalent of a histogram
