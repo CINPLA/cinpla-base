@@ -91,7 +91,7 @@ def persistent_trials(spikes, persistent_trials):
 
 
 def project_path():
-    path = os.environ.get("CA2MEC_PATH")
+    path = os.environ.get("HPC_PATH")
     if path is None:
         raise Exception("Need to set `CA2MEC_PATH` as environment variable first.")
     else:

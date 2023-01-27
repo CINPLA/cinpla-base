@@ -103,7 +103,7 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-src/
+
 graveyard/
 plots/
 .DS_Store
