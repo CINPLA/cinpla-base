@@ -28,8 +28,15 @@ With the terminal run
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd c:\apps
-git clone https://github.com/sarahthon/CA2_MEC.git@vemundss#egg=CA2_MEC
+git clone https://github.com/sarahthon/CA2_MEC.git
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Enter CA2_MEC and switch to branch vemundss
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd c:\CA2_MEC
+git switch vemundss
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ### Anaconda
 Windows: Search for anaconda and open Anaconda prompt.
