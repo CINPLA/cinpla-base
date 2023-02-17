@@ -1,9 +1,5 @@
 # Welcome!
 
-This repository is a template you can use to *create new projects*.
-
-IMPORTANT: If you are going to work on an existing project, do not clone this repository. You need to look for the repository for that project.
-
 # Installation
 Install GIT [Windows](https://git-scm.com/downloads)
 
@@ -16,11 +12,12 @@ Install [Anaconda](https://www.anaconda.com/download/#linux)
 Install [Github Desktop](https://desktop.github.com/), if you do not like to use the terminal so much.
  * [Setup](https://help.github.com/desktop/guides/getting-started-with-github-desktop/setting-up-github-desktop/)
  
-Install [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017)
+Download [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017), and install C++ package manager
+(You might need admin rights for this)
 
 Install [Atom](https://atom.io/)
 
-### Cloning the cinpla-base repository
+### Cloning the CA2-MEC repository
 This can either be done with Github Desktop
 or with a terminal. When we say terminal, in Windows we mean Anaconda prompt.
 However, all code that starts with `git` can be done with Github Desktop.
@@ -31,7 +28,7 @@ With the terminal run
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd c:\apps
-git clone https://github.com/CINPLA/cinpla-base.git
+git clone https://github.com/sarahthon/CA2_MEC.git@vemundss#egg=CA2_MEC
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Anaconda
@@ -39,26 +36,46 @@ Windows: Search for anaconda and open Anaconda prompt.
 
 Mac: open a terminal
 
-Create a new Anaconda environment with (replace `myproject` with the name of your project):
+Navigate to into CA2_MEC, and create anaconda environment locally by installing the environment file `environment.yml`:
+
 
 ```
-conda create -n myproject python=3.6
-```
-
-Then, enter the environment using
+conda env create -f environment.yml 
 
 ```
-activate myproject
+#bør python versjon spesifiseres her?
+
+
+
+Then, enter the environment using its name `expipe`
+
+```
+activate expipe
 ```
 
+Exiting the environment can be done by 
+
+```
+deactivate
+```
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Installing expipe for CINPLA
-Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
-requirements
+Navigate to where you have cloned `CA2-MEC`, then install the `CA2_MEC`
+requirements. This clones and install specific commit of the github repos. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd cinpla-base
 pip install -r requirements.txt
+
+
+Two repos have been edited and is currently cloned into src-folder when cloning this repo. 
+For these two you need to navigate into each folder and install by: pip install . 
+
+Then if you later want to uninstall this can be done by: pip uninstall "package-name"
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Adding expipe_plugin_cinpla plugin
@@ -110,30 +127,28 @@ set WAVECLUS_PATH=C:\apps\wave_clus
 
 ## Installing curationtools [phy]
 
-Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
-requirements-curationtools
+Dependencies for curation tools are alredy installed in environment
 
+Phy is already installed in environment, but you can test out a newer one with:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd cinpla-base
-pip install -r requirements-curationtools.txt
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pip uninstall phy
+pip uninstall phylib
 
-Next you can install phy:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 pip install --pre --upgrade phy
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-(**NOTE:** On Windows you need an extra package: `pip install pywin32`)
 
 ## Adding a remote server
 
 To add a remote server for spike sorting, run:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-expipe add-server -n name-of-the-server(torkel-beist) -d IP-address -un username 
+expipe add-server -n name-of-the-server -d IP-address -un username 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+PC at IBV has name = `torkel-beist`
 You will be prompted a password for the server.
+From time to time you need to update the IP-address.
 
 # Getting started with git LFS and gitea@nird
 
