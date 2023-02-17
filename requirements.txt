@@ -1,41 +1,14 @@
-pycircstat
-quantities
-ruamel.yaml
-packaging
-xmltodict
-numpy
-matplotlib
-scipy
-h5py
-tkfilebrowser
-requests
-traitlets
-tqdm
-six
-scp
-joblib
-click
-vispy
-cython
-gitpython
-pandas
-seaborn
-pytest
-statsmodels
-jupyter
-ipython
-openpyxl
-astropy
-packaging
-paramiko
-pyintan
-elephant
-pyopenephys
-expipe
-exdir
-spikeinterface
--e git+https://github.com/CINPLA/pyxona.git@dev#egg=pyxona
--e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@dev#egg=expipe-plugin-cinpla
--e git+https://github.com/CINPLA/expipe-io-neuro.git@dev#egg=expipe-io-neuro
--e git+https://github.com/CINPLA/expipe-templates-cinpla.git@master#egg=expipe-templates-cinpla
--e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
+-e git+https://github.com/CINPLA/expipe-io-neuro.git@792ada6ec299e54b9cef872e1b104e19b9cb87cd
+-e git+https://github.com/CINPLA/optogenetics.git@41331383f1fe726536ce0906cc1b16768bc60a70
+-e git+https://github.com/CINPLA/place-stimulation.git@f473100abea7c608397936fd325ee62a227c39ac
+-e git+https://github.com/CINPLA/pyxona.git@9972b6328b0d4e4059705bad199c7d2bc22d1873
+-e git+https://github.com/CINPLA/septum-mec.git@cd6abb81b81a0896ef8bb2399505e4b5f1f76c77
+-e git+https://github.com/CINPLA/speed-cells.git@18e1e9040b0f143c0051505fd0d07a73b2b68fee
+-e git+https://github.com/CINPLA/spike-statistics.git@d1df095903d17d30f75877eb0a43fa180ddb1108
+-e git+https://github.com/CINPLA/spike-waveform.git@2ebb3ea8eb96d185517554ce1dd845c9d36e54b1
+-e git+https://github.com/CINPLA/time-frequency.git@84336a9c546ba81691388ea6a51a0668639058c5
+-e git+https://github.com/CINPLA/visual-stimulation.git@83363a45553dca5d46ea182c83ec8f6d95259f94
+-e git+https://github.com/CINPLA/head-direction.git@3109909c2361343a5ab40a51cd8b6a16b5d8a6f3
+-e git+https://github.com/CINPLA/expipe-templates-cinpla.git@a68292f1677f9063f6e5a62bb63f6eb71160687f
+# we have added local changes: -e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
+# we have added local changes to curationfile:-e git+https://github.com/CINPLA/expipe-plugin-cinpla.git@968f7271aa6dc0c1ac5b3570a4b4940aa10be520 
