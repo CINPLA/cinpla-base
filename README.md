@@ -48,7 +48,7 @@ conda env create -f environment.yml
 
 
 Then, enter the environment using its name `expipe`
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
 activate expipe
 ```
