@@ -43,7 +43,7 @@ Navigate to into CA2_MEC, and create anaconda environment locally by installing 
 conda env create -f environment.yml 
 
 ```
-#bør python versjon spesifiseres her?
+(notat til selv: bør python versjon spesifiseres her?)
 
 
 
