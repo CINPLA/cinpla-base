@@ -28,15 +28,8 @@ With the terminal run
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd c:\apps
-git clone https://github.com/sarahthon/CA2_MEC.git
+git clone https://github.com/sarahthon/CA2_MEC.git@vemundss#egg=CA2_MEC
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Enter CA2_MEC and switch to branch vemundss
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd c:\CA2_MEC
-git switch vemundss
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 ### Anaconda
 Windows: Search for anaconda and open Anaconda prompt.
@@ -50,23 +43,22 @@ Navigate to into CA2_MEC, and create anaconda environment locally by installing 
 conda env create -f environment.yml 
 
 ```
-(notat til selv: bør python versjon spesifiseres her?)
+#bør python versjon spesifiseres her?
 
 
 
 Then, enter the environment using its name `expipe`
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-```
 activate expipe
-```
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Exiting the environment can be done by 
 
-```
-deactivate
-```
-
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+deactivate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 ## Installing expipe for CINPLA
 Navigate to where you have cloned `CA2-MEC`, then install the `CA2_MEC`
