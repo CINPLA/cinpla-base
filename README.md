@@ -81,19 +81,19 @@ Manually install the following in the src folder and switch to the given commit:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd src
-git clone https://github.com/CINPLA/spike-waveform.git
+git clone https://github.com/CINPLA/time-frequency.git
 cd time-frequency
-git switch 84336a9c546ba81691388ea6a51a0668639058c5
+git checkout 84336a9c546ba81691388ea6a51a0668639058c5
 cd..
 
-git clone https://github.com/CINPLA/time-frequency.git
+git clone https://github.com/CINPLA/spike-waveform.git
 cd spike-waveform
-git switch 2ebb3ea8eb96d185517554ce1dd845c9d36e54b1
+git checkout 2ebb3ea8eb96d185517554ce1dd845c9d36e54b1
 cd..
 
 git clone https://github.com/CINPLA/visual-stimulation.git
 cd visual-stimulation
-git switch 83363a45553dca5d46ea182c83ec8f6d95259f94
+git checkout 83363a45553dca5d46ea182c83ec8f6d95259f94
 cd..
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
