@@ -211,7 +211,7 @@ def project_path():
     path = os.environ.get("PROJECTNAME_PATH")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you do not have the packages in src as envrionmental variables in your environment (se note under installing requirements above), you must refer to the packages location using the following, before importing into notebooks:
+If you do not have the packages in src as environmental variables in your environment (see note under "installing requirements" above), you must refer to the packages' location before importing them into notebooks by adding in the notebook:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 import sys
 sys.path.append("/path/to/src")`
