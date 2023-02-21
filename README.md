@@ -46,7 +46,6 @@ Navigate to into CA2_MEC, and create anaconda environment locally by installing 
 conda env create -f environment.yml 
 
 ```
-#bør python versjon spesifiseres her?
 
 
 
@@ -73,9 +72,20 @@ pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two repos have been edited and are currently cloned into src-folder when cloning this repo. 
-For these two you need to navigate into each folder and install by: pip install . 
+For these two you need to navigate into each folder and install by: `pip install .` 
 
-Then if you later want to uninstall this can be done by: pip uninstall "package-name"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd src
+cd spatial-maps
+pip install .
+cd..
+
+cd expipe-plugin-cinpla
+pip install . 
+cd..
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Using `pip install .` will later let you uninstall the package simply by entering the environment and: `pip uninstall "package-name"`
 
 Manually install the following in the src folder and switch to the given commit:
 
@@ -97,6 +107,11 @@ git checkout 83363a45553dca5d46ea182c83ec8f6d95259f94
 cd..
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Note: after cloning all repos into src, you can also set a new python path in the environment to this folder so you don't have to enter each folder and install.
+Alternatively add this to the notebooks before importing the packages: 
+`import sys
+sys.path.append("/path/to/src")`
+
 
 ## Adding expipe_plugin_cinpla plugin
 
@@ -113,7 +128,7 @@ Navigate to where you have cloned `cinpla-base`, then install the `cinpla-base`
 requirements-spiketools. Choose the appropriate file (windows-linux)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd cinpla-base
+cd CA2-MEC
 pip install -r requirements-spiketools-windows.txt (or requirements-spiketools-linux.txt)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -167,6 +182,7 @@ expipe add-server -n name-of-the-server -d IP-address -un username
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PC at IBV has name = `torkel-beist`
+
 You will be prompted a password for the server.
 From time to time you need to update the IP-address.
 
