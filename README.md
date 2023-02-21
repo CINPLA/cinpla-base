@@ -203,9 +203,11 @@ name: PROJECTNAME_PATH     variable: C:\path\to\projects\projectname
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Then you must change the path to corresponding project in `\apps\CA2_MEC\ca2-mec\dataloader.py` under the function `def project_path():` so that it reads:
-`def project_path():
-    path = os.environ.get("PROJECTNAME_PATH")`
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+def project_path():
+    path = os.environ.get("PROJECTNAME_PATH")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Getting started with git LFS and gitea@nird
 
