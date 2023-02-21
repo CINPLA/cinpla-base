@@ -109,8 +109,10 @@ cd..
 
 Note: after cloning all repos into src, you can also set a new python path in the environment to this folder so you don't have to enter each folder and install.
 Alternatively add this to the notebooks before importing the packages: 
-`import sys
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import sys
 sys.path.append("/path/to/src")`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 ## Adding expipe_plugin_cinpla plugin
@@ -195,9 +197,9 @@ cd CA2_MEC/notebooks
 jupyter notebook
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To have access to you data saved in expipe, you must let the system know where these project is stored by setting its path as an environment variable. 
+To have access to you data saved in expipe, you must let the system know where this project is stored by setting its path as an environment variable. 
 If you have admin access, in Windows, select `start-->Computer-->right-click-->Properties`. 
-Then click on `Advanced settings-->Environment variables` and add this `New` variables:
+Then click on `Advanced settings-->Environment variables` and add this `New` variable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 name: PROJECTNAME_PATH     variable: C:\path\to\projects\projectname
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -207,6 +209,12 @@ Then you must change the path to corresponding project in `\apps\CA2_MEC\ca2-mec
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 def project_path():
     path = os.environ.get("PROJECTNAME_PATH")
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you do not have the packages in src as envrionmental variables in your environment (se note under installing requirements above), you must refer to the packages location using the following, before importing into notebooks:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+import sys
+sys.path.append("/path/to/src")`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Getting started with git LFS and gitea@nird
