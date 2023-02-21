@@ -5,9 +5,9 @@
 -e git+https://github.com/CINPLA/septum-mec.git@cd6abb81b81a0896ef8bb2399505e4b5f1f76c77#egg=septum-mec
 -e git+https://github.com/CINPLA/speed-cells.git@18e1e9040b0f143c0051505fd0d07a73b2b68fee#egg=speed-cells
 -e git+https://github.com/CINPLA/spike-statistics.git@d1df095903d17d30f75877eb0a43fa180ddb1108#egg=spike-statistics
--e git+https://github.com/CINPLA/spike-waveform.git@master#egg=spike-waveform
--e git+https://github.com/CINPLA/time-frequency.git@master#egg=time-frequency
--e git+https://github.com/CINPLA/visual-stimulation.git@master#egg=visual-stimulation
+-e git+https://github.com/CINPLA/spike-waveform.git@dev#egg=spike-waveform
+-e git+https://github.com/CINPLA/time-frequency.git@dev#egg=time-frequency
+-e git+https://github.com/CINPLA/visual-stimulation.git@dev#egg=visual-stimulation
 -e git+https://github.com/CINPLA/head-direction.git@3109909c2361343a5ab40a51cd8b6a16b5d8a6f3#egg=head-direction
 -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@a68292f1677f9063f6e5a62bb63f6eb71160687f#egg=expipe-templates-cinpla
 # we have added local changes: -e git+https://github.com/CINPLA/spatial-maps.git@dev#egg=spatial-maps
