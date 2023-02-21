@@ -107,3 +107,9 @@ venv.bak/
 graveyard/
 plots/
 .DS_Store
+
+#Ignore src
+src/*
+#Except spatial maps and expipe-plugin-cinpla
+!src/expipe-plugin-cinpla
+!src/spatial-maps
