@@ -72,7 +72,7 @@ pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two repos have been edited and are currently cloned into src-folder when cloning this repo. 
-For these two you need to navigate into each folder and install by: `pip install .` 
+For these two you need to navigate into each folder and install by `pip install .`: 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd src
@@ -185,6 +185,27 @@ PC at IBV has name = `torkel-beist`
 
 You will be prompted a password for the server.
 From time to time you need to update the IP-address.
+
+
+## Notebooks:
+You should now be able to open jupyter notebook in folder `CA2_MEC/notebooks`:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd CA2_MEC/notebooks
+jupyter notebook
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To have access to you data saved in expipe, you must let the system know where these project is stored by setting its path as an environment variable. 
+If you have admin access, in Windows, select `start-->Computer-->right-click-->Properties`. 
+Then click on `Advanced settings-->Environment variables` and add this `New` variables:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+name: PROJECTNAME_PATH     variable: C:\path\to\projects\projectname
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Then you must change the path to corresponding project in `\apps\CA2_MEC\ca2-mec\dataloader.py` under the function `def project_path():` so that it reads:
+`def project_path():
+    path = os.environ.get("PROJECTNAME_PATH")`
+
 
 # Getting started with git LFS and gitea@nird
 
