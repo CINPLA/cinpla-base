@@ -68,14 +68,31 @@ Navigate to where you have cloned `CA2_MEC`, then install the `CA2_MEC`
 requirements. This clones and installs specific commit of the github repos. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+activate expipe
 pip install -r requirements.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Two repos have been edited and is currently cloned into src-folder when cloning this repo. 
+Two repos have been edited and are currently cloned into src-folder when cloning this repo. 
 For these two you need to navigate into each folder and install by: pip install . 
 
 Then if you later want to uninstall this can be done by: pip uninstall "package-name"
 
+Also make sure you are on the following commits by entering the respective folders and:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cd src
+cd time-frequency
+git switch 84336a9c546ba81691388ea6a51a0668639058c5
+cd..
+
+cd spike-waveform
+git switch 2ebb3ea8eb96d185517554ce1dd845c9d36e54b1
+cd..
+
+cd visual-stimulation
+git switch 83363a45553dca5d46ea182c83ec8f6d95259f94
+cd..
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 ## Adding expipe_plugin_cinpla plugin
