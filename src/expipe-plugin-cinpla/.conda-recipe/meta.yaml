@@ -1,0 +1,41 @@
+package:
+  name: expipe
+  version: {{ environ.get("GIT_TAG", "0.0.0_custom")|replace("v", "")|replace("-", "_") }}
+
+source:
+  git_url: ..
+
+build:
+    # noarch: python  # TODO Add back noarch when it works properly on Windows,
+                      # we are converting packages manually now
+    script: python setup.py install
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - pip
+    - quantities
+    - exdir
+
+  run:
+    - python
+    - setuptools
+    - pip
+    - quantities
+    - exdir
+
+test:
+  imports:
+    - expipe
+  # requires:
+    # - sphinx
+  # commands:
+    # - pip install pyrebase && cd docs && make doctest
+  # files:
+    # - docs
+
+about:
+  home: https://github.com/CINPLA/expipe/
+  license: GPLv3
+  license_file: LICENSE
