@@ -5,8 +5,8 @@
 -e git+https://github.com/CINPLA/septum-mec.git@cd6abb81b81a0896ef8bb2399505e4b5f1f76c77#egg=septum-mec
 -e git+https://github.com/CINPLA/speed-cells.git@18e1e9040b0f143c0051505fd0d07a73b2b68fee#egg=speed-cells
 -e git+https://github.com/CINPLA/spike-statistics.git@d1df095903d17d30f75877eb0a43fa180ddb1108#egg=spike-statistics
--e git+https://github.com/CINPLA/spike-waveform.git@2ebb3ea8eb96d185517554ce1dd845c9d36e54b1#egg=spike-waveform
--e git+https://github.com/CINPLA/time-frequency.git@84336a9c546ba81691388ea6a51a0668639058c5#egg=time-frequency
+-e git+https://github.com/CINPLA/spike-waveform.git
+-e git+https://github.com/CINPLA/time-frequency.git
 -e git+https://github.com/CINPLA/visual-stimulation.git@83363a45553dca5d46ea182c83ec8f6d95259f94#egg=visual-stimulation
 -e git+https://github.com/CINPLA/head-direction.git@3109909c2361343a5ab40a51cd8b6a16b5d8a6f3#egg=head-direction
 -e git+https://github.com/CINPLA/expipe-templates-cinpla.git@a68292f1677f9063f6e5a62bb63f6eb71160687f#egg=expipe-templates-cinpla
