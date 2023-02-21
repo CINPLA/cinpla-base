@@ -28,7 +28,10 @@ With the terminal run
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd c:\apps
-git clone https://github.com/sarahthon/CA2_MEC.git@vemundss#egg=CA2_MEC
+git clone https://github.com/sarahthon/CA2_MEC.git
+
+cd CA2_MEC
+git switch vemundss
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ### Anaconda
@@ -61,13 +64,12 @@ deactivate
 
 
 ## Installing expipe for CINPLA
-Navigate to where you have cloned `CA2-MEC`, then install the `CA2_MEC`
-requirements. This clones and install specific commit of the github repos. 
+Navigate to where you have cloned `CA2_MEC`, then install the `CA2_MEC`
+requirements. This clones and installs specific commit of the github repos. 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd cinpla-base
 pip install -r requirements.txt
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Two repos have been edited and is currently cloned into src-folder when cloning this repo. 
 For these two you need to navigate into each folder and install by: pip install . 
@@ -75,7 +77,6 @@ For these two you need to navigate into each folder and install by: pip install 
 Then if you later want to uninstall this can be done by: pip uninstall "package-name"
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## Adding expipe_plugin_cinpla plugin
 
