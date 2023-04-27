@@ -91,7 +91,7 @@ def persistent_trials(spikes, persistent_trials):
 
 
 def project_path():
-    path = os.environ.get("HPC_PATH")
+    path = os.environ.get("LEC_PATH")
     if path is None:
         raise Exception("Need to set `CA2MEC_PATH` as environment variable first.")
     else:
@@ -140,6 +140,7 @@ def load_spiketrains(
         load_waveforms=load_waveforms,
     )
     mua_df = load_action_mua(action_id)
+    cluster_info_df = load_group_id(action_id)
     sptr = []
     # build neo objects
     for u in sorting.get_unit_ids():
@@ -168,7 +169,12 @@ def load_spiketrains(
             sampling_rate=sorting.get_sampling_frequency() * pq.Hz,
         )
         for p in sorting.get_unit_property_names(u):
-            st.annotations.update({p: sorting.get_unit_property(u, p)})
+            if p == "group_id":
+                unit_id = int(sorting.get_unit_property(u, 'name').split("#")[-1])
+                group_id = cluster_info_df.loc[cluster_info_df['id'] == unit_id,'ch_group']
+                st.annotations.update({p: group_id.values[0]})
+            else:
+                st.annotations.update({p: sorting.get_unit_property(u, p)})
 
         # set unit name to int
         st.annotations.update({"name": int(st.annotations["name"].split("#")[-1])})
@@ -231,6 +237,17 @@ def load_action_mua(action_id):
     df = pd.read_csv(mua_path, sep="\t")
     return df
 
+def load_group_id(action_id):
+    # group_id is the same as ch_group ---- of course...
+    group_id_path = (
+        action_path(action_id)
+        / "processing/electrophysiology/spikesorting/mountainsort4/phy/cluster_info.tsv"
+    )
+    cluster_group_pd_table = pd.read_csv(group_id_path, sep="\t")
+    # if 'ch_group' is nan for some units, infer them based on 'ch'
+    nan_ch_groups = cluster_group_pd_table['ch_group'].isnull()
+    cluster_group_pd_table.loc[nan_ch_groups, 'ch_group'] = cluster_group_pd_table.loc[nan_ch_groups, 'ch'] // 4
+    return cluster_group_pd_table
 
 def add_identify_neurons(spike_train, identify_neurons):
     """
