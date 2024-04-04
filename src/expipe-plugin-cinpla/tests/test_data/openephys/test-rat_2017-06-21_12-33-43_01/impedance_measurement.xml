@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CHANNEL_IMPEDANCES>
+  <CHANNEL name="CH1" stream="0" channel_number="0" magnitude="141500.5625"
+           phase="-42.414920806884766"/>
+  <CHANNEL name="CH2" stream="0" channel_number="1" magnitude="202522.53125"
+           phase="-62.251918792724609"/>
+  <CHANNEL name="CH3" stream="0" channel_number="2" magnitude="222429.546875"
+           phase="-75.760208129882813"/>
+  <CHANNEL name="CH4" stream="0" channel_number="3" magnitude="244812.421875"
+           phase="-48.605411529541016"/>
+  <CHANNEL name="CH5" stream="0" channel_number="4" magnitude="239488.984375"
+           phase="-49.827075958251953"/>
+  <CHANNEL name="CH6" stream="0" channel_number="5" magnitude="214457.125"
+           phase="-55.563125610351563"/>
+  <CHANNEL name="CH7" stream="0" channel_number="6" magnitude="210079.40625"
+           phase="-39.550209045410156"/>
+  <CHANNEL name="CH8" stream="0" channel_number="7" magnitude="200451.546875"
+           phase="-35.00482177734375"/>
+  <CHANNEL name="CH9" stream="0" channel_number="8" magnitude="27048500"
+           phase="-81.203109741210937"/>
+  <CHANNEL name="CH10" stream="0" channel_number="9" magnitude="31403606"
+           phase="-118.04732513427734"/>
+  <CHANNEL name="CH11" stream="0" channel_number="10" magnitude="32776214"
+           phase="-117.23712921142578"/>
+  <CHANNEL name="CH12" stream="0" channel_number="11" magnitude="31201310"
+           phase="-115.71672058105469"/>
+  <CHANNEL name="CH13" stream="0" channel_number="12" magnitude="37248712"
+           phase="-109.1458740234375"/>
+  <CHANNEL name="CH14" stream="0" channel_number="13" magnitude="31047536"
+           phase="-101.09458923339844"/>
+  <CHANNEL name="CH15" stream="0" channel_number="14" magnitude="49975880"
+           phase="-123.46358489990234"/>
+  <CHANNEL name="CH16" stream="0" channel_number="15" magnitude="21003070"
+           phase="-100.29798126220703"/>
+  <CHANNEL name="CH17" stream="0" channel_number="16" magnitude="16136965"
+           phase="-96.864494323730469"/>
+  <CHANNEL name="CH18" stream="0" channel_number="17" magnitude="25357102"
+           phase="-107.68666076660156"/>
+  <CHANNEL name="CH19" stream="0" channel_number="18" magnitude="28360018"
+           phase="-111.36418914794922"/>
+  <CHANNEL name="CH20" stream="0" channel_number="19" magnitude="44456404"
+           phase="-118.96903228759766"/>
+  <CHANNEL name="CH21" stream="0" channel_number="20" magnitude="33362452"
+           phase="-111.50137329101562"/>
+  <CHANNEL name="CH22" stream="0" channel_number="21" magnitude="41032464"
+           phase="-116.77104187011719"/>
+  <CHANNEL name="CH23" stream="0" channel_number="22" magnitude="37280400"
+           phase="-112.91307067871094"/>
+  <CHANNEL name="CH24" stream="0" channel_number="23" magnitude="37824460"
+           phase="-111.53352355957031"/>
+  <CHANNEL name="CH25" stream="0" channel_number="24" magnitude="524312.5625"
+           phase="-27.099813461303711"/>
+  <CHANNEL name="CH26" stream="0" channel_number="25" magnitude="477806.5"
+           phase="-34.238201141357422"/>
+  <CHANNEL name="CH27" stream="0" channel_number="26" magnitude="162789.421875"
+           phase="-30.807744979858398"/>
+  <CHANNEL name="CH28" stream="0" channel_number="27" magnitude="138544.625"
+           phase="-37.600357055664063"/>
+  <CHANNEL name="CH29" stream="0" channel_number="28" magnitude="585909.625"
+           phase="-39.544551849365234"/>
+  <CHANNEL name="CH30" stream="0" channel_number="29" magnitude="687727.1875"
+           phase="-46.565494537353516"/>
+  <CHANNEL name="CH31" stream="0" channel_number="30" magnitude="3224.469482421875"
+           phase="-17.814188003540039"/>
+  <CHANNEL name="CH32" stream="0" channel_number="31" magnitude="256846.0625"
+           phase="-21.769506454467773"/>
+  <CHANNEL name="CH33" stream="1" channel_number="0" magnitude="384817.5"
+           phase="-43.821723937988281"/>
+  <CHANNEL name="CH34" stream="1" channel_number="1" magnitude="963424.125"
+           phase="-40.211185455322266"/>
+  <CHANNEL name="CH35" stream="1" channel_number="2" magnitude="389034.125"
+           phase="-41.000011444091797"/>
+  <CHANNEL name="CH36" stream="1" channel_number="3" magnitude="273603.8125"
+           phase="-67.659339904785156"/>
+  <CHANNEL name="CH37" stream="1" channel_number="4" magnitude="3681842.25"
+           phase="-77.78253173828125"/>
+  <CHANNEL name="CH38" stream="1" channel_number="5" magnitude="3455968.5"
+           phase="-70.335685729980469"/>
+  <CHANNEL name="CH39" stream="1" channel_number="6" magnitude="1418733.25"
+           phase="-44.990093231201172"/>
+  <CHANNEL name="CH40" stream="1" channel_number="7" magnitude="1645296"
+           phase="-55.867603302001953"/>
+  <CHANNEL name="CH41" stream="1" channel_number="8" magnitude="39220556"
+           phase="-140.60458374023437"/>
+  <CHANNEL name="CH42" stream="1" channel_number="9" magnitude="41271024"
+           phase="-137.361328125"/>
+  <CHANNEL name="CH43" stream="1" channel_number="10" magnitude="37477736"
+           phase="-135.4190673828125"/>
+  <CHANNEL name="CH44" stream="1" channel_number="11" magnitude="35414968"
+           phase="-130.55726623535156"/>
+  <CHANNEL name="CH45" stream="1" channel_number="12" magnitude="40200404"
+           phase="-135.12356567382812"/>
+  <CHANNEL name="CH46" stream="1" channel_number="13" magnitude="37422172"
+           phase="-129.26515197753906"/>
+  <CHANNEL name="CH47" stream="1" channel_number="14" magnitude="42468516"
+           phase="-133.64730834960937"/>
+  <CHANNEL name="CH48" stream="1" channel_number="15" magnitude="40390008"
+           phase="-128.59402465820312"/>
+  <CHANNEL name="CH49" stream="1" channel_number="16" magnitude="29827000"
+           phase="-117.88195037841797"/>
+  <CHANNEL name="CH50" stream="1" channel_number="17" magnitude="38735188"
+           phase="-124.37431335449219"/>
+  <CHANNEL name="CH51" stream="1" channel_number="18" magnitude="41507984"
+           phase="-124.22933197021484"/>
+  <CHANNEL name="CH52" stream="1" channel_number="19" magnitude="28375264"
+           phase="-112.43546295166016"/>
+  <CHANNEL name="CH53" stream="1" channel_number="20" magnitude="37860920"
+           phase="-119.60618591308594"/>
+  <CHANNEL name="CH54" stream="1" channel_number="21" magnitude="26472734"
+           phase="-108.15116119384766"/>
+  <CHANNEL name="CH55" stream="1" channel_number="22" magnitude="38019260"
+           phase="-117.77170562744141"/>
+  <CHANNEL name="CH56" stream="1" channel_number="23" magnitude="31243112"
+           phase="-110.40319061279297"/>
+  <CHANNEL name="CH57" stream="1" channel_number="24" magnitude="214778.96875"
+           phase="-56.115554809570312"/>
+  <CHANNEL name="CH58" stream="1" channel_number="25" magnitude="199468.96875"
+           phase="-38.745887756347656"/>
+  <CHANNEL name="CH59" stream="1" channel_number="26" magnitude="993844.9375"
+           phase="-35.121353149414062"/>
+  <CHANNEL name="CH60" stream="1" channel_number="27" magnitude="260298.859375"
+           phase="-38.427574157714844"/>
+  <CHANNEL name="CH61" stream="1" channel_number="28" magnitude="686447.4375"
+           phase="-37.718166351318359"/>
+  <CHANNEL name="CH62" stream="1" channel_number="29" magnitude="791241.3125"
+           phase="-45.694480895996094"/>
+  <CHANNEL name="CH63" stream="1" channel_number="30" magnitude="529768.0625"
+           phase="-29.690471649169922"/>
+  <CHANNEL name="CH64" stream="1" channel_number="31" magnitude="1044115.5625"
+           phase="-29.818351745605469"/>
+</CHANNEL_IMPEDANCES>

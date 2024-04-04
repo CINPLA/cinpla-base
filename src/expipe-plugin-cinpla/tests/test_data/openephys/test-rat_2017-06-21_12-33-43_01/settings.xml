@@ -1,0 +1,2908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETTINGS>
+  <INFO>
+    <VERSION>0.4.1</VERSION>
+    <PLUGIN_API_VERSION>3</PLUGIN_API_VERSION>
+    <DATE>21 Jun 2017 12:33:43</DATE>
+    <OS>Windows 7</OS>
+    <MACHINE>BIO89233</MACHINE>
+  </INFO>
+  <SIGNALCHAIN>
+    <PROCESSOR name="Sources/OSC Port" insertionPoint="1" pluginName="OSC Port"
+               pluginType="1" pluginIndex="10" libraryName="OSC Port" libraryVersion="1"
+               isSource="1" isSink="0" NodeId="108">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EDITOR isCollapsed="0" displayName="OSC Port">
+        <OSCNODE port="27020" address="/red"/>
+      </EDITOR>
+    </PROCESSOR>
+    <PROCESSOR name="Utilities/Merger" insertionPoint="1" pluginName="Merger"
+               pluginType="-1" pluginIndex="1" libraryName="" libraryVersion="-1"
+               isSource="0" isSink="0" NodeId="109">
+      <MERGER NodeA="108" NodeB="110" MergeEventsA="1" MergeContinuousA="1"
+              MergeEventsB="1" MergeContinuousB="1"/>
+      <EDITOR isCollapsed="0" displayName="Merger"/>
+    </PROCESSOR>
+    <PROCESSOR name="Sinks/Position Tracker" insertionPoint="1" pluginName="Position Tracker"
+               pluginType="1" pluginIndex="12" libraryName="Position Tracker"
+               libraryVersion="1" isSource="0" isSink="1" NodeId="111">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EDITOR isCollapsed="0" displayName="Position Tracker" Type="Visualizer">
+        <TAB Active="1"/>
+        <WINDOW Active="0"/>
+      </EDITOR>
+    </PROCESSOR>
+  </SIGNALCHAIN>
+  <SIGNALCHAIN>
+    <PROCESSOR name="Sources/OSC Port" insertionPoint="1" pluginName="OSC Port"
+               pluginType="1" pluginIndex="10" libraryName="OSC Port" libraryVersion="1"
+               isSource="1" isSink="0" NodeId="110">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EDITOR isCollapsed="0" displayName="OSC Port">
+        <OSCNODE port="27021" address="/green"/>
+      </EDITOR>
+    </PROCESSOR>
+  </SIGNALCHAIN>
+  <SIGNALCHAIN>
+    <PROCESSOR name="Sources/Rhythm FPGA" insertionPoint="1" pluginName="Rhythm FPGA"
+               pluginType="-1" pluginIndex="0" libraryName="" libraryVersion="-1"
+               isSource="1" isSink="0" NodeId="112">
+      <CHANNEL_INFO>
+        <CHANNEL name="CH1" number="0" gain="0.19499999284744263"/>
+        <CHANNEL name="CH2" number="1" gain="0.19499999284744263"/>
+        <CHANNEL name="CH3" number="2" gain="0.19499999284744263"/>
+        <CHANNEL name="CH4" number="3" gain="0.19499999284744263"/>
+        <CHANNEL name="CH5" number="4" gain="0.19499999284744263"/>
+        <CHANNEL name="CH6" number="5" gain="0.19499999284744263"/>
+        <CHANNEL name="CH7" number="6" gain="0.19499999284744263"/>
+        <CHANNEL name="CH8" number="7" gain="0.19499999284744263"/>
+        <CHANNEL name="CH9" number="8" gain="0.19499999284744263"/>
+        <CHANNEL name="CH10" number="9" gain="0.19499999284744263"/>
+        <CHANNEL name="CH11" number="10" gain="0.19499999284744263"/>
+        <CHANNEL name="CH12" number="11" gain="0.19499999284744263"/>
+        <CHANNEL name="CH13" number="12" gain="0.19499999284744263"/>
+        <CHANNEL name="CH14" number="13" gain="0.19499999284744263"/>
+        <CHANNEL name="CH15" number="14" gain="0.19499999284744263"/>
+        <CHANNEL name="CH16" number="15" gain="0.19499999284744263"/>
+        <CHANNEL name="CH17" number="16" gain="0.19499999284744263"/>
+        <CHANNEL name="CH18" number="17" gain="0.19499999284744263"/>
+        <CHANNEL name="CH19" number="18" gain="0.19499999284744263"/>
+        <CHANNEL name="CH20" number="19" gain="0.19499999284744263"/>
+        <CHANNEL name="CH21" number="20" gain="0.19499999284744263"/>
+        <CHANNEL name="CH22" number="21" gain="0.19499999284744263"/>
+        <CHANNEL name="CH23" number="22" gain="0.19499999284744263"/>
+        <CHANNEL name="CH24" number="23" gain="0.19499999284744263"/>
+        <CHANNEL name="CH25" number="24" gain="0.19499999284744263"/>
+        <CHANNEL name="CH26" number="25" gain="0.19499999284744263"/>
+        <CHANNEL name="CH27" number="26" gain="0.19499999284744263"/>
+        <CHANNEL name="CH28" number="27" gain="0.19499999284744263"/>
+        <CHANNEL name="CH29" number="28" gain="0.19499999284744263"/>
+        <CHANNEL name="CH30" number="29" gain="0.19499999284744263"/>
+        <CHANNEL name="CH31" number="30" gain="0.19499999284744263"/>
+        <CHANNEL name="CH32" number="31" gain="0.19499999284744263"/>
+        <CHANNEL name="CH33" number="32" gain="0.19499999284744263"/>
+        <CHANNEL name="CH34" number="33" gain="0.19499999284744263"/>
+        <CHANNEL name="CH35" number="34" gain="0.19499999284744263"/>
+        <CHANNEL name="CH36" number="35" gain="0.19499999284744263"/>
+        <CHANNEL name="CH37" number="36" gain="0.19499999284744263"/>
+        <CHANNEL name="CH38" number="37" gain="0.19499999284744263"/>
+        <CHANNEL name="CH39" number="38" gain="0.19499999284744263"/>
+        <CHANNEL name="CH40" number="39" gain="0.19499999284744263"/>
+        <CHANNEL name="CH41" number="40" gain="0.19499999284744263"/>
+        <CHANNEL name="CH42" number="41" gain="0.19499999284744263"/>
+        <CHANNEL name="CH43" number="42" gain="0.19499999284744263"/>
+        <CHANNEL name="CH44" number="43" gain="0.19499999284744263"/>
+        <CHANNEL name="CH45" number="44" gain="0.19499999284744263"/>
+        <CHANNEL name="CH46" number="45" gain="0.19499999284744263"/>
+        <CHANNEL name="CH47" number="46" gain="0.19499999284744263"/>
+        <CHANNEL name="CH48" number="47" gain="0.19499999284744263"/>
+        <CHANNEL name="CH49" number="48" gain="0.19499999284744263"/>
+        <CHANNEL name="CH50" number="49" gain="0.19499999284744263"/>
+        <CHANNEL name="CH51" number="50" gain="0.19499999284744263"/>
+        <CHANNEL name="CH52" number="51" gain="0.19499999284744263"/>
+        <CHANNEL name="CH53" number="52" gain="0.19499999284744263"/>
+        <CHANNEL name="CH54" number="53" gain="0.19499999284744263"/>
+        <CHANNEL name="CH55" number="54" gain="0.19499999284744263"/>
+        <CHANNEL name="CH56" number="55" gain="0.19499999284744263"/>
+        <CHANNEL name="CH57" number="56" gain="0.19499999284744263"/>
+        <CHANNEL name="CH58" number="57" gain="0.19499999284744263"/>
+        <CHANNEL name="CH59" number="58" gain="0.19499999284744263"/>
+        <CHANNEL name="CH60" number="59" gain="0.19499999284744263"/>
+        <CHANNEL name="CH61" number="60" gain="0.19499999284744263"/>
+        <CHANNEL name="CH62" number="61" gain="0.19499999284744263"/>
+        <CHANNEL name="CH63" number="62" gain="0.19499999284744263"/>
+        <CHANNEL name="CH64" number="63" gain="0.19499999284744263"/>
+        <CHANNEL name="AUX1" number="64" gain="3.7400001019705087e-005"/>
+        <CHANNEL name="AUX2" number="65" gain="3.7400001019705087e-005"/>
+        <CHANNEL name="AUX3" number="66" gain="3.7400001019705087e-005"/>
+        <CHANNEL name="AUX4" number="67" gain="3.7400001019705087e-005"/>
+        <CHANNEL name="AUX5" number="68" gain="3.7400001019705087e-005"/>
+        <CHANNEL name="AUX6" number="69" gain="3.7400001019705087e-005"/>
+      </CHANNEL_INFO>
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="32" number="32">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="33" number="33">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="34" number="34">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="35" number="35">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="36" number="36">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="37" number="37">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="38" number="38">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="39" number="39">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="40" number="40">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="41" number="41">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="42" number="42">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="43" number="43">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="44" number="44">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="45" number="45">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="46" number="46">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="47" number="47">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="48" number="48">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="49" number="49">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="50" number="50">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="51" number="51">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="52" number="52">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="53" number="53">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="54" number="54">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="55" number="55">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="56" number="56">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="57" number="57">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="58" number="58">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="59" number="59">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="60" number="60">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="61" number="61">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="62" number="62">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="63" number="63">
+        <SELECTIONSTATE param="1" record="1" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="64" number="64">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="65" number="65">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="66" number="66">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="67" number="67">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="68" number="68">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="69" number="69">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EDITOR isCollapsed="0" displayName="Rhythm FPGA" SampleRate="17" LowCut="2.2485836294267494"
+              HighCut="7603.7651218333704" ADCsOn="0" AudioOutputL="-1" AudioOutputR="-1"
+              NoiseSlicer="0" TTLFastSettle="1" DAC_TTL="0" DAC_HPF="1" DSPOffset="1"
+              DSPCutoffFreq="0.14571292570770725" save_impedance_measurements="1"
+              auto_measure_impedances="0" LEDs="1" ClockDivideRatio="1"/>
+    </PROCESSOR>
+    <PROCESSOR name="Filters/Channel Map" insertionPoint="1" pluginName="Channel Map"
+               pluginType="1" pluginIndex="3" libraryName="Channel Mapper" libraryVersion="1"
+               isSource="0" isSink="0" NodeId="101">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EDITOR isCollapsed="0" displayName="Channel Map" Type="ChannelMappingEditor">
+        <SETTING Type="visibleChannels" Value="70"/>
+        <CHANNEL Number="0" Mapping="1" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="1" Mapping="2" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="2" Mapping="3" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="3" Mapping="4" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="4" Mapping="5" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="5" Mapping="6" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="6" Mapping="7" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="7" Mapping="8" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="8" Mapping="25" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="9" Mapping="26" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="10" Mapping="27" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="11" Mapping="28" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="12" Mapping="29" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="13" Mapping="30" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="14" Mapping="31" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="15" Mapping="32" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="16" Mapping="33" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="17" Mapping="34" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="18" Mapping="35" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="19" Mapping="36" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="20" Mapping="37" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="21" Mapping="38" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="22" Mapping="39" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="23" Mapping="40" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="24" Mapping="57" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="25" Mapping="58" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="26" Mapping="59" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="27" Mapping="60" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="28" Mapping="61" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="29" Mapping="62" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="30" Mapping="63" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="31" Mapping="64" Reference="-1" Enabled="1"/>
+        <CHANNEL Number="32" Mapping="9" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="33" Mapping="10" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="34" Mapping="11" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="35" Mapping="12" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="36" Mapping="13" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="37" Mapping="14" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="38" Mapping="15" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="39" Mapping="16" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="40" Mapping="17" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="41" Mapping="18" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="42" Mapping="19" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="43" Mapping="20" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="44" Mapping="21" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="45" Mapping="22" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="46" Mapping="23" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="47" Mapping="24" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="48" Mapping="41" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="49" Mapping="42" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="50" Mapping="43" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="51" Mapping="44" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="52" Mapping="45" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="53" Mapping="46" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="54" Mapping="47" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="55" Mapping="48" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="56" Mapping="49" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="57" Mapping="50" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="58" Mapping="51" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="59" Mapping="52" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="60" Mapping="53" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="61" Mapping="54" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="62" Mapping="55" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="63" Mapping="56" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="64" Mapping="65" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="65" Mapping="66" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="66" Mapping="67" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="67" Mapping="68" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="68" Mapping="69" Reference="-1" Enabled="0"/>
+        <CHANNEL Number="69" Mapping="70" Reference="-1" Enabled="0"/>
+        <REFERENCE Number="0" Channel="-2"/>
+        <REFERENCE Number="1" Channel="-1"/>
+        <REFERENCE Number="2" Channel="-1"/>
+        <REFERENCE Number="3" Channel="-1"/>
+      </EDITOR>
+    </PROCESSOR>
+    <PROCESSOR name="Utilities/Splitter" insertionPoint="1" pluginName="Splitter"
+               pluginType="-1" pluginIndex="2" libraryName="" libraryVersion="-1"
+               isSource="0" isSink="0" NodeId="102">
+      <EDITOR isCollapsed="0" displayName="Splitter"/>
+    </PROCESSOR>
+    <PROCESSOR name="Filters/Bandpass Filter" insertionPoint="1" pluginName="Bandpass Filter"
+               pluginType="1" pluginIndex="6" libraryName="Bandpass Filter"
+               libraryVersion="1" isSource="0" isSink="0" NodeId="103">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="6000" lowcut="300" shouldFilter="1"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EDITOR isCollapsed="0" displayName="Bandpass Filter" Type="FilterEditor">
+        <VALUES HighCut="6000" LowCut="300" ApplyToADC="0"/>
+      </EDITOR>
+    </PROCESSOR>
+    <PROCESSOR name="Utilities/Splitter" insertionPoint="1" pluginName="Splitter"
+               pluginType="-1" pluginIndex="2" libraryName="" libraryVersion="-1"
+               isSource="0" isSink="0" NodeId="118">
+      <EDITOR isCollapsed="0" displayName="Splitter"/>
+    </PROCESSOR>
+    <PROCESSOR name="Filters/Spike Detector" insertionPoint="1" pluginName="Spike Detector"
+               pluginType="1" pluginIndex="1" libraryName="Basic Spike Display"
+               libraryVersion="1" isSource="0" isSink="0" NodeId="113">
+      <ELECTRODE name="Tetrode 1" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="1">
+        <SUBCHANNEL ch="0" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="1" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="2" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="3" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 2" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="2">
+        <SUBCHANNEL ch="4" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="5" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="6" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="7" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 3" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="3">
+        <SUBCHANNEL ch="8" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="9" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="10" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="11" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 4" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="4">
+        <SUBCHANNEL ch="12" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="13" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="14" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="15" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 5" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="5">
+        <SUBCHANNEL ch="16" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="17" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="18" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="19" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 6" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="6">
+        <SUBCHANNEL ch="20" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="21" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="22" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="23" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 7" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="7">
+        <SUBCHANNEL ch="24" thresh="80" isActive="0"/>
+        <SUBCHANNEL ch="25" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="26" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="27" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <ELECTRODE name="Tetrode 8" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                 electrodeID="8">
+        <SUBCHANNEL ch="28" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="29" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="30" thresh="80" isActive="1"/>
+        <SUBCHANNEL ch="31" thresh="80" isActive="1"/>
+      </ELECTRODE>
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EVENTCHANNEL name="16" number="16"/>
+      <EVENTCHANNEL name="17" number="17"/>
+      <EVENTCHANNEL name="18" number="18"/>
+      <EVENTCHANNEL name="19" number="19"/>
+      <EVENTCHANNEL name="20" number="20"/>
+      <EVENTCHANNEL name="21" number="21"/>
+      <EVENTCHANNEL name="22" number="22"/>
+      <EVENTCHANNEL name="23" number="23"/>
+      <EDITOR isCollapsed="0" displayName="Spike Detector"/>
+    </PROCESSOR>
+    <PROCESSOR name="Sinks/Spike Viewer" insertionPoint="1" pluginName="Spike Viewer"
+               pluginType="1" pluginIndex="2" libraryName="Basic Spike Display"
+               libraryVersion="1" isSource="0" isSink="1" NodeId="114">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EVENTCHANNEL name="16" number="16"/>
+      <EVENTCHANNEL name="17" number="17"/>
+      <EVENTCHANNEL name="18" number="18"/>
+      <EVENTCHANNEL name="19" number="19"/>
+      <EVENTCHANNEL name="20" number="20"/>
+      <EVENTCHANNEL name="21" number="21"/>
+      <EVENTCHANNEL name="22" number="22"/>
+      <EVENTCHANNEL name="23" number="23"/>
+      <EDITOR isCollapsed="0" displayName="Spike Viewer" Type="Visualizer">
+        <TAB Active="1"/>
+        <WINDOW Active="0"/>
+        <SPIKEDISPLAY LockThresholds="0" InvertSpikes="0">
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+          <PLOT>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+            <AXIS thresh="0" range="500"/>
+          </PLOT>
+        </SPIKEDISPLAY>
+      </EDITOR>
+    </PROCESSOR>
+    <SWITCH number="6"/>
+    <PROCESSOR name="Filters/Bandpass Filter" insertionPoint="1" pluginName="Bandpass Filter"
+               pluginType="1" pluginIndex="6" libraryName="Bandpass Filter"
+               libraryVersion="1" isSource="0" isSink="0" NodeId="116">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+        <PARAMETERS highcut="300" lowcut="1" shouldFilter="1"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EDITOR isCollapsed="0" displayName="Bandpass Filter" Type="FilterEditor">
+        <VALUES HighCut="300" LowCut="1" ApplyToADC="0"/>
+      </EDITOR>
+    </PROCESSOR>
+    <PROCESSOR name="Sinks/LFP Viewer" insertionPoint="1" pluginName="LFP Viewer"
+               pluginType="1" pluginIndex="7" libraryName="LFP viewer" libraryVersion="1"
+               isSource="0" isSink="1" NodeId="117">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="32" number="32">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EDITOR isCollapsed="0" displayName="LFP Viewer" Type="Visualizer">
+        <TAB Active="1"/>
+        <WINDOW Active="0"/>
+        <LFPDISPLAY Range="1000,2000,10.0" Timebase="2.0" Spread="50" colorGrouping="3"
+                    isInverted="0" drawMethod="0" EventButtonState="255" ChannelDisplayState="11111111110111111111111111011111"
+                    ScrollX="0" ScrollY="0"/>
+      </EDITOR>
+    </PROCESSOR>
+    <SWITCH number="8"/>
+    <PROCESSOR name="Filters/Spike Sorter" insertionPoint="1" pluginName="Spike Sorter"
+               pluginType="1" pluginIndex="18" libraryName="Spike Sorter" libraryVersion="1"
+               isSource="0" isSink="0" NodeId="120">
+      <SpikeSorter numElectrodes="8" activeElectrode="7" numPreSamples="8" numPostSamples="32"
+                   autoDACassignment="0" syncThresholds="0" uniqueID="8" flipSignal="0">
+        <ELECTRODE_COUNTER numElectrodeTypes="1">
+          <ELECTRODE_TYPE type="Tetrode" count="9"/>
+        </ELECTRODE_COUNTER>
+        <ELECTRODE name="Tetrode 1" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="1">
+          <SUBCHANNEL ch="0" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="1" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="2" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="3" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-11452.2275390625"
+               pc2min="-2438.09765625" pc1max="18808.607421875" pc2max="1972.138671875"
+               PCAjobFinished="1" PCAcomputed="1">
+            <PCA_DIM pc1="-0.098193630576133728" pc2="0.091120883822441101"/>
+            <PCA_DIM pc1="-0.10222861170768738" pc2="0.089865051209926605"/>
+            <PCA_DIM pc1="-0.10547860711812973" pc2="0.088614217936992645"/>
+            <PCA_DIM pc1="-0.10780353099107742" pc2="0.08744947612285614"/>
+            <PCA_DIM pc1="-0.10938310623168945" pc2="0.084986619651317596"/>
+            <PCA_DIM pc1="-0.11018868535757065" pc2="0.079949446022510529"/>
+            <PCA_DIM pc1="-0.11028070002794266" pc2="0.073772601783275604"/>
+            <PCA_DIM pc1="-0.11013416200876236" pc2="0.068747378885746002"/>
+            <PCA_DIM pc1="-0.10965988785028458" pc2="0.065663613379001617"/>
+            <PCA_DIM pc1="-0.10822285711765289" pc2="0.061773672699928284"/>
+            <PCA_DIM pc1="-0.10630417615175247" pc2="0.054116565734148026"/>
+            <PCA_DIM pc1="-0.10479026287794113" pc2="0.044049423187971115"/>
+            <PCA_DIM pc1="-0.10364850610494614" pc2="0.034773014485836029"/>
+            <PCA_DIM pc1="-0.10233940184116364" pc2="0.02787284180521965"/>
+            <PCA_DIM pc1="-0.10074459761381149" pc2="0.021990550681948662"/>
+            <PCA_DIM pc1="-0.099014386534690857" pc2="0.014533016830682755"/>
+            <PCA_DIM pc1="-0.097052901983261108" pc2="0.0048356656916439533"/>
+            <PCA_DIM pc1="-0.094656839966773987" pc2="-0.0049903886392712593"/>
+            <PCA_DIM pc1="-0.092036612331867218" pc2="-0.013426223769783974"/>
+            <PCA_DIM pc1="-0.089412763714790344" pc2="-0.020121209323406219"/>
+            <PCA_DIM pc1="-0.086659222841262817" pc2="-0.02695288322865963"/>
+            <PCA_DIM pc1="-0.083760224282741547" pc2="-0.035116937011480331"/>
+            <PCA_DIM pc1="-0.080827891826629639" pc2="-0.042510081082582474"/>
+            <PCA_DIM pc1="-0.077977903187274933" pc2="-0.049383372068405151"/>
+            <PCA_DIM pc1="-0.075406588613986969" pc2="-0.058062843978404999"/>
+            <PCA_DIM pc1="-0.072646960616111755" pc2="-0.068009130656719208"/>
+            <PCA_DIM pc1="-0.069296799600124359" pc2="-0.077099144458770752"/>
+            <PCA_DIM pc1="-0.065986566245555878" pc2="-0.084977284073829651"/>
+            <PCA_DIM pc1="-0.063027225434780121" pc2="-0.093708448112010956"/>
+            <PCA_DIM pc1="-0.059751246124505997" pc2="-0.10306917130947113"/>
+            <PCA_DIM pc1="-0.05583040788769722" pc2="-0.11004029214382172"/>
+            <PCA_DIM pc1="-0.052008431404829025" pc2="-0.11344483494758606"/>
+            <PCA_DIM pc1="-0.048617929220199585" pc2="-0.11600384116172791"/>
+            <PCA_DIM pc1="-0.045156918466091156" pc2="-0.12073706835508347"/>
+            <PCA_DIM pc1="-0.041948020458221436" pc2="-0.12652388215065002"/>
+            <PCA_DIM pc1="-0.039048485457897186" pc2="-0.13158537447452545"/>
+            <PCA_DIM pc1="-0.036623697727918625" pc2="-0.13573458790779114"/>
+            <PCA_DIM pc1="-0.034282643347978592" pc2="-0.13861982524394989"/>
+            <PCA_DIM pc1="-0.031269807368516922" pc2="-0.137831911444664"/>
+            <PCA_DIM pc1="-0.02809445746243" pc2="-0.13300520181655884"/>
+            <PCA_DIM pc1="-0.096653401851654053" pc2="0.0853462815284729"/>
+            <PCA_DIM pc1="-0.10057982057332993" pc2="0.084480687975883484"/>
+            <PCA_DIM pc1="-0.10424541682004929" pc2="0.083298154175281525"/>
+            <PCA_DIM pc1="-0.1066935658454895" pc2="0.081133462488651276"/>
+            <PCA_DIM pc1="-0.10768548399209976" pc2="0.078654058277606964"/>
+            <PCA_DIM pc1="-0.10807117074728012" pc2="0.075903065502643585"/>
+            <PCA_DIM pc1="-0.10836952179670334" pc2="0.071192100644111633"/>
+            <PCA_DIM pc1="-0.10846413671970367" pc2="0.064437329769134521"/>
+            <PCA_DIM pc1="-0.10795597732067108" pc2="0.059548851102590561"/>
+            <PCA_DIM pc1="-0.10671962052583694" pc2="0.056421399116516113"/>
+            <PCA_DIM pc1="-0.10541810095310211" pc2="0.051487129181623459"/>
+            <PCA_DIM pc1="-0.10431008785963058" pc2="0.043930217623710632"/>
+            <PCA_DIM pc1="-0.10290781408548355" pc2="0.03636280819773674"/>
+            <PCA_DIM pc1="-0.1013990119099617" pc2="0.029519883915781975"/>
+            <PCA_DIM pc1="-0.1001293957233429" pc2="0.02107180655002594"/>
+            <PCA_DIM pc1="-0.098810002207756042" pc2="0.010248388163745403"/>
+            <PCA_DIM pc1="-0.096925169229507446" pc2="-0.0021392304915934801"/>
+            <PCA_DIM pc1="-0.094395197927951813" pc2="-0.013068340718746185"/>
+            <PCA_DIM pc1="-0.091740190982818604" pc2="-0.021156556904315948"/>
+            <PCA_DIM pc1="-0.08940519392490387" pc2="-0.026866966858506203"/>
+            <PCA_DIM pc1="-0.087065204977989197" pc2="-0.032535001635551453"/>
+            <PCA_DIM pc1="-0.084332473576068878" pc2="-0.040096405893564224"/>
+            <PCA_DIM pc1="-0.081436797976493835" pc2="-0.047377754002809525"/>
+            <PCA_DIM pc1="-0.078741163015365601" pc2="-0.054269492626190186"/>
+            <PCA_DIM pc1="-0.075990147888660431" pc2="-0.062559373676776886"/>
+            <PCA_DIM pc1="-0.072663053870201111" pc2="-0.072057150304317474"/>
+            <PCA_DIM pc1="-0.068979933857917786" pc2="-0.081859856843948364"/>
+            <PCA_DIM pc1="-0.06569170206785202" pc2="-0.090923205018043518"/>
+            <PCA_DIM pc1="-0.062811180949211121" pc2="-0.098444707691669464"/>
+            <PCA_DIM pc1="-0.059449873864650726" pc2="-0.10517872869968414"/>
+            <PCA_DIM pc1="-0.055776201188564301" pc2="-0.11164094507694244"/>
+            <PCA_DIM pc1="-0.05234861746430397" pc2="-0.11707084625959396"/>
+            <PCA_DIM pc1="-0.048957008868455887" pc2="-0.12142068892717361"/>
+            <PCA_DIM pc1="-0.045428525656461716" pc2="-0.12685839831829071"/>
+            <PCA_DIM pc1="-0.042176857590675354" pc2="-0.1322522759437561"/>
+            <PCA_DIM pc1="-0.039004538208246231" pc2="-0.13530184328556061"/>
+            <PCA_DIM pc1="-0.036046601831912994" pc2="-0.13716495037078857"/>
+            <PCA_DIM pc1="-0.033214982599020004" pc2="-0.13838596642017365"/>
+            <PCA_DIM pc1="-0.030546260997653008" pc2="-0.13710874319076538"/>
+            <PCA_DIM pc1="-0.028216701000928879" pc2="-0.13365906476974487"/>
+            <PCA_DIM pc1="-0.082075357437133789" pc2="0.076147139072418213"/>
+            <PCA_DIM pc1="-0.085244134068489075" pc2="0.074892915785312653"/>
+            <PCA_DIM pc1="-0.088174179196357727" pc2="0.074053935706615448"/>
+            <PCA_DIM pc1="-0.090428732335567474" pc2="0.072803564369678497"/>
+            <PCA_DIM pc1="-0.091538146138191223" pc2="0.07121923565864563"/>
+            <PCA_DIM pc1="-0.091825254261493683" pc2="0.069579914212226868"/>
+            <PCA_DIM pc1="-0.091952279210090637" pc2="0.067881137132644653"/>
+            <PCA_DIM pc1="-0.091942071914672852" pc2="0.06396801769733429"/>
+            <PCA_DIM pc1="-0.091354921460151672" pc2="0.058182496577501297"/>
+            <PCA_DIM pc1="-0.090231664478778839" pc2="0.05219828337430954"/>
+            <PCA_DIM pc1="-0.089099645614624023" pc2="0.04673844575881958"/>
+            <PCA_DIM pc1="-0.088251657783985138" pc2="0.040799509733915329"/>
+            <PCA_DIM pc1="-0.087290644645690918" pc2="0.034689251333475113"/>
+            <PCA_DIM pc1="-0.085901752114295959" pc2="0.030027942731976509"/>
+            <PCA_DIM pc1="-0.084209650754928589" pc2="0.025388667359948158"/>
+            <PCA_DIM pc1="-0.082376286387443542" pc2="0.017835211008787155"/>
+            <PCA_DIM pc1="-0.080287501215934753" pc2="0.0088675376027822495"/>
+            <PCA_DIM pc1="-0.078038811683654785" pc2="0.0029155095107853413"/>
+            <PCA_DIM pc1="-0.075819849967956543" pc2="-0.0015786230796948075"/>
+            <PCA_DIM pc1="-0.073544964194297791" pc2="-0.0064230109564960003"/>
+            <PCA_DIM pc1="-0.071100175380706787" pc2="-0.011198644526302814"/>
+            <PCA_DIM pc1="-0.068514034152030945" pc2="-0.015893079340457916"/>
+            <PCA_DIM pc1="-0.065923035144805908" pc2="-0.020921209827065468"/>
+            <PCA_DIM pc1="-0.063477590680122375" pc2="-0.027207763865590096"/>
+            <PCA_DIM pc1="-0.061085183173418045" pc2="-0.034088119864463806"/>
+            <PCA_DIM pc1="-0.058428149670362473" pc2="-0.040293928235769272"/>
+            <PCA_DIM pc1="-0.055652391165494919" pc2="-0.045898277312517166"/>
+            <PCA_DIM pc1="-0.053122702986001968" pc2="-0.051460593938827515"/>
+            <PCA_DIM pc1="-0.050704203546047211" pc2="-0.056524809449911118"/>
+            <PCA_DIM pc1="-0.047885805368423462" pc2="-0.061178188771009445"/>
+            <PCA_DIM pc1="-0.045051258057355881" pc2="-0.065899096429347992"/>
+            <PCA_DIM pc1="-0.042519290000200272" pc2="-0.071082279086112976"/>
+            <PCA_DIM pc1="-0.039633706212043762" pc2="-0.076490767300128937"/>
+            <PCA_DIM pc1="-0.036549661308526993" pc2="-0.08060995489358902"/>
+            <PCA_DIM pc1="-0.0338466577231884" pc2="-0.082224436104297638"/>
+            <PCA_DIM pc1="-0.031613398343324661" pc2="-0.082925945520401001"/>
+            <PCA_DIM pc1="-0.029731430113315582" pc2="-0.084826529026031494"/>
+            <PCA_DIM pc1="-0.027670085430145264" pc2="-0.086640618741512299"/>
+            <PCA_DIM pc1="-0.025493303313851357" pc2="-0.086922593414783478"/>
+            <PCA_DIM pc1="-0.023423917591571808" pc2="-0.085930176079273224"/>
+            <PCA_DIM pc1="-0.088174842298030853" pc2="0.078069597482681274"/>
+            <PCA_DIM pc1="-0.091562762856483459" pc2="0.07657332718372345"/>
+            <PCA_DIM pc1="-0.09425538033246994" pc2="0.075680039823055267"/>
+            <PCA_DIM pc1="-0.096322059631347656" pc2="0.074685998260974884"/>
+            <PCA_DIM pc1="-0.097763970494270325" pc2="0.073532149195671082"/>
+            <PCA_DIM pc1="-0.098620884120464325" pc2="0.072117336094379425"/>
+            <PCA_DIM pc1="-0.099048241972923279" pc2="0.068539351224899292"/>
+            <PCA_DIM pc1="-0.099355906248092651" pc2="0.062452554702758789"/>
+            <PCA_DIM pc1="-0.099360823631286621" pc2="0.056288119405508041"/>
+            <PCA_DIM pc1="-0.098457425832748413" pc2="0.049830261617898941"/>
+            <PCA_DIM pc1="-0.097076959908008575" pc2="0.042493604123592377"/>
+            <PCA_DIM pc1="-0.0958213210105896" pc2="0.034560352563858032"/>
+            <PCA_DIM pc1="-0.094489283859729767" pc2="0.027731185778975487"/>
+            <PCA_DIM pc1="-0.092963330447673798" pc2="0.022472452372312546"/>
+            <PCA_DIM pc1="-0.091629713773727417" pc2="0.015929127112030983"/>
+            <PCA_DIM pc1="-0.090343564748764038" pc2="0.0051740603521466255"/>
+            <PCA_DIM pc1="-0.088627137243747711" pc2="-0.0074988850392401218"/>
+            <PCA_DIM pc1="-0.086538240313529968" pc2="-0.017292387783527374"/>
+            <PCA_DIM pc1="-0.084509357810020447" pc2="-0.024988787248730659"/>
+            <PCA_DIM pc1="-0.082222744822502136" pc2="-0.032256010919809341"/>
+            <PCA_DIM pc1="-0.079309165477752686" pc2="-0.039488453418016434"/>
+            <PCA_DIM pc1="-0.076322011649608612" pc2="-0.0467710942029953"/>
+            <PCA_DIM pc1="-0.07379644364118576" pc2="-0.053916122764348984"/>
+            <PCA_DIM pc1="-0.071552403271198273" pc2="-0.062295228242874146"/>
+            <PCA_DIM pc1="-0.069084122776985168" pc2="-0.07224031537771225"/>
+            <PCA_DIM pc1="-0.065909698605537415" pc2="-0.081832967698574066"/>
+            <PCA_DIM pc1="-0.062466584146022797" pc2="-0.090023323893547058"/>
+            <PCA_DIM pc1="-0.059550222009420395" pc2="-0.098379082977771759"/>
+            <PCA_DIM pc1="-0.057174660265445709" pc2="-0.10738853365182877"/>
+            <PCA_DIM pc1="-0.054724261164665222" pc2="-0.11502616852521896"/>
+            <PCA_DIM pc1="-0.05211947113275528" pc2="-0.12101838737726212"/>
+            <PCA_DIM pc1="-0.049221590161323547" pc2="-0.12581685185432434"/>
+            <PCA_DIM pc1="-0.045803159475326538" pc2="-0.1296190470457077"/>
+            <PCA_DIM pc1="-0.042540878057479858" pc2="-0.13282424211502075"/>
+            <PCA_DIM pc1="-0.039471998810768127" pc2="-0.13600638508796692"/>
+            <PCA_DIM pc1="-0.036540944129228592" pc2="-0.13899022340774536"/>
+            <PCA_DIM pc1="-0.034279428422451019" pc2="-0.14163212478160858"/>
+            <PCA_DIM pc1="-0.03208724781870842" pc2="-0.14229565858840942"/>
+            <PCA_DIM pc1="-0.029640600085258484" pc2="-0.13997918367385864"/>
+            <PCA_DIM pc1="-0.027155665680766106" pc2="-0.13645695149898529"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 2" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="2">
+          <SUBCHANNEL ch="4" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="5" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="6" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="7" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-15071.16015625"
+               pc2min="-4261.55322265625" pc1max="24601.9375" pc2max="3910.05810546875"
+               PCAjobFinished="1" PCAcomputed="1">
+            <PCA_DIM pc1="-0.075667053461074829" pc2="0.058867890387773514"/>
+            <PCA_DIM pc1="-0.078383639454841614" pc2="0.060674156993627548"/>
+            <PCA_DIM pc1="-0.080752380192279816" pc2="0.06310899555683136"/>
+            <PCA_DIM pc1="-0.082551136612892151" pc2="0.065220676362514496"/>
+            <PCA_DIM pc1="-0.083497628569602966" pc2="0.066156491637229919"/>
+            <PCA_DIM pc1="-0.083718180656433105" pc2="0.066646620631217957"/>
+            <PCA_DIM pc1="-0.083902552723884583" pc2="0.066116765141487122"/>
+            <PCA_DIM pc1="-0.084329470992088318" pc2="0.064036443829536438"/>
+            <PCA_DIM pc1="-0.084391102194786072" pc2="0.061632994562387466"/>
+            <PCA_DIM pc1="-0.083601288497447968" pc2="0.05965060368180275"/>
+            <PCA_DIM pc1="-0.082612380385398865" pc2="0.057284533977508545"/>
+            <PCA_DIM pc1="-0.081809259951114655" pc2="0.053992614150047302"/>
+            <PCA_DIM pc1="-0.080877117812633514" pc2="0.050286874175071716"/>
+            <PCA_DIM pc1="-0.079625584185123444" pc2="0.046407692134380341"/>
+            <PCA_DIM pc1="-0.078178256750106812" pc2="0.042626582086086273"/>
+            <PCA_DIM pc1="-0.076735533773899078" pc2="0.038532517850399017"/>
+            <PCA_DIM pc1="-0.075286701321601868" pc2="0.033081524074077606"/>
+            <PCA_DIM pc1="-0.073735326528549194" pc2="0.02649037167429924"/>
+            <PCA_DIM pc1="-0.072179622948169708" pc2="0.020814457908272743"/>
+            <PCA_DIM pc1="-0.070699959993362427" pc2="0.016777481883764267"/>
+            <PCA_DIM pc1="-0.069197818636894226" pc2="0.013060783036053181"/>
+            <PCA_DIM pc1="-0.067445233464241028" pc2="0.0089383004233241081"/>
+            <PCA_DIM pc1="-0.065404169261455536" pc2="0.0051601412706077099"/>
+            <PCA_DIM pc1="-0.063261352479457855" pc2="0.0022787181660532951"/>
+            <PCA_DIM pc1="-0.060806572437286377" pc2="-0.00010312331141903996"/>
+            <PCA_DIM pc1="-0.057822857052087784" pc2="-0.0022489202674478292"/>
+            <PCA_DIM pc1="-0.054785545915365219" pc2="-0.003665081225335598"/>
+            <PCA_DIM pc1="-0.051999799907207489" pc2="-0.0050474745221436024"/>
+            <PCA_DIM pc1="-0.04924575611948967" pc2="-0.0073540033772587776"/>
+            <PCA_DIM pc1="-0.04623015969991684" pc2="-0.0093868011608719826"/>
+            <PCA_DIM pc1="-0.043363843113183975" pc2="-0.010636525228619576"/>
+            <PCA_DIM pc1="-0.040445797145366669" pc2="-0.011728798039257526"/>
+            <PCA_DIM pc1="-0.037105973809957504" pc2="-0.012708654627203941"/>
+            <PCA_DIM pc1="-0.034163013100624084" pc2="-0.013326358050107956"/>
+            <PCA_DIM pc1="-0.031744204461574554" pc2="-0.014274404384195805"/>
+            <PCA_DIM pc1="-0.029392516240477562" pc2="-0.015634579584002495"/>
+            <PCA_DIM pc1="-0.027168907225131989" pc2="-0.017692742869257927"/>
+            <PCA_DIM pc1="-0.024815943092107773" pc2="-0.020011376589536667"/>
+            <PCA_DIM pc1="-0.02273375540971756" pc2="-0.021480632945895195"/>
+            <PCA_DIM pc1="-0.020886821672320366" pc2="-0.023291256278753281"/>
+            <PCA_DIM pc1="-0.074619315564632416" pc2="0.058018393814563751"/>
+            <PCA_DIM pc1="-0.077040113508701324" pc2="0.058392848819494247"/>
+            <PCA_DIM pc1="-0.079080238938331604" pc2="0.059719502925872803"/>
+            <PCA_DIM pc1="-0.080744750797748566" pc2="0.061630144715309143"/>
+            <PCA_DIM pc1="-0.081808730959892273" pc2="0.062996156513690948"/>
+            <PCA_DIM pc1="-0.082211621105670929" pc2="0.063485719263553619"/>
+            <PCA_DIM pc1="-0.082249924540519714" pc2="0.062615819275379181"/>
+            <PCA_DIM pc1="-0.082321286201477051" pc2="0.06084870919585228"/>
+            <PCA_DIM pc1="-0.082230046391487122" pc2="0.058779597282409668"/>
+            <PCA_DIM pc1="-0.081664815545082092" pc2="0.056496568024158478"/>
+            <PCA_DIM pc1="-0.0810045525431633" pc2="0.053645424544811249"/>
+            <PCA_DIM pc1="-0.08039528876543045" pc2="0.050088897347450256"/>
+            <PCA_DIM pc1="-0.079466372728347778" pc2="0.046141631901264191"/>
+            <PCA_DIM pc1="-0.078267835080623627" pc2="0.041894767433404922"/>
+            <PCA_DIM pc1="-0.077162995934486389" pc2="0.03772580623626709"/>
+            <PCA_DIM pc1="-0.076165750622749329" pc2="0.033496610820293427"/>
+            <PCA_DIM pc1="-0.074960209429264069" pc2="0.028253624215722084"/>
+            <PCA_DIM pc1="-0.073439829051494598" pc2="0.022389844059944153"/>
+            <PCA_DIM pc1="-0.07181645929813385" pc2="0.017249953001737595"/>
+            <PCA_DIM pc1="-0.070271261036396027" pc2="0.012827674858272076"/>
+            <PCA_DIM pc1="-0.068690657615661621" pc2="0.0082572354003787041"/>
+            <PCA_DIM pc1="-0.066924214363098145" pc2="0.0036992388777434826"/>
+            <PCA_DIM pc1="-0.065133534371852875" pc2="0.00016547448467463255"/>
+            <PCA_DIM pc1="-0.063228204846382141" pc2="-0.0022971238940954208"/>
+            <PCA_DIM pc1="-0.060692459344863892" pc2="-0.0047006742097437382"/>
+            <PCA_DIM pc1="-0.057596579194068909" pc2="-0.0069234217517077923"/>
+            <PCA_DIM pc1="-0.054425258189439774" pc2="-0.0082404594868421555"/>
+            <PCA_DIM pc1="-0.051461681723594666" pc2="-0.009522588923573494"/>
+            <PCA_DIM pc1="-0.048867899924516678" pc2="-0.01157617662101984"/>
+            <PCA_DIM pc1="-0.046447876840829849" pc2="-0.013539726845920086"/>
+            <PCA_DIM pc1="-0.044108659029006958" pc2="-0.01521356962621212"/>
+            <PCA_DIM pc1="-0.04133208841085434" pc2="-0.016960758715867996"/>
+            <PCA_DIM pc1="-0.037996359169483185" pc2="-0.018288621678948402"/>
+            <PCA_DIM pc1="-0.034906655550003052" pc2="-0.018987404182553291"/>
+            <PCA_DIM pc1="-0.032000672072172165" pc2="-0.019333401694893837"/>
+            <PCA_DIM pc1="-0.029362522065639496" pc2="-0.019277205690741539"/>
+            <PCA_DIM pc1="-0.027183625847101212" pc2="-0.019652178511023521"/>
+            <PCA_DIM pc1="-0.025008805096149445" pc2="-0.020980281755328178"/>
+            <PCA_DIM pc1="-0.023217769339680672" pc2="-0.022257165983319283"/>
+            <PCA_DIM pc1="-0.021449260413646698" pc2="-0.023697393015027046"/>
+            <PCA_DIM pc1="-0.057858411222696304" pc2="0.049714785069227219"/>
+            <PCA_DIM pc1="-0.06007593497633934" pc2="0.050086256116628647"/>
+            <PCA_DIM pc1="-0.062104217708110809" pc2="0.050964191555976868"/>
+            <PCA_DIM pc1="-0.063559375703334808" pc2="0.052201200276613235"/>
+            <PCA_DIM pc1="-0.064059160649776459" pc2="0.052942246198654175"/>
+            <PCA_DIM pc1="-0.064040325582027435" pc2="0.053280908614397049"/>
+            <PCA_DIM pc1="-0.064200639724731445" pc2="0.05310986191034317"/>
+            <PCA_DIM pc1="-0.064581118524074554" pc2="0.052631709724664688"/>
+            <PCA_DIM pc1="-0.064716003835201263" pc2="0.051855277270078659"/>
+            <PCA_DIM pc1="-0.064162366092205048" pc2="0.050429891794919968"/>
+            <PCA_DIM pc1="-0.063165426254272461" pc2="0.047840595245361328"/>
+            <PCA_DIM pc1="-0.062325872480869293" pc2="0.044848509132862091"/>
+            <PCA_DIM pc1="-0.061784181743860245" pc2="0.042403586208820343"/>
+            <PCA_DIM pc1="-0.061197333037853241" pc2="0.039994183927774429"/>
+            <PCA_DIM pc1="-0.060294684022665024" pc2="0.037423510104417801"/>
+            <PCA_DIM pc1="-0.059281997382640839" pc2="0.034747447818517685"/>
+            <PCA_DIM pc1="-0.058273956179618835" pc2="0.031088532879948616"/>
+            <PCA_DIM pc1="-0.057041283696889877" pc2="0.026709733530879021"/>
+            <PCA_DIM pc1="-0.055642340332269669" pc2="0.02319035492837429"/>
+            <PCA_DIM pc1="-0.054340321570634842" pc2="0.02027462050318718"/>
+            <PCA_DIM pc1="-0.052990172058343887" pc2="0.016929555684328079"/>
+            <PCA_DIM pc1="-0.051274750381708145" pc2="0.013214870356023312"/>
+            <PCA_DIM pc1="-0.049447797238826752" pc2="0.010501367971301079"/>
+            <PCA_DIM pc1="-0.047806244343519211" pc2="0.0092049073427915573"/>
+            <PCA_DIM pc1="-0.045984581112861633" pc2="0.0079303914681077003"/>
+            <PCA_DIM pc1="-0.04364607110619545" pc2="0.0060434737242758274"/>
+            <PCA_DIM pc1="-0.041193448007106781" pc2="0.0044097541831433773"/>
+            <PCA_DIM pc1="-0.039084833115339279" pc2="0.0025378379505127668"/>
+            <PCA_DIM pc1="-0.03714984655380249" pc2="-4.0562706999480724e-005"/>
+            <PCA_DIM pc1="-0.035213954746723175" pc2="-0.0021052248775959015"/>
+            <PCA_DIM pc1="-0.033449169248342514" pc2="-0.0034408336505293846"/>
+            <PCA_DIM pc1="-0.031541448086500168" pc2="-0.0042319828644394875"/>
+            <PCA_DIM pc1="-0.029208913445472717" pc2="-0.0048472643829882145"/>
+            <PCA_DIM pc1="-0.026854090392589569" pc2="-0.0057942559942603111"/>
+            <PCA_DIM pc1="-0.024504272267222404" pc2="-0.0073011033236980438"/>
+            <PCA_DIM pc1="-0.022482013329863548" pc2="-0.0088441940024495125"/>
+            <PCA_DIM pc1="-0.020888496190309525" pc2="-0.010515740141272545"/>
+            <PCA_DIM pc1="-0.019408345222473145" pc2="-0.012093931436538696"/>
+            <PCA_DIM pc1="-0.01816507987678051" pc2="-0.013282496482133865"/>
+            <PCA_DIM pc1="-0.016915770247578621" pc2="-0.014845686964690685"/>
+            <PCA_DIM pc1="-0.12302792817354202" pc2="0.12708713114261627"/>
+            <PCA_DIM pc1="-0.12757137417793274" pc2="0.12625369429588318"/>
+            <PCA_DIM pc1="-0.13138605654239655" pc2="0.12477194517850876"/>
+            <PCA_DIM pc1="-0.13454228639602661" pc2="0.12154018878936768"/>
+            <PCA_DIM pc1="-0.13701704144477844" pc2="0.11616449803113937"/>
+            <PCA_DIM pc1="-0.13880278170108795" pc2="0.10953249037265778"/>
+            <PCA_DIM pc1="-0.13984569907188416" pc2="0.10234009474515915"/>
+            <PCA_DIM pc1="-0.14044518768787384" pc2="0.094384796917438507"/>
+            <PCA_DIM pc1="-0.14113235473632813" pc2="0.085058756172657013"/>
+            <PCA_DIM pc1="-0.14188100397586823" pc2="0.073855742812156677"/>
+            <PCA_DIM pc1="-0.14229851961135864" pc2="0.060479577630758286"/>
+            <PCA_DIM pc1="-0.14228232204914093" pc2="0.045052159577608109"/>
+            <PCA_DIM pc1="-0.14194858074188232" pc2="0.027894804254174232"/>
+            <PCA_DIM pc1="-0.14150418341159821" pc2="0.0092163318768143654"/>
+            <PCA_DIM pc1="-0.14095157384872437" pc2="-0.01003942359238863"/>
+            <PCA_DIM pc1="-0.14031316339969635" pc2="-0.029743226245045662"/>
+            <PCA_DIM pc1="-0.13965113461017609" pc2="-0.049699537456035614"/>
+            <PCA_DIM pc1="-0.13853612542152405" pc2="-0.069297656416893005"/>
+            <PCA_DIM pc1="-0.13670328259468079" pc2="-0.087266623973846436"/>
+            <PCA_DIM pc1="-0.13441269099712372" pc2="-0.1030496284365654"/>
+            <PCA_DIM pc1="-0.13203680515289307" pc2="-0.11770801246166229"/>
+            <PCA_DIM pc1="-0.12964007258415222" pc2="-0.13210909068584442"/>
+            <PCA_DIM pc1="-0.12685582041740417" pc2="-0.14530828595161438"/>
+            <PCA_DIM pc1="-0.1233927384018898" pc2="-0.15645088255405426"/>
+            <PCA_DIM pc1="-0.11907880008220673" pc2="-0.16528640687465668"/>
+            <PCA_DIM pc1="-0.11428675055503845" pc2="-0.17243903875350952"/>
+            <PCA_DIM pc1="-0.10929840803146362" pc2="-0.17876207828521729"/>
+            <PCA_DIM pc1="-0.10415071249008179" pc2="-0.18489308655261993"/>
+            <PCA_DIM pc1="-0.099050119519233704" pc2="-0.19079020619392395"/>
+            <PCA_DIM pc1="-0.093924000859260559" pc2="-0.19613417983055115"/>
+            <PCA_DIM pc1="-0.088711373507976532" pc2="-0.2008092850446701"/>
+            <PCA_DIM pc1="-0.083342805504798889" pc2="-0.20424811542034149"/>
+            <PCA_DIM pc1="-0.077830687165260315" pc2="-0.20539698004722595"/>
+            <PCA_DIM pc1="-0.072314441204071045" pc2="-0.20543919503688812"/>
+            <PCA_DIM pc1="-0.06691935658454895" pc2="-0.20556458830833435"/>
+            <PCA_DIM pc1="-0.06168854609131813" pc2="-0.20546108484268188"/>
+            <PCA_DIM pc1="-0.056559529155492783" pc2="-0.20525743067264557"/>
+            <PCA_DIM pc1="-0.051596719771623611" pc2="-0.20446625351905823"/>
+            <PCA_DIM pc1="-0.046887639909982681" pc2="-0.20290258526802063"/>
+            <PCA_DIM pc1="-0.042459182441234589" pc2="-0.20053930580615997"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 3" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="3">
+          <SUBCHANNEL ch="8" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="9" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="10" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="11" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-14477.6298828125"
+               pc2min="-3202.412109375" pc1max="23436.037109375" pc2max="2512.467041015625"
+               PCAjobFinished="1" PCAcomputed="1">
+            <PCA_DIM pc1="-0.093398362398147583" pc2="0.094927862286567688"/>
+            <PCA_DIM pc1="-0.097179636359214783" pc2="0.09163791686296463"/>
+            <PCA_DIM pc1="-0.10064428299665451" pc2="0.088199138641357422"/>
+            <PCA_DIM pc1="-0.10369127988815308" pc2="0.086997956037521362"/>
+            <PCA_DIM pc1="-0.10588545352220535" pc2="0.08570273220539093"/>
+            <PCA_DIM pc1="-0.10714924335479736" pc2="0.082932114601135254"/>
+            <PCA_DIM pc1="-0.10767730325460434" pc2="0.078968651592731476"/>
+            <PCA_DIM pc1="-0.10793932527303696" pc2="0.072244212031364441"/>
+            <PCA_DIM pc1="-0.10812721401453018" pc2="0.065052226185798645"/>
+            <PCA_DIM pc1="-0.10772043466567993" pc2="0.059319406747817993"/>
+            <PCA_DIM pc1="-0.10681134462356567" pc2="0.053748622536659241"/>
+            <PCA_DIM pc1="-0.10588055104017258" pc2="0.044419154524803162"/>
+            <PCA_DIM pc1="-0.10486890375614166" pc2="0.030920831486582756"/>
+            <PCA_DIM pc1="-0.10360027104616165" pc2="0.01734626293182373"/>
+            <PCA_DIM pc1="-0.1021868884563446" pc2="0.0053184940479695797"/>
+            <PCA_DIM pc1="-0.10071263462305069" pc2="-0.0060194735415279865"/>
+            <PCA_DIM pc1="-0.098869547247886658" pc2="-0.015120825730264187"/>
+            <PCA_DIM pc1="-0.096514187753200531" pc2="-0.021960651502013206"/>
+            <PCA_DIM pc1="-0.094263866543769836" pc2="-0.029713289812207222"/>
+            <PCA_DIM pc1="-0.092406287789344788" pc2="-0.038842026144266129"/>
+            <PCA_DIM pc1="-0.090551324188709259" pc2="-0.04893207922577858"/>
+            <PCA_DIM pc1="-0.088252857327461243" pc2="-0.058573029935359955"/>
+            <PCA_DIM pc1="-0.085539601743221283" pc2="-0.066510006785392761"/>
+            <PCA_DIM pc1="-0.082524880766868591" pc2="-0.072935193777084351"/>
+            <PCA_DIM pc1="-0.079233616590499878" pc2="-0.077986136078834534"/>
+            <PCA_DIM pc1="-0.075652837753295898" pc2="-0.083159372210502625"/>
+            <PCA_DIM pc1="-0.071746893227100372" pc2="-0.089561924338340759"/>
+            <PCA_DIM pc1="-0.068087652325630188" pc2="-0.0961269810795784"/>
+            <PCA_DIM pc1="-0.064767137169837952" pc2="-0.10087601840496063"/>
+            <PCA_DIM pc1="-0.061383023858070374" pc2="-0.10317913442850113"/>
+            <PCA_DIM pc1="-0.058004476130008698" pc2="-0.10535803437232971"/>
+            <PCA_DIM pc1="-0.054521616548299789" pc2="-0.10934126377105713"/>
+            <PCA_DIM pc1="-0.050574421882629395" pc2="-0.11316686868667603"/>
+            <PCA_DIM pc1="-0.046800252050161362" pc2="-0.11612837016582489"/>
+            <PCA_DIM pc1="-0.043215733021497726" pc2="-0.11927001923322678"/>
+            <PCA_DIM pc1="-0.039757020771503448" pc2="-0.12313517183065414"/>
+            <PCA_DIM pc1="-0.037093412131071091" pc2="-0.12724059820175171"/>
+            <PCA_DIM pc1="-0.034582309424877167" pc2="-0.13044513761997223"/>
+            <PCA_DIM pc1="-0.032201152294874191" pc2="-0.13260377943515778"/>
+            <PCA_DIM pc1="-0.030015058815479279" pc2="-0.13529357314109802"/>
+            <PCA_DIM pc1="-0.07836546003818512" pc2="0.08959217369556427"/>
+            <PCA_DIM pc1="-0.08195195347070694" pc2="0.087472997605800629"/>
+            <PCA_DIM pc1="-0.085114479064941406" pc2="0.085641011595726013"/>
+            <PCA_DIM pc1="-0.087655574083328247" pc2="0.084565877914428711"/>
+            <PCA_DIM pc1="-0.089503243565559387" pc2="0.08237602561712265"/>
+            <PCA_DIM pc1="-0.090764105319976807" pc2="0.079369500279426575"/>
+            <PCA_DIM pc1="-0.091509327292442322" pc2="0.07621832937002182"/>
+            <PCA_DIM pc1="-0.092087075114250183" pc2="0.071707732975482941"/>
+            <PCA_DIM pc1="-0.092392913997173309" pc2="0.06634906679391861"/>
+            <PCA_DIM pc1="-0.091996468603610992" pc2="0.060922257602214813"/>
+            <PCA_DIM pc1="-0.091251134872436523" pc2="0.054751850664615631"/>
+            <PCA_DIM pc1="-0.090633295476436615" pc2="0.045612026005983353"/>
+            <PCA_DIM pc1="-0.089844554662704468" pc2="0.034867424517869949"/>
+            <PCA_DIM pc1="-0.088700644671916962" pc2="0.025153005495667458"/>
+            <PCA_DIM pc1="-0.087511949241161346" pc2="0.015903210267424583"/>
+            <PCA_DIM pc1="-0.086495809257030487" pc2="0.0063756820745766163"/>
+            <PCA_DIM pc1="-0.085118912160396576" pc2="-0.001446486683562398"/>
+            <PCA_DIM pc1="-0.083084143698215485" pc2="-0.0080377915874123573"/>
+            <PCA_DIM pc1="-0.080849975347518921" pc2="-0.015840483829379082"/>
+            <PCA_DIM pc1="-0.078989505767822266" pc2="-0.023993875831365585"/>
+            <PCA_DIM pc1="-0.077428184449672699" pc2="-0.031792134046554565"/>
+            <PCA_DIM pc1="-0.075640946626663208" pc2="-0.039216723293066025"/>
+            <PCA_DIM pc1="-0.073370635509490967" pc2="-0.046040266752243042"/>
+            <PCA_DIM pc1="-0.070814773440361023" pc2="-0.051641400903463364"/>
+            <PCA_DIM pc1="-0.06828540563583374" pc2="-0.05549732968211174"/>
+            <PCA_DIM pc1="-0.065802186727523804" pc2="-0.05992542952299118"/>
+            <PCA_DIM pc1="-0.062921524047851563" pc2="-0.065813414752483368"/>
+            <PCA_DIM pc1="-0.059760741889476776" pc2="-0.071196690201759338"/>
+            <PCA_DIM pc1="-0.056569024920463562" pc2="-0.07488308846950531"/>
+            <PCA_DIM pc1="-0.05342680960893631" pc2="-0.077886149287223816"/>
+            <PCA_DIM pc1="-0.050603833049535751" pc2="-0.082117460668087006"/>
+            <PCA_DIM pc1="-0.047682188451290131" pc2="-0.086933530867099762"/>
+            <PCA_DIM pc1="-0.044485330581665039" pc2="-0.09049716591835022"/>
+            <PCA_DIM pc1="-0.041690412908792496" pc2="-0.09382205456495285"/>
+            <PCA_DIM pc1="-0.039049319922924042" pc2="-0.09782138466835022"/>
+            <PCA_DIM pc1="-0.036467313766479492" pc2="-0.1014336422085762"/>
+            <PCA_DIM pc1="-0.034197758883237839" pc2="-0.10463961958885193"/>
+            <PCA_DIM pc1="-0.031959567219018936" pc2="-0.10747080296278"/>
+            <PCA_DIM pc1="-0.029964320361614227" pc2="-0.10994810611009598"/>
+            <PCA_DIM pc1="-0.028116676956415176" pc2="-0.11272986233234406"/>
+            <PCA_DIM pc1="-0.090869247913360596" pc2="0.10086755454540253"/>
+            <PCA_DIM pc1="-0.095169737935066223" pc2="0.09683699905872345"/>
+            <PCA_DIM pc1="-0.098516315221786499" pc2="0.093632414937019348"/>
+            <PCA_DIM pc1="-0.10091438144445419" pc2="0.091561831533908844"/>
+            <PCA_DIM pc1="-0.10272757709026337" pc2="0.088735632598400116"/>
+            <PCA_DIM pc1="-0.1041598841547966" pc2="0.085339292883872986"/>
+            <PCA_DIM pc1="-0.10504636168479919" pc2="0.080749571323394775"/>
+            <PCA_DIM pc1="-0.10564596205949783" pc2="0.074944853782653809"/>
+            <PCA_DIM pc1="-0.10595140606164932" pc2="0.069746792316436768"/>
+            <PCA_DIM pc1="-0.10556013882160187" pc2="0.065613463521003723"/>
+            <PCA_DIM pc1="-0.10465532541275024" pc2="0.060433607548475266"/>
+            <PCA_DIM pc1="-0.103512242436409" pc2="0.050998702645301819"/>
+            <PCA_DIM pc1="-0.10211662948131561" pc2="0.039510723203420639"/>
+            <PCA_DIM pc1="-0.10063205659389496" pc2="0.029938438907265663"/>
+            <PCA_DIM pc1="-0.099177129566669464" pc2="0.021601466462016106"/>
+            <PCA_DIM pc1="-0.097758181393146515" pc2="0.012450188398361206"/>
+            <PCA_DIM pc1="-0.096183784306049347" pc2="0.0034357060212641954"/>
+            <PCA_DIM pc1="-0.094127573072910309" pc2="-0.0045192940160632133"/>
+            <PCA_DIM pc1="-0.091685973107814789" pc2="-0.011883012019097805"/>
+            <PCA_DIM pc1="-0.089299418032169342" pc2="-0.018691297620534897"/>
+            <PCA_DIM pc1="-0.087021477520465851" pc2="-0.025515928864479065"/>
+            <PCA_DIM pc1="-0.084549270570278168" pc2="-0.03198762983083725"/>
+            <PCA_DIM pc1="-0.081740230321884155" pc2="-0.039155136793851852"/>
+            <PCA_DIM pc1="-0.078836597502231598" pc2="-0.045762687921524048"/>
+            <PCA_DIM pc1="-0.076120845973491669" pc2="-0.050119288265705109"/>
+            <PCA_DIM pc1="-0.073318049311637878" pc2="-0.054329186677932739"/>
+            <PCA_DIM pc1="-0.070034846663475037" pc2="-0.060005359351634979"/>
+            <PCA_DIM pc1="-0.066486828029155731" pc2="-0.065615661442279816"/>
+            <PCA_DIM pc1="-0.06305927038192749" pc2="-0.068682052195072174"/>
+            <PCA_DIM pc1="-0.059801284223794937" pc2="-0.070282638072967529"/>
+            <PCA_DIM pc1="-0.056725732982158661" pc2="-0.074306972324848175"/>
+            <PCA_DIM pc1="-0.053406037390232086" pc2="-0.079695291817188263"/>
+            <PCA_DIM pc1="-0.0499265156686306" pc2="-0.083940282464027405"/>
+            <PCA_DIM pc1="-0.046686284244060516" pc2="-0.087764911353588104"/>
+            <PCA_DIM pc1="-0.043374434113502502" pc2="-0.090897351503372192"/>
+            <PCA_DIM pc1="-0.040285337716341019" pc2="-0.094033896923065186"/>
+            <PCA_DIM pc1="-0.037633448839187622" pc2="-0.09846515953540802"/>
+            <PCA_DIM pc1="-0.035045012831687927" pc2="-0.10265586525201797"/>
+            <PCA_DIM pc1="-0.032738346606492996" pc2="-0.10545110702514648"/>
+            <PCA_DIM pc1="-0.030303750187158585" pc2="-0.10773374885320663"/>
+            <PCA_DIM pc1="-0.080386191606521606" pc2="0.10322432965040207"/>
+            <PCA_DIM pc1="-0.084121003746986389" pc2="0.10033102333545685"/>
+            <PCA_DIM pc1="-0.086912713944911957" pc2="0.098602332174777985"/>
+            <PCA_DIM pc1="-0.088993169367313385" pc2="0.096595779061317444"/>
+            <PCA_DIM pc1="-0.090432509779930115" pc2="0.092554353177547455"/>
+            <PCA_DIM pc1="-0.09131506085395813" pc2="0.088705331087112427"/>
+            <PCA_DIM pc1="-0.092173382639884949" pc2="0.084773413836956024"/>
+            <PCA_DIM pc1="-0.093281686305999756" pc2="0.079548053443431854"/>
+            <PCA_DIM pc1="-0.094100780785083771" pc2="0.073887385427951813"/>
+            <PCA_DIM pc1="-0.094143897294998169" pc2="0.068543381989002228"/>
+            <PCA_DIM pc1="-0.093665763735771179" pc2="0.061248704791069031"/>
+            <PCA_DIM pc1="-0.092874214053153992" pc2="0.048761643469333649"/>
+            <PCA_DIM pc1="-0.091689057648181915" pc2="0.033772069960832596"/>
+            <PCA_DIM pc1="-0.090437084436416626" pc2="0.021046251058578491"/>
+            <PCA_DIM pc1="-0.089443989098072052" pc2="0.011359963566064835"/>
+            <PCA_DIM pc1="-0.088661618530750275" pc2="0.0019144960679113865"/>
+            <PCA_DIM pc1="-0.087619215250015259" pc2="-0.0083860792219638824"/>
+            <PCA_DIM pc1="-0.085889346897602081" pc2="-0.01967022567987442"/>
+            <PCA_DIM pc1="-0.083626165986061096" pc2="-0.030059674754738808"/>
+            <PCA_DIM pc1="-0.081632032990455627" pc2="-0.038969185203313828"/>
+            <PCA_DIM pc1="-0.080086387693881989" pc2="-0.047929607331752777"/>
+            <PCA_DIM pc1="-0.07827555388212204" pc2="-0.056464154273271561"/>
+            <PCA_DIM pc1="-0.07596839964389801" pc2="-0.064512103796005249"/>
+            <PCA_DIM pc1="-0.073746785521507263" pc2="-0.071242928504943848"/>
+            <PCA_DIM pc1="-0.071806475520133972" pc2="-0.075813338160514832"/>
+            <PCA_DIM pc1="-0.069474369287490845" pc2="-0.081338934600353241"/>
+            <PCA_DIM pc1="-0.066280364990234375" pc2="-0.088777966797351837"/>
+            <PCA_DIM pc1="-0.062843456864356995" pc2="-0.095678150653839111"/>
+            <PCA_DIM pc1="-0.059567615389823914" pc2="-0.098535604774951935"/>
+            <PCA_DIM pc1="-0.056424558162689209" pc2="-0.098734185099601746"/>
+            <PCA_DIM pc1="-0.053438302129507065" pc2="-0.10125097632408142"/>
+            <PCA_DIM pc1="-0.050368119031190872" pc2="-0.10643988102674484"/>
+            <PCA_DIM pc1="-0.047531384974718094" pc2="-0.11237191408872604"/>
+            <PCA_DIM pc1="-0.044981591403484344" pc2="-0.11826492846012115"/>
+            <PCA_DIM pc1="-0.04205833375453949" pc2="-0.12282804399728775"/>
+            <PCA_DIM pc1="-0.039250884205102921" pc2="-0.12599396705627441"/>
+            <PCA_DIM pc1="-0.036583919078111649" pc2="-0.13024558126926422"/>
+            <PCA_DIM pc1="-0.03376462310552597" pc2="-0.13535131514072418"/>
+            <PCA_DIM pc1="-0.031478025019168854" pc2="-0.13907639682292938"/>
+            <PCA_DIM pc1="-0.029396504163742065" pc2="-0.14173884689807892"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 4" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="4">
+          <SUBCHANNEL ch="12" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="13" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="14" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="15" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-10496.15234375"
+               pc2min="-2392.085205078125" pc1max="16992.9296875" pc2max="2002.583740234375"
+               PCAjobFinished="1" PCAcomputed="1">
+            <PCA_DIM pc1="-0.10359548777341843" pc2="0.089279912412166595"/>
+            <PCA_DIM pc1="-0.10829977691173553" pc2="0.088181443512439728"/>
+            <PCA_DIM pc1="-0.11246369779109955" pc2="0.088514640927314758"/>
+            <PCA_DIM pc1="-0.11585493385791779" pc2="0.091267488896846771"/>
+            <PCA_DIM pc1="-0.11823114007711411" pc2="0.093073941767215729"/>
+            <PCA_DIM pc1="-0.11964704841375351" pc2="0.093345917761325836"/>
+            <PCA_DIM pc1="-0.12036320567131042" pc2="0.09080919623374939"/>
+            <PCA_DIM pc1="-0.12085457891225815" pc2="0.08497145026922226"/>
+            <PCA_DIM pc1="-0.12093278765678406" pc2="0.079094178974628448"/>
+            <PCA_DIM pc1="-0.12013889849185944" pc2="0.07490992546081543"/>
+            <PCA_DIM pc1="-0.11897718161344528" pc2="0.06855715811252594"/>
+            <PCA_DIM pc1="-0.11820673942565918" pc2="0.059424601495265961"/>
+            <PCA_DIM pc1="-0.11755342036485672" pc2="0.051727816462516785"/>
+            <PCA_DIM pc1="-0.11646248400211334" pc2="0.043761711567640305"/>
+            <PCA_DIM pc1="-0.11493110656738281" pc2="0.032086815685033798"/>
+            <PCA_DIM pc1="-0.11347915977239609" pc2="0.019250992685556412"/>
+            <PCA_DIM pc1="-0.1122458204627037" pc2="0.0081346966326236725"/>
+            <PCA_DIM pc1="-0.11070260405540466" pc2="-0.0027492290828377008"/>
+            <PCA_DIM pc1="-0.10847210139036179" pc2="-0.015309997834265232"/>
+            <PCA_DIM pc1="-0.10580824315547943" pc2="-0.028836626559495926"/>
+            <PCA_DIM pc1="-0.10323408246040344" pc2="-0.041801836341619492"/>
+            <PCA_DIM pc1="-0.10098829120397568" pc2="-0.053725454956293106"/>
+            <PCA_DIM pc1="-0.098598010838031769" pc2="-0.064432792365550995"/>
+            <PCA_DIM pc1="-0.095595724880695343" pc2="-0.074013568460941315"/>
+            <PCA_DIM pc1="-0.092045344412326813" pc2="-0.08352930098772049"/>
+            <PCA_DIM pc1="-0.088041491806507111" pc2="-0.093899518251419067"/>
+            <PCA_DIM pc1="-0.083729632198810577" pc2="-0.10350431501865387"/>
+            <PCA_DIM pc1="-0.079501934349536896" pc2="-0.11052593588829041"/>
+            <PCA_DIM pc1="-0.075665026903152466" pc2="-0.11500684171915054"/>
+            <PCA_DIM pc1="-0.072339840233325958" pc2="-0.11875651776790619"/>
+            <PCA_DIM pc1="-0.069084413349628448" pc2="-0.12421641498804092"/>
+            <PCA_DIM pc1="-0.065211929380893707" pc2="-0.13038386404514313"/>
+            <PCA_DIM pc1="-0.061251450330018997" pc2="-0.13614992797374725"/>
+            <PCA_DIM pc1="-0.057353302836418152" pc2="-0.14057938754558563"/>
+            <PCA_DIM pc1="-0.053066231310367584" pc2="-0.1447814404964447"/>
+            <PCA_DIM pc1="-0.049351587891578674" pc2="-0.14942051470279694"/>
+            <PCA_DIM pc1="-0.046464022248983383" pc2="-0.15285263955593109"/>
+            <PCA_DIM pc1="-0.043687470257282257" pc2="-0.15293176472187042"/>
+            <PCA_DIM pc1="-0.040807820856571198" pc2="-0.15129183232784271"/>
+            <PCA_DIM pc1="-0.037652630358934402" pc2="-0.15095984935760498"/>
+            <PCA_DIM pc1="-0.084857620298862457" pc2="0.072521395981311798"/>
+            <PCA_DIM pc1="-0.088872402906417847" pc2="0.075254112482070923"/>
+            <PCA_DIM pc1="-0.092171818017959595" pc2="0.078343488276004791"/>
+            <PCA_DIM pc1="-0.09402967244386673" pc2="0.080797828733921051"/>
+            <PCA_DIM pc1="-0.094793014228343964" pc2="0.080176405608654022"/>
+            <PCA_DIM pc1="-0.095239289104938507" pc2="0.077087961137294769"/>
+            <PCA_DIM pc1="-0.095758579671382904" pc2="0.073067881166934967"/>
+            <PCA_DIM pc1="-0.09633655846118927" pc2="0.069243818521499634"/>
+            <PCA_DIM pc1="-0.096562512218952179" pc2="0.06634887307882309"/>
+            <PCA_DIM pc1="-0.09612312912940979" pc2="0.063784383237361908"/>
+            <PCA_DIM pc1="-0.095543570816516876" pc2="0.059584852308034897"/>
+            <PCA_DIM pc1="-0.095485247671604156" pc2="0.054659344255924225"/>
+            <PCA_DIM pc1="-0.095277793705463409" pc2="0.050409138202667236"/>
+            <PCA_DIM pc1="-0.094409003853797913" pc2="0.042969543486833572"/>
+            <PCA_DIM pc1="-0.093209773302078247" pc2="0.030617795884609222"/>
+            <PCA_DIM pc1="-0.091993376612663269" pc2="0.016068805009126663"/>
+            <PCA_DIM pc1="-0.090463109314441681" pc2="0.0033883396536111832"/>
+            <PCA_DIM pc1="-0.088327780365943909" pc2="-0.0067439326085150242"/>
+            <PCA_DIM pc1="-0.085973627865314484" pc2="-0.0153459208086133"/>
+            <PCA_DIM pc1="-0.084134481847286224" pc2="-0.023908844217658043"/>
+            <PCA_DIM pc1="-0.082488134503364563" pc2="-0.032431852072477341"/>
+            <PCA_DIM pc1="-0.080296874046325684" pc2="-0.038764763623476028"/>
+            <PCA_DIM pc1="-0.0776849165558815" pc2="-0.042956452816724777"/>
+            <PCA_DIM pc1="-0.075353875756263733" pc2="-0.047931093722581863"/>
+            <PCA_DIM pc1="-0.073444373905658722" pc2="-0.054610650986433029"/>
+            <PCA_DIM pc1="-0.071063980460166931" pc2="-0.061859246343374252"/>
+            <PCA_DIM pc1="-0.067770764231681824" pc2="-0.068573527038097382"/>
+            <PCA_DIM pc1="-0.064435683190822601" pc2="-0.075071029365062714"/>
+            <PCA_DIM pc1="-0.061585180461406708" pc2="-0.080422647297382355"/>
+            <PCA_DIM pc1="-0.058558080345392227" pc2="-0.083562858402729034"/>
+            <PCA_DIM pc1="-0.055146675556898117" pc2="-0.086719788610935211"/>
+            <PCA_DIM pc1="-0.051581598818302155" pc2="-0.092233002185821533"/>
+            <PCA_DIM pc1="-0.048138607293367386" pc2="-0.099237784743309021"/>
+            <PCA_DIM pc1="-0.044417805969715118" pc2="-0.10406026244163513"/>
+            <PCA_DIM pc1="-0.040847156196832657" pc2="-0.10716370493173599"/>
+            <PCA_DIM pc1="-0.038391545414924622" pc2="-0.1104351133108139"/>
+            <PCA_DIM pc1="-0.036301322281360626" pc2="-0.11430351436138153"/>
+            <PCA_DIM pc1="-0.033671386539936066" pc2="-0.11772602051496506"/>
+            <PCA_DIM pc1="-0.030672907829284668" pc2="-0.11948554217815399"/>
+            <PCA_DIM pc1="-0.027876134961843491" pc2="-0.12030961364507675"/>
+            <PCA_DIM pc1="-0.056043203920125961" pc2="0.050833847373723984"/>
+            <PCA_DIM pc1="-0.058802254498004913" pc2="0.053428560495376587"/>
+            <PCA_DIM pc1="-0.060874138027429581" pc2="0.056581538170576096"/>
+            <PCA_DIM pc1="-0.062183022499084473" pc2="0.059630110859870911"/>
+            <PCA_DIM pc1="-0.063408799469470978" pc2="0.061987414956092834"/>
+            <PCA_DIM pc1="-0.064525172114372253" pc2="0.064064808189868927"/>
+            <PCA_DIM pc1="-0.065164797008037567" pc2="0.064637579023838043"/>
+            <PCA_DIM pc1="-0.065604887902736664" pc2="0.062550835311412811"/>
+            <PCA_DIM pc1="-0.065985076129436493" pc2="0.059040199965238571"/>
+            <PCA_DIM pc1="-0.06595958024263382" pc2="0.056012887507677078"/>
+            <PCA_DIM pc1="-0.065279729664325714" pc2="0.052159149199724197"/>
+            <PCA_DIM pc1="-0.064363442361354828" pc2="0.047595687210559845"/>
+            <PCA_DIM pc1="-0.063673831522464752" pc2="0.043213877826929092"/>
+            <PCA_DIM pc1="-0.063127435743808746" pc2="0.037316080182790756"/>
+            <PCA_DIM pc1="-0.062528118491172791" pc2="0.027965018525719643"/>
+            <PCA_DIM pc1="-0.061959758400917053" pc2="0.016154410317540169"/>
+            <PCA_DIM pc1="-0.061417195945978165" pc2="0.0043758745305240154"/>
+            <PCA_DIM pc1="-0.06059635803103447" pc2="-0.0059735202230513096"/>
+            <PCA_DIM pc1="-0.059485722333192825" pc2="-0.013783733360469341"/>
+            <PCA_DIM pc1="-0.058515094220638275" pc2="-0.019901979714632034"/>
+            <PCA_DIM pc1="-0.057613831013441086" pc2="-0.025172550231218338"/>
+            <PCA_DIM pc1="-0.056268956512212753" pc2="-0.030111903324723244"/>
+            <PCA_DIM pc1="-0.054432328790426254" pc2="-0.035326555371284485"/>
+            <PCA_DIM pc1="-0.052648384124040604" pc2="-0.040445689111948013"/>
+            <PCA_DIM pc1="-0.05128990113735199" pc2="-0.045717179775238037"/>
+            <PCA_DIM pc1="-0.050086215138435364" pc2="-0.051030870527029037"/>
+            <PCA_DIM pc1="-0.048577159643173218" pc2="-0.056034483015537262"/>
+            <PCA_DIM pc1="-0.046666588634252548" pc2="-0.062469180673360825"/>
+            <PCA_DIM pc1="-0.044418666511774063" pc2="-0.070202581584453583"/>
+            <PCA_DIM pc1="-0.042291373014450073" pc2="-0.076219908893108368"/>
+            <PCA_DIM pc1="-0.040174402296543121" pc2="-0.079535201191902161"/>
+            <PCA_DIM pc1="-0.037704646587371826" pc2="-0.081184633076190948"/>
+            <PCA_DIM pc1="-0.035466898232698441" pc2="-0.082368545234203339"/>
+            <PCA_DIM pc1="-0.033623617142438889" pc2="-0.084988966584205627"/>
+            <PCA_DIM pc1="-0.032110046595335007" pc2="-0.088987424969673157"/>
+            <PCA_DIM pc1="-0.031088359653949738" pc2="-0.093456991016864777"/>
+            <PCA_DIM pc1="-0.029834650456905365" pc2="-0.096508130431175232"/>
+            <PCA_DIM pc1="-0.027917062863707542" pc2="-0.097638726234436035"/>
+            <PCA_DIM pc1="-0.02551465667784214" pc2="-0.097988590598106384"/>
+            <PCA_DIM pc1="-0.022994173690676689" pc2="-0.098066993057727814"/>
+            <PCA_DIM pc1="-0.091197140514850616" pc2="0.085737936198711395"/>
+            <PCA_DIM pc1="-0.094849400222301483" pc2="0.0853375643491745"/>
+            <PCA_DIM pc1="-0.098518930375576019" pc2="0.086419157683849335"/>
+            <PCA_DIM pc1="-0.10163508355617523" pc2="0.086831748485565186"/>
+            <PCA_DIM pc1="-0.10360925644636154" pc2="0.08502061665058136"/>
+            <PCA_DIM pc1="-0.1045311912894249" pc2="0.08301108330488205"/>
+            <PCA_DIM pc1="-0.1047414243221283" pc2="0.082035638391971588"/>
+            <PCA_DIM pc1="-0.10493364185094833" pc2="0.08013702929019928"/>
+            <PCA_DIM pc1="-0.10534152388572693" pc2="0.074896536767482758"/>
+            <PCA_DIM pc1="-0.10513935983181" pc2="0.067472338676452637"/>
+            <PCA_DIM pc1="-0.1039813831448555" pc2="0.060048401355743408"/>
+            <PCA_DIM pc1="-0.10240484029054642" pc2="0.055289603769779205"/>
+            <PCA_DIM pc1="-0.10102793574333191" pc2="0.050712112337350845"/>
+            <PCA_DIM pc1="-0.10001114755868912" pc2="0.04231632873415947"/>
+            <PCA_DIM pc1="-0.099119894206523895" pc2="0.030924407765269279"/>
+            <PCA_DIM pc1="-0.098174691200256348" pc2="0.018571445718407631"/>
+            <PCA_DIM pc1="-0.096946761012077332" pc2="0.0072701121680438519"/>
+            <PCA_DIM pc1="-0.094968102872371674" pc2="-0.0015969063388183713"/>
+            <PCA_DIM pc1="-0.092291414737701416" pc2="-0.0096162548288702965"/>
+            <PCA_DIM pc1="-0.089409872889518738" pc2="-0.018489198759198189"/>
+            <PCA_DIM pc1="-0.086774706840515137" pc2="-0.027838248759508133"/>
+            <PCA_DIM pc1="-0.084368281066417694" pc2="-0.037592574954032898"/>
+            <PCA_DIM pc1="-0.08210977166891098" pc2="-0.047227378934621811"/>
+            <PCA_DIM pc1="-0.079628206789493561" pc2="-0.055715654045343399"/>
+            <PCA_DIM pc1="-0.076667629182338715" pc2="-0.063481897115707397"/>
+            <PCA_DIM pc1="-0.072920240461826324" pc2="-0.071006886661052704"/>
+            <PCA_DIM pc1="-0.068585246801376343" pc2="-0.078383013606071472"/>
+            <PCA_DIM pc1="-0.064726307988166809" pc2="-0.086023241281509399"/>
+            <PCA_DIM pc1="-0.061784166842699051" pc2="-0.091307342052459717"/>
+            <PCA_DIM pc1="-0.058993939310312271" pc2="-0.092450052499771118"/>
+            <PCA_DIM pc1="-0.055881902575492859" pc2="-0.092802844941616058"/>
+            <PCA_DIM pc1="-0.052683055400848389" pc2="-0.095874376595020294"/>
+            <PCA_DIM pc1="-0.049737557768821716" pc2="-0.10130208730697632"/>
+            <PCA_DIM pc1="-0.046347338706254959" pc2="-0.10717675089836121"/>
+            <PCA_DIM pc1="-0.042786557227373123" pc2="-0.11237061023712158"/>
+            <PCA_DIM pc1="-0.04003075510263443" pc2="-0.1153222993016243"/>
+            <PCA_DIM pc1="-0.037677697837352753" pc2="-0.11530409753322601"/>
+            <PCA_DIM pc1="-0.035272300243377686" pc2="-0.11507526040077209"/>
+            <PCA_DIM pc1="-0.032626908272504807" pc2="-0.11697299778461456"/>
+            <PCA_DIM pc1="-0.030030682682991028" pc2="-0.1200321838259697"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 5" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="5">
+          <SUBCHANNEL ch="16" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="17" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="18" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="19" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-4050.447021484375"
+               pc2min="-2168.99072265625" pc1max="6038.642578125" pc2max="1718.0286865234375"
+               PCAjobFinished="1" PCAcomputed="1">
+            <PCA_DIM pc1="-0.048608001321554184" pc2="0.055334702134132385"/>
+            <PCA_DIM pc1="-0.047870803624391556" pc2="0.058620408177375793"/>
+            <PCA_DIM pc1="-0.04763399064540863" pc2="0.062106471508741379"/>
+            <PCA_DIM pc1="-0.046955876052379608" pc2="0.067766420543193817"/>
+            <PCA_DIM pc1="-0.045112203806638718" pc2="0.073257073760032654"/>
+            <PCA_DIM pc1="-0.042937684804201126" pc2="0.075525395572185516"/>
+            <PCA_DIM pc1="-0.042502552270889282" pc2="0.075609266757965088"/>
+            <PCA_DIM pc1="-0.043248709291219711" pc2="0.075194507837295532"/>
+            <PCA_DIM pc1="-0.04281337559223175" pc2="0.073443621397018433"/>
+            <PCA_DIM pc1="-0.040907621383666992" pc2="0.069610394537448883"/>
+            <PCA_DIM pc1="-0.042001679539680481" pc2="0.064493909478187561"/>
+            <PCA_DIM pc1="-0.047156497836112976" pc2="0.060060277581214905"/>
+            <PCA_DIM pc1="-0.052288655191659927" pc2="0.056051265448331833"/>
+            <PCA_DIM pc1="-0.056169919669628143" pc2="0.049922451376914978"/>
+            <PCA_DIM pc1="-0.060533832758665085" pc2="0.0408291295170784"/>
+            <PCA_DIM pc1="-0.065210916101932526" pc2="0.03075125440955162"/>
+            <PCA_DIM pc1="-0.068791724741458893" pc2="0.022272570058703423"/>
+            <PCA_DIM pc1="-0.072639919817447662" pc2="0.01518689189106226"/>
+            <PCA_DIM pc1="-0.077666275203227997" pc2="0.0081767989322543144"/>
+            <PCA_DIM pc1="-0.081940926611423492" pc2="0.00059122568927705288"/>
+            <PCA_DIM pc1="-0.084641873836517334" pc2="-0.0087609328329563141"/>
+            <PCA_DIM pc1="-0.087109833955764771" pc2="-0.020129723474383354"/>
+            <PCA_DIM pc1="-0.089546613395214081" pc2="-0.030341584235429764"/>
+            <PCA_DIM pc1="-0.090898022055625916" pc2="-0.037538729608058929"/>
+            <PCA_DIM pc1="-0.090989887714385986" pc2="-0.044802233576774597"/>
+            <PCA_DIM pc1="-0.090365514159202576" pc2="-0.054628849029541016"/>
+            <PCA_DIM pc1="-0.089331567287445068" pc2="-0.065295673906803131"/>
+            <PCA_DIM pc1="-0.08758990466594696" pc2="-0.07377973198890686"/>
+            <PCA_DIM pc1="-0.08491070568561554" pc2="-0.079879522323608398"/>
+            <PCA_DIM pc1="-0.081982262432575226" pc2="-0.087148942053318024"/>
+            <PCA_DIM pc1="-0.080075345933437347" pc2="-0.096153654158115387"/>
+            <PCA_DIM pc1="-0.078605316579341888" pc2="-0.10455413162708282"/>
+            <PCA_DIM pc1="-0.075020350515842438" pc2="-0.11297506839036942"/>
+            <PCA_DIM pc1="-0.070391900837421417" pc2="-0.1224958673119545"/>
+            <PCA_DIM pc1="-0.067987710237503052" pc2="-0.13092070817947388"/>
+            <PCA_DIM pc1="-0.066432826220989227" pc2="-0.13726779818534851"/>
+            <PCA_DIM pc1="-0.063452035188674927" pc2="-0.14242461323738098"/>
+            <PCA_DIM pc1="-0.059709087014198303" pc2="-0.14687193930149078"/>
+            <PCA_DIM pc1="-0.057206463068723679" pc2="-0.14855824410915375"/>
+            <PCA_DIM pc1="-0.056591935455799103" pc2="-0.14750029146671295"/>
+            <PCA_DIM pc1="-0.081345364451408386" pc2="0.089016415178775787"/>
+            <PCA_DIM pc1="-0.082110010087490082" pc2="0.092950873076915741"/>
+            <PCA_DIM pc1="-0.083168700337409973" pc2="0.095240965485572815"/>
+            <PCA_DIM pc1="-0.083639152348041534" pc2="0.099578872323036194"/>
+            <PCA_DIM pc1="-0.082413427531719208" pc2="0.10534993559122086"/>
+            <PCA_DIM pc1="-0.080376408994197845" pc2="0.108733169734478"/>
+            <PCA_DIM pc1="-0.079512596130371094" pc2="0.10961818695068359"/>
+            <PCA_DIM pc1="-0.080713920295238495" pc2="0.11018559336662292"/>
+            <PCA_DIM pc1="-0.081973381340503693" pc2="0.10916419327259064"/>
+            <PCA_DIM pc1="-0.08110983669757843" pc2="0.10459855198860168"/>
+            <PCA_DIM pc1="-0.080823414027690887" pc2="0.097568444907665253"/>
+            <PCA_DIM pc1="-0.083011768758296967" pc2="0.090582400560379028"/>
+            <PCA_DIM pc1="-0.086044877767562866" pc2="0.084416411817073822"/>
+            <PCA_DIM pc1="-0.089334152638912201" pc2="0.077330224215984344"/>
+            <PCA_DIM pc1="-0.093539483845233917" pc2="0.067838594317436218"/>
+            <PCA_DIM pc1="-0.097419731318950653" pc2="0.057738080620765686"/>
+            <PCA_DIM pc1="-0.099739827215671539" pc2="0.050336383283138275"/>
+            <PCA_DIM pc1="-0.10243096202611923" pc2="0.044072121381759644"/>
+            <PCA_DIM pc1="-0.10667555779218674" pc2="0.035183951258659363"/>
+            <PCA_DIM pc1="-0.11036022007465363" pc2="0.024917993694543839"/>
+            <PCA_DIM pc1="-0.11203557252883911" pc2="0.014405477792024612"/>
+            <PCA_DIM pc1="-0.11268549412488937" pc2="0.0029730051755905151"/>
+            <PCA_DIM pc1="-0.113536037504673" pc2="-0.007361880037933588"/>
+            <PCA_DIM pc1="-0.11382484436035156" pc2="-0.015272115357220173"/>
+            <PCA_DIM pc1="-0.11228533834218979" pc2="-0.023072807118296623"/>
+            <PCA_DIM pc1="-0.10954442620277405" pc2="-0.032907996326684952"/>
+            <PCA_DIM pc1="-0.10729010403156281" pc2="-0.043824147433042526"/>
+            <PCA_DIM pc1="-0.10589379072189331" pc2="-0.05387694388628006"/>
+            <PCA_DIM pc1="-0.10346253961324692" pc2="-0.062423627823591232"/>
+            <PCA_DIM pc1="-0.099563546478748322" pc2="-0.07028459757566452"/>
+            <PCA_DIM pc1="-0.096192151308059692" pc2="-0.078995659947395325"/>
+            <PCA_DIM pc1="-0.09318070113658905" pc2="-0.088290177285671234"/>
+            <PCA_DIM pc1="-0.08852926641702652" pc2="-0.097534812986850739"/>
+            <PCA_DIM pc1="-0.083642870187759399" pc2="-0.106568343937397"/>
+            <PCA_DIM pc1="-0.080408729612827301" pc2="-0.11512307822704315"/>
+            <PCA_DIM pc1="-0.077275946736335754" pc2="-0.12196946889162064"/>
+            <PCA_DIM pc1="-0.074140094220638275" pc2="-0.12653453648090363"/>
+            <PCA_DIM pc1="-0.07086452841758728" pc2="-0.13107338547706604"/>
+            <PCA_DIM pc1="-0.067145116627216339" pc2="-0.13504724204540253"/>
+            <PCA_DIM pc1="-0.064747676253318787" pc2="-0.13668633997440338"/>
+            <PCA_DIM pc1="-0.032360725104808807" pc2="0.039830584079027176"/>
+            <PCA_DIM pc1="-0.033206362277269363" pc2="0.042584601789712906"/>
+            <PCA_DIM pc1="-0.032301675528287888" pc2="0.044536672532558441"/>
+            <PCA_DIM pc1="-0.030661378055810928" pc2="0.04691406711935997"/>
+            <PCA_DIM pc1="-0.030059661716222763" pc2="0.050261996686458588"/>
+            <PCA_DIM pc1="-0.029957592487335205" pc2="0.053985748440027237"/>
+            <PCA_DIM pc1="-0.030104555189609528" pc2="0.057104241102933884"/>
+            <PCA_DIM pc1="-0.031169449910521507" pc2="0.058166790753602982"/>
+            <PCA_DIM pc1="-0.032146498560905457" pc2="0.057194624096155167"/>
+            <PCA_DIM pc1="-0.031755685806274414" pc2="0.055069733411073685"/>
+            <PCA_DIM pc1="-0.032240144908428192" pc2="0.051092397421598434"/>
+            <PCA_DIM pc1="-0.034721728414297104" pc2="0.046575132757425308"/>
+            <PCA_DIM pc1="-0.037153221666812897" pc2="0.043735865503549576"/>
+            <PCA_DIM pc1="-0.039072316139936447" pc2="0.041138254106044769"/>
+            <PCA_DIM pc1="-0.041193347424268723" pc2="0.036940589547157288"/>
+            <PCA_DIM pc1="-0.043253213167190552" pc2="0.032705854624509811"/>
+            <PCA_DIM pc1="-0.04500686377286911" pc2="0.029239248484373093"/>
+            <PCA_DIM pc1="-0.046921782195568085" pc2="0.024874089285731316"/>
+            <PCA_DIM pc1="-0.048974025994539261" pc2="0.019321203231811523"/>
+            <PCA_DIM pc1="-0.051182053983211517" pc2="0.013930095359683037"/>
+            <PCA_DIM pc1="-0.053414087742567062" pc2="0.0086350059136748314"/>
+            <PCA_DIM pc1="-0.05456986278295517" pc2="0.0034096795134246349"/>
+            <PCA_DIM pc1="-0.054901417344808578" pc2="-0.0021745231933891773"/>
+            <PCA_DIM pc1="-0.05538148432970047" pc2="-0.0093949353322386742"/>
+            <PCA_DIM pc1="-0.055373735725879669" pc2="-0.016485096886754036"/>
+            <PCA_DIM pc1="-0.054314479231834412" pc2="-0.022307764738798141"/>
+            <PCA_DIM pc1="-0.052722442895174026" pc2="-0.028022492304444313"/>
+            <PCA_DIM pc1="-0.051239684224128723" pc2="-0.031962212175130844"/>
+            <PCA_DIM pc1="-0.049318544566631317" pc2="-0.034574858844280243"/>
+            <PCA_DIM pc1="-0.046969782561063766" pc2="-0.039159346371889114"/>
+            <PCA_DIM pc1="-0.045393135398626328" pc2="-0.045203547924757004"/>
+            <PCA_DIM pc1="-0.044297225773334503" pc2="-0.050002124160528183"/>
+            <PCA_DIM pc1="-0.042416069656610489" pc2="-0.055217240005731583"/>
+            <PCA_DIM pc1="-0.040824472904205322" pc2="-0.062620498239994049"/>
+            <PCA_DIM pc1="-0.039537984877824783" pc2="-0.069481633603572845"/>
+            <PCA_DIM pc1="-0.037563234567642212" pc2="-0.072969719767570496"/>
+            <PCA_DIM pc1="-0.035282723605632782" pc2="-0.07430604100227356"/>
+            <PCA_DIM pc1="-0.033222150057554245" pc2="-0.075060248374938965"/>
+            <PCA_DIM pc1="-0.032107263803482056" pc2="-0.075397148728370667"/>
+            <PCA_DIM pc1="-0.031874973326921463" pc2="-0.076091565191745758"/>
+            <PCA_DIM pc1="-0.090948008000850677" pc2="0.10016000270843506"/>
+            <PCA_DIM pc1="-0.093016877770423889" pc2="0.10566974431276321"/>
+            <PCA_DIM pc1="-0.093636289238929749" pc2="0.11038824915885925"/>
+            <PCA_DIM pc1="-0.093454569578170776" pc2="0.11506903171539307"/>
+            <PCA_DIM pc1="-0.092816904187202454" pc2="0.11924239993095398"/>
+            <PCA_DIM pc1="-0.091005086898803711" pc2="0.1217534989118576"/>
+            <PCA_DIM pc1="-0.089366763830184937" pc2="0.12408871948719025"/>
+            <PCA_DIM pc1="-0.089734673500061035" pc2="0.12564100325107574"/>
+            <PCA_DIM pc1="-0.090643003582954407" pc2="0.12401670962572098"/>
+            <PCA_DIM pc1="-0.090208999812602997" pc2="0.1195342019200325"/>
+            <PCA_DIM pc1="-0.089881263673305511" pc2="0.11322959512472153"/>
+            <PCA_DIM pc1="-0.09188445657491684" pc2="0.10571195930242538"/>
+            <PCA_DIM pc1="-0.095162563025951385" pc2="0.097346089780330658"/>
+            <PCA_DIM pc1="-0.098175562918186188" pc2="0.087668910622596741"/>
+            <PCA_DIM pc1="-0.10153044015169144" pc2="0.076941147446632385"/>
+            <PCA_DIM pc1="-0.10557519644498825" pc2="0.067792698740959167"/>
+            <PCA_DIM pc1="-0.10964948683977127" pc2="0.061706505715847015"/>
+            <PCA_DIM pc1="-0.11298888176679611" pc2="0.055688280612230301"/>
+            <PCA_DIM pc1="-0.11537544429302216" pc2="0.047015514224767685"/>
+            <PCA_DIM pc1="-0.11752956360578537" pc2="0.03590976819396019"/>
+            <PCA_DIM pc1="-0.12023286521434784" pc2="0.023006971925497055"/>
+            <PCA_DIM pc1="-0.12235946953296661" pc2="0.01099141500890255"/>
+            <PCA_DIM pc1="-0.12288855016231537" pc2="0.0017983120633289218"/>
+            <PCA_DIM pc1="-0.12283685803413391" pc2="-0.0064129093661904335"/>
+            <PCA_DIM pc1="-0.12185460329055786" pc2="-0.015656782314181328"/>
+            <PCA_DIM pc1="-0.11915668100118637" pc2="-0.026737835258245468"/>
+            <PCA_DIM pc1="-0.11545374244451523" pc2="-0.039757724851369858"/>
+            <PCA_DIM pc1="-0.11284693330526352" pc2="-0.052306231111288071"/>
+            <PCA_DIM pc1="-0.11101701110601425" pc2="-0.060574498027563095"/>
+            <PCA_DIM pc1="-0.10770504176616669" pc2="-0.066342651844024658"/>
+            <PCA_DIM pc1="-0.10320714861154556" pc2="-0.074448734521865845"/>
+            <PCA_DIM pc1="-0.09856722503900528" pc2="-0.084679171442985535"/>
+            <PCA_DIM pc1="-0.093605183064937592" pc2="-0.095632568001747131"/>
+            <PCA_DIM pc1="-0.089060686528682709" pc2="-0.10617296397686005"/>
+            <PCA_DIM pc1="-0.085391424596309662" pc2="-0.11549647152423859"/>
+            <PCA_DIM pc1="-0.082440994679927826" pc2="-0.12299588322639465"/>
+            <PCA_DIM pc1="-0.079086445271968842" pc2="-0.12723714113235474"/>
+            <PCA_DIM pc1="-0.074921853840351105" pc2="-0.1304924339056015"/>
+            <PCA_DIM pc1="-0.071853727102279663" pc2="-0.13560435175895691"/>
+            <PCA_DIM pc1="-0.070436306297779083" pc2="-0.14314234256744385"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 6" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="6">
+          <SUBCHANNEL ch="20" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="21" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="22" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="23" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-9807.412109375"
+               pc2min="-4761.47900390625" pc1max="13814.830078125" pc2max="3960.00048828125"
+               PCAjobFinished="1" PCAcomputed="1">
+            <PCA_DIM pc1="-0.064556106925010681" pc2="0.079888150095939636"/>
+            <PCA_DIM pc1="-0.065480157732963562" pc2="0.08421219140291214"/>
+            <PCA_DIM pc1="-0.065325751900672913" pc2="0.088632427155971527"/>
+            <PCA_DIM pc1="-0.064774826169013977" pc2="0.092231251299381256"/>
+            <PCA_DIM pc1="-0.063892751932144165" pc2="0.093630507588386536"/>
+            <PCA_DIM pc1="-0.063153669238090515" pc2="0.09393475204706192"/>
+            <PCA_DIM pc1="-0.063696384429931641" pc2="0.092560723423957825"/>
+            <PCA_DIM pc1="-0.065499216318130493" pc2="0.088310211896896362"/>
+            <PCA_DIM pc1="-0.066550984978675842" pc2="0.084570735692977905"/>
+            <PCA_DIM pc1="-0.066074207425117493" pc2="0.08406452089548111"/>
+            <PCA_DIM pc1="-0.066179461777210236" pc2="0.082821764051914215"/>
+            <PCA_DIM pc1="-0.067282237112522125" pc2="0.076831966638565063"/>
+            <PCA_DIM pc1="-0.069002941250801086" pc2="0.066043592989444733"/>
+            <PCA_DIM pc1="-0.071685545146465302" pc2="0.054755248129367828"/>
+            <PCA_DIM pc1="-0.075483106076717377" pc2="0.044685162603855133"/>
+            <PCA_DIM pc1="-0.080103784799575806" pc2="0.03357132151722908"/>
+            <PCA_DIM pc1="-0.084543995559215546" pc2="0.020764201879501343"/>
+            <PCA_DIM pc1="-0.087854385375976563" pc2="0.0080819204449653625"/>
+            <PCA_DIM pc1="-0.089993081986904144" pc2="-0.0021973722614347935"/>
+            <PCA_DIM pc1="-0.092046357691287994" pc2="-0.010911940596997738"/>
+            <PCA_DIM pc1="-0.094771653413772583" pc2="-0.019640557467937469"/>
+            <PCA_DIM pc1="-0.097486793994903564" pc2="-0.028609583154320717"/>
+            <PCA_DIM pc1="-0.098937153816223145" pc2="-0.036683332175016403"/>
+            <PCA_DIM pc1="-0.099253490567207336" pc2="-0.044093057513237"/>
+            <PCA_DIM pc1="-0.098668217658996582" pc2="-0.051628772169351578"/>
+            <PCA_DIM pc1="-0.097256243228912354" pc2="-0.058675970882177353"/>
+            <PCA_DIM pc1="-0.096024230122566223" pc2="-0.06554025411605835"/>
+            <PCA_DIM pc1="-0.095309659838676453" pc2="-0.073144778609275818"/>
+            <PCA_DIM pc1="-0.094015292823314667" pc2="-0.080848976969718933"/>
+            <PCA_DIM pc1="-0.091126576066017151" pc2="-0.087809190154075623"/>
+            <PCA_DIM pc1="-0.08757781982421875" pc2="-0.093169331550598145"/>
+            <PCA_DIM pc1="-0.084235429763793945" pc2="-0.096742421388626099"/>
+            <PCA_DIM pc1="-0.08103613555431366" pc2="-0.10118368268013"/>
+            <PCA_DIM pc1="-0.07813262939453125" pc2="-0.10698943585157394"/>
+            <PCA_DIM pc1="-0.075093425810337067" pc2="-0.11298881471157074"/>
+            <PCA_DIM pc1="-0.072027765214443207" pc2="-0.11966527253389359"/>
+            <PCA_DIM pc1="-0.069025583565235138" pc2="-0.12742926180362701"/>
+            <PCA_DIM pc1="-0.065880410373210907" pc2="-0.13531272113323212"/>
+            <PCA_DIM pc1="-0.063648663461208344" pc2="-0.14117409288883209"/>
+            <PCA_DIM pc1="-0.06186734139919281" pc2="-0.14535398781299591"/>
+            <PCA_DIM pc1="-0.07262883335351944" pc2="0.086846105754375458"/>
+            <PCA_DIM pc1="-0.073530688881874084" pc2="0.091042272746562958"/>
+            <PCA_DIM pc1="-0.073648810386657715" pc2="0.095482505857944489"/>
+            <PCA_DIM pc1="-0.073777802288532257" pc2="0.099472425878047943"/>
+            <PCA_DIM pc1="-0.073960050940513611" pc2="0.10197164118289948"/>
+            <PCA_DIM pc1="-0.073184177279472351" pc2="0.10405230522155762"/>
+            <PCA_DIM pc1="-0.071345694363117218" pc2="0.1063963994383812"/>
+            <PCA_DIM pc1="-0.070460610091686249" pc2="0.10732515901327133"/>
+            <PCA_DIM pc1="-0.071390703320503235" pc2="0.10621891170740128"/>
+            <PCA_DIM pc1="-0.073255367577075958" pc2="0.1029360219836235"/>
+            <PCA_DIM pc1="-0.07520969957113266" pc2="0.097149521112442017"/>
+            <PCA_DIM pc1="-0.076099999248981476" pc2="0.089906580746173859"/>
+            <PCA_DIM pc1="-0.076677151024341583" pc2="0.081203579902648926"/>
+            <PCA_DIM pc1="-0.078585557639598846" pc2="0.072630815207958221"/>
+            <PCA_DIM pc1="-0.082019641995429993" pc2="0.064177177846431732"/>
+            <PCA_DIM pc1="-0.085650593042373657" pc2="0.054866410791873932"/>
+            <PCA_DIM pc1="-0.088871091604232788" pc2="0.045231405645608902"/>
+            <PCA_DIM pc1="-0.091581143438816071" pc2="0.036193251609802246"/>
+            <PCA_DIM pc1="-0.093744449317455292" pc2="0.027525641024112701"/>
+            <PCA_DIM pc1="-0.096182987093925476" pc2="0.017498405650258064"/>
+            <PCA_DIM pc1="-0.098962292075157166" pc2="0.007070428691804409"/>
+            <PCA_DIM pc1="-0.1016644611954689" pc2="-0.0029925252310931683"/>
+            <PCA_DIM pc1="-0.10346808284521103" pc2="-0.011938637122511864"/>
+            <PCA_DIM pc1="-0.10422088950872421" pc2="-0.020134897902607918"/>
+            <PCA_DIM pc1="-0.10385341197252274" pc2="-0.028729982674121857"/>
+            <PCA_DIM pc1="-0.10216670483350754" pc2="-0.037593819200992584"/>
+            <PCA_DIM pc1="-0.099980577826499939" pc2="-0.04559466615319252"/>
+            <PCA_DIM pc1="-0.097922049462795258" pc2="-0.051703069359064102"/>
+            <PCA_DIM pc1="-0.095626316964626312" pc2="-0.056178160011768341"/>
+            <PCA_DIM pc1="-0.092640794813632965" pc2="-0.060215409845113754"/>
+            <PCA_DIM pc1="-0.089761421084403992" pc2="-0.065556220710277557"/>
+            <PCA_DIM pc1="-0.087587982416152954" pc2="-0.072697684168815613"/>
+            <PCA_DIM pc1="-0.085381835699081421" pc2="-0.080173641443252563"/>
+            <PCA_DIM pc1="-0.082369513809680939" pc2="-0.086236394941806793"/>
+            <PCA_DIM pc1="-0.078437864780426025" pc2="-0.091999664902687073"/>
+            <PCA_DIM pc1="-0.074704296886920929" pc2="-0.099398188292980194"/>
+            <PCA_DIM pc1="-0.071669168770313263" pc2="-0.10860895365476608"/>
+            <PCA_DIM pc1="-0.069567956030368805" pc2="-0.11818605661392212"/>
+            <PCA_DIM pc1="-0.068659670650959015" pc2="-0.1243048757314682"/>
+            <PCA_DIM pc1="-0.067284546792507172" pc2="-0.12752902507781982"/>
+            <PCA_DIM pc1="-0.041515976190567017" pc2="0.055497188121080399"/>
+            <PCA_DIM pc1="-0.042533136904239655" pc2="0.058844719082117081"/>
+            <PCA_DIM pc1="-0.043264914304018021" pc2="0.061557076871395111"/>
+            <PCA_DIM pc1="-0.043862514197826385" pc2="0.062865652143955231"/>
+            <PCA_DIM pc1="-0.044006496667861938" pc2="0.063571639358997345"/>
+            <PCA_DIM pc1="-0.043562397360801697" pc2="0.064910270273685455"/>
+            <PCA_DIM pc1="-0.043199028819799423" pc2="0.06634686142206192"/>
+            <PCA_DIM pc1="-0.043684504926204681" pc2="0.06701737642288208"/>
+            <PCA_DIM pc1="-0.044545762240886688" pc2="0.066500395536422729"/>
+            <PCA_DIM pc1="-0.045039135962724686" pc2="0.064003385603427887"/>
+            <PCA_DIM pc1="-0.045299895107746124" pc2="0.060326825827360153"/>
+            <PCA_DIM pc1="-0.045679796487092972" pc2="0.057006277143955231"/>
+            <PCA_DIM pc1="-0.046269632875919342" pc2="0.053482823073863983"/>
+            <PCA_DIM pc1="-0.046980679035186768" pc2="0.049577143043279648"/>
+            <PCA_DIM pc1="-0.048013880848884583" pc2="0.045735102146863937"/>
+            <PCA_DIM pc1="-0.049417249858379364" pc2="0.042319629341363907"/>
+            <PCA_DIM pc1="-0.050649520009756088" pc2="0.038399111479520798"/>
+            <PCA_DIM pc1="-0.051136177033185959" pc2="0.033123426139354706"/>
+            <PCA_DIM pc1="-0.051382433623075485" pc2="0.0279734767973423"/>
+            <PCA_DIM pc1="-0.051925688982009888" pc2="0.023690085858106613"/>
+            <PCA_DIM pc1="-0.052537236362695694" pc2="0.019654734060168266"/>
+            <PCA_DIM pc1="-0.053169053047895432" pc2="0.016086725518107414"/>
+            <PCA_DIM pc1="-0.053327396512031555" pc2="0.012807332910597324"/>
+            <PCA_DIM pc1="-0.052713543176651001" pc2="0.0090320734307169914"/>
+            <PCA_DIM pc1="-0.051609963178634644" pc2="0.0053815674036741257"/>
+            <PCA_DIM pc1="-0.05016949400305748" pc2="0.0015114292036741972"/>
+            <PCA_DIM pc1="-0.048784017562866211" pc2="-0.0030033285729587078"/>
+            <PCA_DIM pc1="-0.047621097415685654" pc2="-0.0065120463259518147"/>
+            <PCA_DIM pc1="-0.046330347657203674" pc2="-0.0085603063926100731"/>
+            <PCA_DIM pc1="-0.044817026704549789" pc2="-0.010652386583387852"/>
+            <PCA_DIM pc1="-0.042950984090566635" pc2="-0.013970712199807167"/>
+            <PCA_DIM pc1="-0.040692981332540512" pc2="-0.018312582746148109"/>
+            <PCA_DIM pc1="-0.038668248802423477" pc2="-0.021763427183032036"/>
+            <PCA_DIM pc1="-0.037300191819667816" pc2="-0.024004820734262466"/>
+            <PCA_DIM pc1="-0.036033466458320618" pc2="-0.027333885431289673"/>
+            <PCA_DIM pc1="-0.03452591598033905" pc2="-0.032442741096019745"/>
+            <PCA_DIM pc1="-0.03293619304895401" pc2="-0.037895794957876205"/>
+            <PCA_DIM pc1="-0.03190777450799942" pc2="-0.042892739176750183"/>
+            <PCA_DIM pc1="-0.031607989221811295" pc2="-0.046578515321016312"/>
+            <PCA_DIM pc1="-0.030896645039319992" pc2="-0.049719452857971191"/>
+            <PCA_DIM pc1="-0.083474643528461456" pc2="0.11369689553976059"/>
+            <PCA_DIM pc1="-0.085071228444576263" pc2="0.11883285641670227"/>
+            <PCA_DIM pc1="-0.085987091064453125" pc2="0.12457586079835892"/>
+            <PCA_DIM pc1="-0.086170285940170288" pc2="0.12916761636734009"/>
+            <PCA_DIM pc1="-0.085643574595451355" pc2="0.13126431405544281"/>
+            <PCA_DIM pc1="-0.08491930365562439" pc2="0.13162939250469208"/>
+            <PCA_DIM pc1="-0.084393009543418884" pc2="0.12989509105682373"/>
+            <PCA_DIM pc1="-0.084921084344387054" pc2="0.12545143067836761"/>
+            <PCA_DIM pc1="-0.086128905415534973" pc2="0.12078578025102615"/>
+            <PCA_DIM pc1="-0.087137721478939056" pc2="0.11730262637138367"/>
+            <PCA_DIM pc1="-0.088027156889438629" pc2="0.11369591951370239"/>
+            <PCA_DIM pc1="-0.088821075856685638" pc2="0.106863833963871"/>
+            <PCA_DIM pc1="-0.090136468410491943" pc2="0.095588698983192444"/>
+            <PCA_DIM pc1="-0.09296754002571106" pc2="0.081949107348918915"/>
+            <PCA_DIM pc1="-0.097174189984798431" pc2="0.067476212978363037"/>
+            <PCA_DIM pc1="-0.10167590528726578" pc2="0.052787996828556061"/>
+            <PCA_DIM pc1="-0.10619858652353287" pc2="0.0374167300760746"/>
+            <PCA_DIM pc1="-0.11013149470090866" pc2="0.021917510777711868"/>
+            <PCA_DIM pc1="-0.11296424269676208" pc2="0.0088731320574879646"/>
+            <PCA_DIM pc1="-0.11558616161346436" pc2="-0.0016940986970439553"/>
+            <PCA_DIM pc1="-0.1180717945098877" pc2="-0.012605577707290649"/>
+            <PCA_DIM pc1="-0.11965494602918625" pc2="-0.024493284523487091"/>
+            <PCA_DIM pc1="-0.12003456801176071" pc2="-0.034717537462711334"/>
+            <PCA_DIM pc1="-0.11965285241603851" pc2="-0.042093042284250259"/>
+            <PCA_DIM pc1="-0.11878419667482376" pc2="-0.048278361558914185"/>
+            <PCA_DIM pc1="-0.11718810349702835" pc2="-0.056020993739366531"/>
+            <PCA_DIM pc1="-0.11499342322349548" pc2="-0.065323002636432648"/>
+            <PCA_DIM pc1="-0.11229155957698822" pc2="-0.073735363781452179"/>
+            <PCA_DIM pc1="-0.10917533934116364" pc2="-0.081188604235649109"/>
+            <PCA_DIM pc1="-0.10562639683485031" pc2="-0.088393941521644592"/>
+            <PCA_DIM pc1="-0.10182176530361176" pc2="-0.095184244215488434"/>
+            <PCA_DIM pc1="-0.097765788435935974" pc2="-0.10124661773443222"/>
+            <PCA_DIM pc1="-0.093261100351810455" pc2="-0.10612068325281143"/>
+            <PCA_DIM pc1="-0.088771387934684753" pc2="-0.11119756102561951"/>
+            <PCA_DIM pc1="-0.084845975041389465" pc2="-0.11757349967956543"/>
+            <PCA_DIM pc1="-0.081749342381954193" pc2="-0.12502241134643555"/>
+            <PCA_DIM pc1="-0.078750342130661011" pc2="-0.13376295566558838"/>
+            <PCA_DIM pc1="-0.075802788138389587" pc2="-0.1426728367805481"/>
+            <PCA_DIM pc1="-0.073037624359130859" pc2="-0.14861170947551727"/>
+            <PCA_DIM pc1="-0.06975400447845459" pc2="-0.15203209221363068"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 7" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="7">
+          <SUBCHANNEL ch="24" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="25" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="26" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="27" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-6873.59375" pc2min="-1659.0338134765625"
+               pc1max="11127.771484375" pc2max="1471.7108154296875" PCAjobFinished="1"
+               PCAcomputed="1">
+            <PCA_DIM pc1="-0.07397991418838501" pc2="0.076066933572292328"/>
+            <PCA_DIM pc1="-0.077205941081047058" pc2="0.077250860631465912"/>
+            <PCA_DIM pc1="-0.080018028616905212" pc2="0.076163671910762787"/>
+            <PCA_DIM pc1="-0.082230418920516968" pc2="0.075718477368354797"/>
+            <PCA_DIM pc1="-0.083749890327453613" pc2="0.07420019805431366"/>
+            <PCA_DIM pc1="-0.084883496165275574" pc2="0.070418879389762878"/>
+            <PCA_DIM pc1="-0.085801705718040466" pc2="0.065472923219203949"/>
+            <PCA_DIM pc1="-0.086341120302677155" pc2="0.060088414698839188"/>
+            <PCA_DIM pc1="-0.086471021175384521" pc2="0.054114282131195068"/>
+            <PCA_DIM pc1="-0.085991322994232178" pc2="0.048432841897010803"/>
+            <PCA_DIM pc1="-0.084993205964565277" pc2="0.042919587343931198"/>
+            <PCA_DIM pc1="-0.08430086076259613" pc2="0.036808725446462631"/>
+            <PCA_DIM pc1="-0.08417220413684845" pc2="0.031520765274763107"/>
+            <PCA_DIM pc1="-0.084024034440517426" pc2="0.026078827679157257"/>
+            <PCA_DIM pc1="-0.083580173552036285" pc2="0.018527185544371605"/>
+            <PCA_DIM pc1="-0.082668803632259369" pc2="0.0094070443883538246"/>
+            <PCA_DIM pc1="-0.081462308764457703" pc2="-0.00057755823945626616"/>
+            <PCA_DIM pc1="-0.080218560993671417" pc2="-0.010786806233227253"/>
+            <PCA_DIM pc1="-0.079011000692844391" pc2="-0.019398495554924011"/>
+            <PCA_DIM pc1="-0.07770296186208725" pc2="-0.026398057118058205"/>
+            <PCA_DIM pc1="-0.076282873749732971" pc2="-0.033536598086357117"/>
+            <PCA_DIM pc1="-0.074913501739501953" pc2="-0.040800321847200394"/>
+            <PCA_DIM pc1="-0.073327407240867615" pc2="-0.047702200710773468"/>
+            <PCA_DIM pc1="-0.071829646825790405" pc2="-0.055090438574552536"/>
+            <PCA_DIM pc1="-0.07094603031873703" pc2="-0.062728889286518097"/>
+            <PCA_DIM pc1="-0.069514594972133636" pc2="-0.07133752852678299"/>
+            <PCA_DIM pc1="-0.066561281681060791" pc2="-0.081228002905845642"/>
+            <PCA_DIM pc1="-0.063335984945297241" pc2="-0.090960890054702759"/>
+            <PCA_DIM pc1="-0.060742668807506561" pc2="-0.098781503736972809"/>
+            <PCA_DIM pc1="-0.057949118316173553" pc2="-0.10512788593769073"/>
+            <PCA_DIM pc1="-0.055319804698228836" pc2="-0.1140948161482811"/>
+            <PCA_DIM pc1="-0.052911009639501572" pc2="-0.12388335168361664"/>
+            <PCA_DIM pc1="-0.049875769764184952" pc2="-0.12988942861557007"/>
+            <PCA_DIM pc1="-0.046466566622257233" pc2="-0.13403081893920898"/>
+            <PCA_DIM pc1="-0.042923808097839355" pc2="-0.13834699988365173"/>
+            <PCA_DIM pc1="-0.039876677095890045" pc2="-0.14219306409358978"/>
+            <PCA_DIM pc1="-0.037793613970279694" pc2="-0.14571423828601837"/>
+            <PCA_DIM pc1="-0.035548627376556396" pc2="-0.14758242666721344"/>
+            <PCA_DIM pc1="-0.033056676387786865" pc2="-0.14642667770385742"/>
+            <PCA_DIM pc1="-0.030603373423218727" pc2="-0.14492762088775635"/>
+            <PCA_DIM pc1="-0.062786906957626343" pc2="0.068719394505023956"/>
+            <PCA_DIM pc1="-0.065602771937847137" pc2="0.070408634841442108"/>
+            <PCA_DIM pc1="-0.068222537636756897" pc2="0.069717712700366974"/>
+            <PCA_DIM pc1="-0.070650286972522736" pc2="0.068286806344985962"/>
+            <PCA_DIM pc1="-0.072509169578552246" pc2="0.066407151520252228"/>
+            <PCA_DIM pc1="-0.073567382991313934" pc2="0.063290722668170929"/>
+            <PCA_DIM pc1="-0.073682636022567749" pc2="0.059348415583372116"/>
+            <PCA_DIM pc1="-0.073601745069026947" pc2="0.055547386407852173"/>
+            <PCA_DIM pc1="-0.073582708835601807" pc2="0.053663443773984909"/>
+            <PCA_DIM pc1="-0.072703137993812561" pc2="0.05271148681640625"/>
+            <PCA_DIM pc1="-0.071655981242656708" pc2="0.049806341528892517"/>
+            <PCA_DIM pc1="-0.071597807109355927" pc2="0.044954251497983932"/>
+            <PCA_DIM pc1="-0.071868114173412323" pc2="0.039044938981533051"/>
+            <PCA_DIM pc1="-0.071317411959171295" pc2="0.031866457313299179"/>
+            <PCA_DIM pc1="-0.070024758577346802" pc2="0.02434827946126461"/>
+            <PCA_DIM pc1="-0.068829715251922607" pc2="0.017337502911686897"/>
+            <PCA_DIM pc1="-0.068144738674163818" pc2="0.011300576850771904"/>
+            <PCA_DIM pc1="-0.067341692745685577" pc2="0.0055865515023469925"/>
+            <PCA_DIM pc1="-0.065870068967342377" pc2="-0.00020067940931767225"/>
+            <PCA_DIM pc1="-0.064473554491996765" pc2="-0.0060318205505609512"/>
+            <PCA_DIM pc1="-0.06343744695186615" pc2="-0.011360290460288525"/>
+            <PCA_DIM pc1="-0.06213291734457016" pc2="-0.016288109123706818"/>
+            <PCA_DIM pc1="-0.060296632349491119" pc2="-0.023079534992575645"/>
+            <PCA_DIM pc1="-0.058539852499961853" pc2="-0.032163683325052261"/>
+            <PCA_DIM pc1="-0.057570002973079681" pc2="-0.040196847170591354"/>
+            <PCA_DIM pc1="-0.056997749954462051" pc2="-0.047359324991703033"/>
+            <PCA_DIM pc1="-0.055477723479270935" pc2="-0.05406845360994339"/>
+            <PCA_DIM pc1="-0.053038690239191055" pc2="-0.060137219727039337"/>
+            <PCA_DIM pc1="-0.050482146441936493" pc2="-0.06662161648273468"/>
+            <PCA_DIM pc1="-0.04760509729385376" pc2="-0.072462715208530426"/>
+            <PCA_DIM pc1="-0.044647566974163055" pc2="-0.078654423356056213"/>
+            <PCA_DIM pc1="-0.042108684778213501" pc2="-0.08457714319229126"/>
+            <PCA_DIM pc1="-0.039584074169397354" pc2="-0.089436933398246765"/>
+            <PCA_DIM pc1="-0.037106204777956009" pc2="-0.093541644513607025"/>
+            <PCA_DIM pc1="-0.034492339938879013" pc2="-0.098314225673675537"/>
+            <PCA_DIM pc1="-0.032146681100130081" pc2="-0.10417298972606659"/>
+            <PCA_DIM pc1="-0.030226899310946465" pc2="-0.10826645791530609"/>
+            <PCA_DIM pc1="-0.027604259550571442" pc2="-0.10748951137065887"/>
+            <PCA_DIM pc1="-0.025035496801137924" pc2="-0.10366004705429077"/>
+            <PCA_DIM pc1="-0.023080773651599884" pc2="-0.10168047249317169"/>
+            <PCA_DIM pc1="-0.069173619151115417" pc2="0.077612072229385376"/>
+            <PCA_DIM pc1="-0.07308834046125412" pc2="0.076083548367023468"/>
+            <PCA_DIM pc1="-0.075970232486724854" pc2="0.07579389214515686"/>
+            <PCA_DIM pc1="-0.077850870788097382" pc2="0.076806835830211639"/>
+            <PCA_DIM pc1="-0.07944246381521225" pc2="0.076404958963394165"/>
+            <PCA_DIM pc1="-0.080833666026592255" pc2="0.073234677314758301"/>
+            <PCA_DIM pc1="-0.081444337964057922" pc2="0.068368330597877502"/>
+            <PCA_DIM pc1="-0.081749260425567627" pc2="0.063878364861011505"/>
+            <PCA_DIM pc1="-0.082309722900390625" pc2="0.060591433197259903"/>
+            <PCA_DIM pc1="-0.082223556935787201" pc2="0.058478523045778275"/>
+            <PCA_DIM pc1="-0.081529885530471802" pc2="0.055520478636026382"/>
+            <PCA_DIM pc1="-0.081219539046287537" pc2="0.049901347607374191"/>
+            <PCA_DIM pc1="-0.081185087561607361" pc2="0.043679662048816681"/>
+            <PCA_DIM pc1="-0.080805644392967224" pc2="0.037782549858093262"/>
+            <PCA_DIM pc1="-0.080145373940467834" pc2="0.031037960201501846"/>
+            <PCA_DIM pc1="-0.079525269567966461" pc2="0.023573838174343109"/>
+            <PCA_DIM pc1="-0.078270837664604187" pc2="0.01716923713684082"/>
+            <PCA_DIM pc1="-0.076102264225482941" pc2="0.01226024329662323"/>
+            <PCA_DIM pc1="-0.074224717915058136" pc2="0.0064984625205397606"/>
+            <PCA_DIM pc1="-0.072929620742797852" pc2="-0.00070080824661999941"/>
+            <PCA_DIM pc1="-0.071879900991916656" pc2="-0.0072539648972451687"/>
+            <PCA_DIM pc1="-0.070710599422454834" pc2="-0.011662636883556843"/>
+            <PCA_DIM pc1="-0.069100417196750641" pc2="-0.016037033870816231"/>
+            <PCA_DIM pc1="-0.067289963364601135" pc2="-0.022980272769927979"/>
+            <PCA_DIM pc1="-0.065701685845851898" pc2="-0.031239040195941925"/>
+            <PCA_DIM pc1="-0.063830457627773285" pc2="-0.039004817605018616"/>
+            <PCA_DIM pc1="-0.061360593885183334" pc2="-0.046396981924772263"/>
+            <PCA_DIM pc1="-0.058755390346050262" pc2="-0.053590670228004456"/>
+            <PCA_DIM pc1="-0.055963005870580673" pc2="-0.060319770127534866"/>
+            <PCA_DIM pc1="-0.052835922688245773" pc2="-0.067180491983890533"/>
+            <PCA_DIM pc1="-0.050043821334838867" pc2="-0.07501336932182312"/>
+            <PCA_DIM pc1="-0.04784233495593071" pc2="-0.082676425576210022"/>
+            <PCA_DIM pc1="-0.045535195618867874" pc2="-0.087642952799797058"/>
+            <PCA_DIM pc1="-0.042744286358356476" pc2="-0.089486002922058105"/>
+            <PCA_DIM pc1="-0.039568353444337845" pc2="-0.09148155152797699"/>
+            <PCA_DIM pc1="-0.03661004826426506" pc2="-0.09509691596031189"/>
+            <PCA_DIM pc1="-0.033973898738622665" pc2="-0.096678964793682098"/>
+            <PCA_DIM pc1="-0.03117629699409008" pc2="-0.09588024765253067"/>
+            <PCA_DIM pc1="-0.028766496106982231" pc2="-0.096027113497257233"/>
+            <PCA_DIM pc1="-0.026887532323598862" pc2="-0.09756411612033844"/>
+            <PCA_DIM pc1="-0.11835965514183044" pc2="0.109604611992836"/>
+            <PCA_DIM pc1="-0.12359432131052017" pc2="0.10834649950265884"/>
+            <PCA_DIM pc1="-0.12812092900276184" pc2="0.10621491819620132"/>
+            <PCA_DIM pc1="-0.13203240931034088" pc2="0.10476266592741013"/>
+            <PCA_DIM pc1="-0.13482096791267395" pc2="0.10055434703826904"/>
+            <PCA_DIM pc1="-0.13636727631092072" pc2="0.094711698591709137"/>
+            <PCA_DIM pc1="-0.13693597912788391" pc2="0.088961809873580933"/>
+            <PCA_DIM pc1="-0.13726729154586792" pc2="0.082534894347190857"/>
+            <PCA_DIM pc1="-0.13693447411060333" pc2="0.077317692339420319"/>
+            <PCA_DIM pc1="-0.13538528978824615" pc2="0.075215406715869904"/>
+            <PCA_DIM pc1="-0.13366775214672089" pc2="0.07234625518321991"/>
+            <PCA_DIM pc1="-0.13280317187309265" pc2="0.065686613321304321"/>
+            <PCA_DIM pc1="-0.13237877190113068" pc2="0.057021331042051315"/>
+            <PCA_DIM pc1="-0.13160867989063263" pc2="0.047027301043272018"/>
+            <PCA_DIM pc1="-0.1300741583108902" pc2="0.035403762012720108"/>
+            <PCA_DIM pc1="-0.12835395336151123" pc2="0.023151224479079247"/>
+            <PCA_DIM pc1="-0.12684087455272675" pc2="0.013000202365219593"/>
+            <PCA_DIM pc1="-0.12438302487134933" pc2="0.0045111561194062233"/>
+            <PCA_DIM pc1="-0.12071670591831207" pc2="-0.0060500893741846085"/>
+            <PCA_DIM pc1="-0.1170647069811821" pc2="-0.016761880367994308"/>
+            <PCA_DIM pc1="-0.11393165588378906" pc2="-0.02488349936902523"/>
+            <PCA_DIM pc1="-0.11112210154533386" pc2="-0.032086212188005447"/>
+            <PCA_DIM pc1="-0.10825538635253906" pc2="-0.04208003357052803"/>
+            <PCA_DIM pc1="-0.10572629421949387" pc2="-0.054633807390928268"/>
+            <PCA_DIM pc1="-0.1031947061419487" pc2="-0.065982326865196228"/>
+            <PCA_DIM pc1="-0.099805451929569244" pc2="-0.076643601059913635"/>
+            <PCA_DIM pc1="-0.095616631209850311" pc2="-0.086589455604553223"/>
+            <PCA_DIM pc1="-0.091533847153186798" pc2="-0.095717556774616241"/>
+            <PCA_DIM pc1="-0.087671756744384766" pc2="-0.10541589558124542"/>
+            <PCA_DIM pc1="-0.083796150982379913" pc2="-0.11403521150350571"/>
+            <PCA_DIM pc1="-0.080079987645149231" pc2="-0.1222904771566391"/>
+            <PCA_DIM pc1="-0.075837649405002594" pc2="-0.13105678558349609"/>
+            <PCA_DIM pc1="-0.070862576365470886" pc2="-0.13908050954341888"/>
+            <PCA_DIM pc1="-0.065354727208614349" pc2="-0.14512401819229126"/>
+            <PCA_DIM pc1="-0.059695649892091751" pc2="-0.1494380384683609"/>
+            <PCA_DIM pc1="-0.055372338742017746" pc2="-0.15270450711250305"/>
+            <PCA_DIM pc1="-0.051904786378145218" pc2="-0.15560847520828247"/>
+            <PCA_DIM pc1="-0.048207029700279236" pc2="-0.15612664818763733"/>
+            <PCA_DIM pc1="-0.045223791152238846" pc2="-0.15389981865882874"/>
+            <PCA_DIM pc1="-0.042175557464361191" pc2="-0.15229187905788422"/>
+          </PCA>
+        </ELECTRODE>
+        <ELECTRODE name="Tetrode 8" numChannels="4" prePeakSamples="8" postPeakSamples="32"
+                   advancerID="-1" depthOffsetMM="0" electrodeID="8">
+          <SUBCHANNEL ch="28" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="29" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="30" thresh="-20" isActive="1"/>
+          <SUBCHANNEL ch="31" thresh="-20" isActive="1"/>
+          <SPIKESORTING numBoxUnits="0" numPCAUnits="0" selectedUnit="-1" selectedBox="-1"/>
+          <PCA numChannels="4" waveformLength="40" pc1min="-27544.01171875"
+               pc2min="-8154.76416015625" pc1max="21310.98046875" pc2max="5144.19287109375"
+               PCAjobFinished="0" PCAcomputed="1">
+            <PCA_DIM pc1="-0.018475014716386795" pc2="0.13460281491279602"/>
+            <PCA_DIM pc1="-0.019360126927495003" pc2="0.13960982859134674"/>
+            <PCA_DIM pc1="-0.019958551973104477" pc2="0.14263644814491272"/>
+            <PCA_DIM pc1="-0.020432626828551292" pc2="0.14399802684783936"/>
+            <PCA_DIM pc1="-0.020965173840522766" pc2="0.14532244205474854"/>
+            <PCA_DIM pc1="-0.074655093252658844" pc2="0.10312949866056442"/>
+            <PCA_DIM pc1="-0.19650626182556152" pc2="0.0040976223535835743"/>
+            <PCA_DIM pc1="-0.26996609568595886" pc2="-0.057227190583944321"/>
+            <PCA_DIM pc1="-0.25375595688819885" pc2="-0.047295846045017242"/>
+            <PCA_DIM pc1="-0.21522194147109985" pc2="-0.018382323905825615"/>
+            <PCA_DIM pc1="-0.18772467970848083" pc2="0.0033694133162498474"/>
+            <PCA_DIM pc1="-0.16993245482444763" pc2="0.017326347529888153"/>
+            <PCA_DIM pc1="-0.15442526340484619" pc2="0.028552161529660225"/>
+            <PCA_DIM pc1="-0.13839296996593475" pc2="0.039816375821828842"/>
+            <PCA_DIM pc1="-0.12234928458929062" pc2="0.051439575850963593"/>
+            <PCA_DIM pc1="-0.10709909349679947" pc2="0.062624171376228333"/>
+            <PCA_DIM pc1="-0.092760756611824036" pc2="0.072815641760826111"/>
+            <PCA_DIM pc1="-0.079395957291126251" pc2="0.081956498324871063"/>
+            <PCA_DIM pc1="-0.067095167934894562" pc2="0.089539192616939545"/>
+            <PCA_DIM pc1="-0.055778253823518753" pc2="0.095655009150505066"/>
+            <PCA_DIM pc1="-0.045149311423301697" pc2="0.10161616653203964"/>
+            <PCA_DIM pc1="-0.034885451197624207" pc2="0.10732380300760269"/>
+            <PCA_DIM pc1="-0.025051737204194069" pc2="0.11230301111936569"/>
+            <PCA_DIM pc1="-0.015976302325725555" pc2="0.11714347451925278"/>
+            <PCA_DIM pc1="-0.0080518545582890511" pc2="0.12097788602113724"/>
+            <PCA_DIM pc1="-0.0010839853202924132" pc2="0.12289868295192719"/>
+            <PCA_DIM pc1="0.0054305563680827618" pc2="0.12412423640489578"/>
+            <PCA_DIM pc1="0.011744198389351368" pc2="0.12570920586585999"/>
+            <PCA_DIM pc1="0.017844287678599358" pc2="0.12642811238765717"/>
+            <PCA_DIM pc1="0.023518379777669907" pc2="0.12554895877838135"/>
+            <PCA_DIM pc1="0.028401531279087067" pc2="0.12346646189689636"/>
+            <PCA_DIM pc1="0.032574620097875595" pc2="0.12135341763496399"/>
+            <PCA_DIM pc1="0.036462761461734772" pc2="0.11959280073642731"/>
+            <PCA_DIM pc1="0.040076602250337601" pc2="0.11796809732913971"/>
+            <PCA_DIM pc1="0.042960543185472488" pc2="0.11657842993736267"/>
+            <PCA_DIM pc1="0.045063082128763199" pc2="0.11398538947105408"/>
+            <PCA_DIM pc1="0.046911418437957764" pc2="0.11021817475557327"/>
+            <PCA_DIM pc1="0.048807553946971893" pc2="0.10692425817251205"/>
+            <PCA_DIM pc1="0.050628591328859329" pc2="0.10364308953285217"/>
+            <PCA_DIM pc1="0.052224121987819672" pc2="0.10063642263412476"/>
+            <PCA_DIM pc1="-0.016047870740294456" pc2="0.11720567941665649"/>
+            <PCA_DIM pc1="-0.016903869807720184" pc2="0.12228451669216156"/>
+            <PCA_DIM pc1="-0.017570415511727333" pc2="0.12608173489570618"/>
+            <PCA_DIM pc1="-0.017994426190853119" pc2="0.1277831494808197"/>
+            <PCA_DIM pc1="-0.018302731215953827" pc2="0.12825863063335419"/>
+            <PCA_DIM pc1="-0.06602274626493454" pc2="0.089734844863414764"/>
+            <PCA_DIM pc1="-0.17453257739543915" pc2="0.0012248021084815264"/>
+            <PCA_DIM pc1="-0.23981373012065887" pc2="-0.05329257994890213"/>
+            <PCA_DIM pc1="-0.22523000836372375" pc2="-0.043839458376169205"/>
+            <PCA_DIM pc1="-0.19098880887031555" pc2="-0.017559507861733437"/>
+            <PCA_DIM pc1="-0.16677026450634003" pc2="0.0025575258769094944"/>
+            <PCA_DIM pc1="-0.15101784467697144" pc2="0.016036652028560638"/>
+            <PCA_DIM pc1="-0.13700376451015472" pc2="0.026205867528915405"/>
+            <PCA_DIM pc1="-0.12267462164163589" pc2="0.035198859870433807"/>
+            <PCA_DIM pc1="-0.10849485546350479" pc2="0.044937849044799805"/>
+            <PCA_DIM pc1="-0.094870299100875854" pc2="0.054736819118261337"/>
+            <PCA_DIM pc1="-0.082126051187515259" pc2="0.062863633036613464"/>
+            <PCA_DIM pc1="-0.070373445749282837" pc2="0.069809824228286743"/>
+            <PCA_DIM pc1="-0.059456337243318558" pc2="0.076921254396438599"/>
+            <PCA_DIM pc1="-0.049116276204586029" pc2="0.084162376821041107"/>
+            <PCA_DIM pc1="-0.03913009911775589" pc2="0.090472683310508728"/>
+            <PCA_DIM pc1="-0.029822124168276787" pc2="0.095569416880607605"/>
+            <PCA_DIM pc1="-0.021531134843826294" pc2="0.1000308096408844"/>
+            <PCA_DIM pc1="-0.014204223640263081" pc2="0.10425050556659698"/>
+            <PCA_DIM pc1="-0.0074680699035525322" pc2="0.10674747079610825"/>
+            <PCA_DIM pc1="-0.0010642044944688678" pc2="0.10693884640932083"/>
+            <PCA_DIM pc1="0.0050018592737615108" pc2="0.10688569396734238"/>
+            <PCA_DIM pc1="0.010671975091099739" pc2="0.10762102901935577"/>
+            <PCA_DIM pc1="0.016094695776700974" pc2="0.10812295973300934"/>
+            <PCA_DIM pc1="0.021023215726017952" pc2="0.10740217566490173"/>
+            <PCA_DIM pc1="0.025156175717711449" pc2="0.10604111105203629"/>
+            <PCA_DIM pc1="0.028742894530296326" pc2="0.10505788028240204"/>
+            <PCA_DIM pc1="0.032205212861299515" pc2="0.10365476459264755"/>
+            <PCA_DIM pc1="0.035562708973884583" pc2="0.10150511562824249"/>
+            <PCA_DIM pc1="0.038476891815662384" pc2="0.099789634346961975"/>
+            <PCA_DIM pc1="0.040855228900909424" pc2="0.097794346511363983"/>
+            <PCA_DIM pc1="0.042592473328113556" pc2="0.095156103372573853"/>
+            <PCA_DIM pc1="0.043840888887643814" pc2="0.092276178300380707"/>
+            <PCA_DIM pc1="0.044939752668142319" pc2="0.088665120303630829"/>
+            <PCA_DIM pc1="0.046117376536130905" pc2="0.085367895662784576"/>
+            <PCA_DIM pc1="-0.014110195450484753" pc2="0.10298901796340942"/>
+            <PCA_DIM pc1="-0.014820219948887825" pc2="0.10672186315059662"/>
+            <PCA_DIM pc1="-0.015364919789135456" pc2="0.10930231213569641"/>
+            <PCA_DIM pc1="-0.015815155580639839" pc2="0.1112154945731163"/>
+            <PCA_DIM pc1="-0.016155991703271866" pc2="0.11254516243934631"/>
+            <PCA_DIM pc1="-0.05898825079202652" pc2="0.078890450298786163"/>
+            <PCA_DIM pc1="-0.15619917213916779" pc2="0.00012641581997741014"/>
+            <PCA_DIM pc1="-0.21416862308979034" pc2="-0.048468712717294693"/>
+            <PCA_DIM pc1="-0.20059752464294434" pc2="-0.040254723280668259"/>
+            <PCA_DIM pc1="-0.17013758420944214" pc2="-0.017398824915289879"/>
+            <PCA_DIM pc1="-0.14880059659481049" pc2="-0.00036393571645021439"/>
+            <PCA_DIM pc1="-0.13443279266357422" pc2="0.010496006347239017"/>
+            <PCA_DIM pc1="-0.12164725363254547" pc2="0.019457036629319191"/>
+            <PCA_DIM pc1="-0.10900501161813736" pc2="0.029122568666934967"/>
+            <PCA_DIM pc1="-0.096761412918567657" pc2="0.039208739995956421"/>
+            <PCA_DIM pc1="-0.084897443652153015" pc2="0.048523813486099243"/>
+            <PCA_DIM pc1="-0.073334112763404846" pc2="0.056103557348251343"/>
+            <PCA_DIM pc1="-0.062513388693332672" pc2="0.062142804265022278"/>
+            <PCA_DIM pc1="-0.052624322474002838" pc2="0.067411415278911591"/>
+            <PCA_DIM pc1="-0.043369770050048828" pc2="0.072276324033737183"/>
+            <PCA_DIM pc1="-0.034615248441696167" pc2="0.076999828219413757"/>
+            <PCA_DIM pc1="-0.026378745213150978" pc2="0.081253670156002045"/>
+            <PCA_DIM pc1="-0.018765803426504135" pc2="0.085146769881248474"/>
+            <PCA_DIM pc1="-0.01198163814842701" pc2="0.08907463401556015"/>
+            <PCA_DIM pc1="-0.0059371455572545528" pc2="0.092070795595645905"/>
+            <PCA_DIM pc1="-0.00031260898686014116" pc2="0.093448087573051453"/>
+            <PCA_DIM pc1="0.0048416266217827797" pc2="0.094527691602706909"/>
+            <PCA_DIM pc1="0.0096597475931048393" pc2="0.095415137708187103"/>
+            <PCA_DIM pc1="0.014294390566647053" pc2="0.095412522554397583"/>
+            <PCA_DIM pc1="0.018659237772226334" pc2="0.094420298933982849"/>
+            <PCA_DIM pc1="0.02260749414563179" pc2="0.093264125287532806"/>
+            <PCA_DIM pc1="0.026109389960765839" pc2="0.092355832457542419"/>
+            <PCA_DIM pc1="0.029390161857008934" pc2="0.090998336672782898"/>
+            <PCA_DIM pc1="0.032438796013593674" pc2="0.089303858578205109"/>
+            <PCA_DIM pc1="0.034836422652006149" pc2="0.087549686431884766"/>
+            <PCA_DIM pc1="0.036630101501941681" pc2="0.085610382258892059"/>
+            <PCA_DIM pc1="0.038145061582326889" pc2="0.083636783063411713"/>
+            <PCA_DIM pc1="0.039374984800815582" pc2="0.081508234143257141"/>
+            <PCA_DIM pc1="0.040458545088768005" pc2="0.079360224306583405"/>
+            <PCA_DIM pc1="0.041658729314804077" pc2="0.077384822070598602"/>
+            <PCA_DIM pc1="0.0019682592246681452" pc2="-0.020609591156244278"/>
+            <PCA_DIM pc1="0.0017237110296264291" pc2="-0.021612241864204407"/>
+            <PCA_DIM pc1="0.0016353563405573368" pc2="-0.023442253470420837"/>
+            <PCA_DIM pc1="0.0015229422133415937" pc2="-0.025315752252936363"/>
+            <PCA_DIM pc1="0.0012682313099503517" pc2="-0.026361409574747086"/>
+            <PCA_DIM pc1="0.0076491478830575943" pc2="-0.021039621904492378"/>
+            <PCA_DIM pc1="0.025640154257416725" pc2="-0.0065230317413806915"/>
+            <PCA_DIM pc1="0.041611079126596451" pc2="0.0045661488547921181"/>
+            <PCA_DIM pc1="0.043108679354190826" pc2="0.0031774535309523344"/>
+            <PCA_DIM pc1="0.035343974828720093" pc2="-0.0033024654258042574"/>
+            <PCA_DIM pc1="0.027710486203432083" pc2="-0.0068371603265404701"/>
+            <PCA_DIM pc1="0.023371655493974686" pc2="-0.0074072964489459991"/>
+            <PCA_DIM pc1="0.020493058487772942" pc2="-0.0078222276642918587"/>
+            <PCA_DIM pc1="0.017231352627277374" pc2="-0.0084140356630086899"/>
+            <PCA_DIM pc1="0.013449943624436855" pc2="-0.0075936773791909218"/>
+            <PCA_DIM pc1="0.0098273297771811485" pc2="-0.0054088267497718334"/>
+            <PCA_DIM pc1="0.0068983836099505424" pc2="-0.0029652565717697144"/>
+            <PCA_DIM pc1="0.0045897345989942551" pc2="-0.0010680403793230653"/>
+            <PCA_DIM pc1="0.0023996911477297544" pc2="-0.00033627153607085347"/>
+            <PCA_DIM pc1="0.00012793195492122322" pc2="-7.7669814345426857e-005"/>
+            <PCA_DIM pc1="-0.0019610607996582985" pc2="0.00092586228856816888"/>
+            <PCA_DIM pc1="-0.0037733877543359995" pc2="0.0027593912091106176"/>
+            <PCA_DIM pc1="-0.0055495672859251499" pc2="0.00472647650167346"/>
+            <PCA_DIM pc1="-0.00757198641076684" pc2="0.0070789032615721226"/>
+            <PCA_DIM pc1="-0.0095387566834688187" pc2="0.0086773810908198357"/>
+            <PCA_DIM pc1="-0.011032406240701675" pc2="0.0087072411552071571"/>
+            <PCA_DIM pc1="-0.012092666700482368" pc2="0.009120759554207325"/>
+            <PCA_DIM pc1="-0.012766015715897083" pc2="0.010488154366612434"/>
+            <PCA_DIM pc1="-0.013295898213982582" pc2="0.011591093614697456"/>
+            <PCA_DIM pc1="-0.013781359419226646" pc2="0.011429397389292717"/>
+            <PCA_DIM pc1="-0.014334804378449917" pc2="0.010636411607265472"/>
+            <PCA_DIM pc1="-0.0148761086165905" pc2="0.011336673982441425"/>
+            <PCA_DIM pc1="-0.014861425384879112" pc2="0.012365544214844704"/>
+            <PCA_DIM pc1="-0.014433917589485645" pc2="0.01285144966095686"/>
+            <PCA_DIM pc1="-0.014325883239507675" pc2="0.013494132086634636"/>
+            <PCA_DIM pc1="-0.014731564559042454" pc2="0.013552702963352203"/>
+            <PCA_DIM pc1="-0.01506325975060463" pc2="0.013213411904871464"/>
+            <PCA_DIM pc1="-0.014858655631542206" pc2="0.012897784821689129"/>
+            <PCA_DIM pc1="-0.014288534410297871" pc2="0.012709098868072033"/>
+            <PCA_DIM pc1="-0.013543969951570034" pc2="0.012577889487147331"/>
+          </PCA>
+        </ELECTRODE>
+      </SpikeSorter>
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="4" number="4">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="5" number="5">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="6" number="6">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="7" number="7">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="8" number="8">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="9" number="9">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="10" number="10">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="11" number="11">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="12" number="12">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="13" number="13">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="14" number="14">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="15" number="15">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="16" number="16">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="17" number="17">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="18" number="18">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="19" number="19">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="20" number="20">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="21" number="21">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="22" number="22">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="23" number="23">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="24" number="24">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="25" number="25">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="26" number="26">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="27" number="27">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="28" number="28">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="29" number="29">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="30" number="30">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="31" number="31">
+        <SELECTIONSTATE param="0" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EVENTCHANNEL name="2" number="2"/>
+      <EVENTCHANNEL name="3" number="3"/>
+      <EVENTCHANNEL name="4" number="4"/>
+      <EVENTCHANNEL name="5" number="5"/>
+      <EVENTCHANNEL name="6" number="6"/>
+      <EVENTCHANNEL name="7" number="7"/>
+      <EVENTCHANNEL name="8" number="8"/>
+      <EVENTCHANNEL name="9" number="9"/>
+      <EVENTCHANNEL name="10" number="10"/>
+      <EVENTCHANNEL name="11" number="11"/>
+      <EVENTCHANNEL name="12" number="12"/>
+      <EVENTCHANNEL name="13" number="13"/>
+      <EVENTCHANNEL name="14" number="14"/>
+      <EVENTCHANNEL name="15" number="15"/>
+      <EVENTCHANNEL name="16" number="16"/>
+      <EVENTCHANNEL name="17" number="17"/>
+      <EVENTCHANNEL name="18" number="18"/>
+      <EVENTCHANNEL name="19" number="19"/>
+      <EVENTCHANNEL name="20" number="20"/>
+      <EVENTCHANNEL name="21" number="21"/>
+      <EVENTCHANNEL name="22" number="22"/>
+      <EVENTCHANNEL name="23" number="23"/>
+      <EDITOR isCollapsed="0" displayName="Spike Sorter" Type="Visualizer">
+        <TAB Active="1"/>
+        <WINDOW Active="0"/>
+      </EDITOR>
+    </PROCESSOR>
+  </SIGNALCHAIN>
+  <AUDIO bufferSize="1024"/>
+  <CONTROLPANEL isOpen="1" recordPath="C:\open_ephys\Data" prependText="1717"
+                appendText="03" recordEngine="RAWBINARY"/>
+  <AUDIOEDITOR isMuted="0" volume="0" noiseGate="0"/>
+  <RECORDENGINES>
+    <ENGINE id="OPENEPHYS" name="Open Ephys">
+      <PARAMETER id="0" type="bool" value="0"/>
+      <PARAMETER id="1" type="bool" value="0"/>
+      <PARAMETER id="2" type="string" value="CH"/>
+    </ENGINE>
+    <ENGINE id="RAWBINARY" name="Binary"/>
+    <ENGINE id="KWIK" name="Kwik"/>
+    <ENGINE id="NWB" name="NWB">
+      <PARAMETER id="0" type="string" value=""/>
+    </ENGINE>
+  </RECORDENGINES>
+  <PROCESSORLIST>
+    <COLOR ID="801" R="59" G="59" B="59"/>
+    <COLOR ID="804" R="241" G="90" B="41"/>
+    <COLOR ID="802" R="0" G="174" B="239"/>
+    <COLOR ID="803" R="0" G="166" B="81"/>
+    <COLOR ID="805" R="147" G="149" B="152"/>
+  </PROCESSORLIST>
+  <MESSAGECENTER sourceNodeId="112"/>
+  <UICOMPONENT isProcessorListOpen="1" isEditorViewportOpen="1"/>
+</SETTINGS>

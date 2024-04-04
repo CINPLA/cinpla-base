@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SETTINGS>
+  <INFO>
+    <VERSION>0.4.1</VERSION>
+    <PLUGIN_API_VERSION>3</PLUGIN_API_VERSION>
+    <DATE>23 Jun 2017 11:16:45</DATE>
+    <OS>Windows 7</OS>
+    <MACHINE>BIO91048</MACHINE>
+  </INFO>
+  <SIGNALCHAIN>
+    <PROCESSOR name="Sources/OSC Port" insertionPoint="1" pluginName="OSC Port"
+               pluginType="1" pluginIndex="10" libraryName="OSC Port" libraryVersion="1"
+               isSource="1" isSink="0" NodeId="100">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EDITOR isCollapsed="0" displayName="OSC Port">
+        <OSCNODE port="27020" address="/red"/>
+      </EDITOR>
+    </PROCESSOR>
+    <PROCESSOR name="Utilities/Merger" insertionPoint="1" pluginName="Merger"
+               pluginType="-1" pluginIndex="1" libraryName="" libraryVersion="-1"
+               isSource="0" isSink="0" NodeId="104">
+      <MERGER NodeA="100" NodeB="101" MergeEventsA="1" MergeContinuousA="1"
+              MergeEventsB="1" MergeContinuousB="1"/>
+      <EDITOR isCollapsed="0" displayName="Merger"/>
+    </PROCESSOR>
+    <PROCESSOR name="Sinks/Tracker Stimulator" insertionPoint="1" pluginName="Tracker Stimulator"
+               pluginType="1" pluginIndex="20" libraryName="Tracker Stimulator"
+               libraryVersion="1" isSource="0" isSink="1" NodeId="105">
+      <CIRCLES>
+        <Circles_0 id="0" xpos="0.17750699818134308" ypos="0.79945802688598633"
+                   rad="0.27622699737548828" on="1"/>
+      </CIRCLES>
+      <CHANNELS>
+        <Chan_1 id="0" freq="10" sd="0.5" uniform-gaussian="1" biphasic="0" negative-positive="0"
+                phase="1" interphase="1" voltage="5" repetitions="1" trainduration="1"
+                interpulse="5"/>
+        <Chan_2 id="1" freq="2" sd="0.5" uniform-gaussian="1" biphasic="1" negative-positive="1"
+                phase="1" interphase="1" voltage="5" repetitions="1" trainduration="10"
+                interpulse="5"/>
+        <Chan_3 id="2" freq="2" sd="0.5" uniform-gaussian="1" biphasic="1" negative-positive="1"
+                phase="1" interphase="1" voltage="5" repetitions="1" trainduration="10"
+                interpulse="5"/>
+        <Chan_4 id="3" freq="2" sd="0.5" uniform-gaussian="1" biphasic="1" negative-positive="1"
+                phase="1" interphase="1" voltage="5" repetitions="1" trainduration="10"
+                interpulse="5"/>
+      </CHANNELS>
+      <SELECTEDCHANNEL channel="0"/>
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="2" number="2">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="3" number="3">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EVENTCHANNEL name="1" number="1"/>
+      <EDITOR isCollapsed="0" displayName="Tracker Stimulator">
+        <TRACKERSTIMULATOR syncStimchan="2" syncTTLchan="-1" stimStatus="0"/>
+      </EDITOR>
+    </PROCESSOR>
+  </SIGNALCHAIN>
+  <SIGNALCHAIN>
+    <PROCESSOR name="Sources/Sync Port" insertionPoint="1" pluginName="Sync Node"
+               pluginType="1" pluginIndex="19" libraryName="Sync Node" libraryVersion="1"
+               isSource="1" isSink="0" NodeId="101">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EDITOR isCollapsed="0" displayName="Sync Port"/>
+    </PROCESSOR>
+  </SIGNALCHAIN>
+  <SIGNALCHAIN>
+    <PROCESSOR name="Sources/OSC Port" insertionPoint="1" pluginName="OSC Port"
+               pluginType="1" pluginIndex="10" libraryName="OSC Port" libraryVersion="1"
+               isSource="1" isSink="0" NodeId="102">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EDITOR isCollapsed="0" displayName="OSC Port">
+        <OSCNODE port="27021" address="/green"/>
+      </EDITOR>
+    </PROCESSOR>
+    <PROCESSOR name="Sinks/Position Tracker" insertionPoint="1" pluginName="Position Tracker"
+               pluginType="1" pluginIndex="12" libraryName="Position Tracker"
+               libraryVersion="1" isSource="0" isSink="1" NodeId="103">
+      <CHANNEL name="0" number="0">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <CHANNEL name="1" number="1">
+        <SELECTIONSTATE param="1" record="0" audio="0"/>
+      </CHANNEL>
+      <EVENTCHANNEL name="0" number="0"/>
+      <EDITOR isCollapsed="0" displayName="Position Tracker" Type="Visualizer">
+        <TAB Active="1"/>
+        <WINDOW Active="0"/>
+      </EDITOR>
+    </PROCESSOR>
+  </SIGNALCHAIN>
+  <AUDIO bufferSize="1024"/>
+  <CONTROLPANEL isOpen="1" recordPath="C:\apps\open_ephys\Data" prependText="test"
+                appendText="nostim" recordEngine="RAWBINARY"/>
+  <AUDIOEDITOR isMuted="0" volume="0" noiseGate="0"/>
+  <RECORDENGINES>
+    <ENGINE id="OPENEPHYS" name="Open Ephys">
+      <PARAMETER id="0" type="bool" value="0"/>
+      <PARAMETER id="1" type="bool" value="0"/>
+      <PARAMETER id="2" type="string" value="CH"/>
+    </ENGINE>
+    <ENGINE id="RAWBINARY" name="Binary"/>
+    <ENGINE id="KWIK" name="Kwik"/>
+    <ENGINE id="NWB" name="NWB">
+      <PARAMETER id="0" type="string" value=""/>
+    </ENGINE>
+  </RECORDENGINES>
+  <PROCESSORLIST>
+    <COLOR ID="801" R="59" G="59" B="59"/>
+    <COLOR ID="804" R="241" G="90" B="41"/>
+    <COLOR ID="802" R="0" G="174" B="239"/>
+    <COLOR ID="803" R="0" G="166" B="81"/>
+    <COLOR ID="805" R="147" G="149" B="152"/>
+  </PROCESSORLIST>
+  <MESSAGECENTER sourceNodeId="0"/>
+  <UICOMPONENT isProcessorListOpen="1" isEditorViewportOpen="1"/>
+</SETTINGS>

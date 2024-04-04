@@ -1,5 +1,6 @@
 import numpy as np
 import networkx as nx
+import yaml
 from trackunitcomparison import TrackingSession
 from data_processing import get_data_path, get_channel_groups, load_spiketrains
 from track_units_tools import (
@@ -178,14 +179,16 @@ class TrackMultipleSessions:
 
     def save_graphs(self):
         for ch, graph in self.graphs.items():
-            nx.readwrite.write_yaml(graph, self.data_path / f'graph-group-{ch}.yaml')
+            with open(self.data_path / f'graph-group-{ch}.yaml', "w") as f:
+                yaml.dump(graph, f)
 
     def load_graphs(self):
         self.graphs = {}
         for path in self.data_path.iterdir():
             if path.name.startswith('graph-group') and path.suffix == '.yaml':
                 ch = int(path.stem.split('-')[-1])
-                self.graphs[ch] = nx.readwrite.read_yaml(path)
+                with open(path, "r") as f:
+                    self.graphs[ch] = yaml.load(f, Loader=yaml.Loader)
 
     def identify_units(self):
         if self._verbose:
