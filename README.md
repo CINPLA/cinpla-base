@@ -1,3 +1,7 @@
+# Deprecated and archived
+
+---
+
 # Welcome!
 
 This repository is a template you can use to *create new projects*.
